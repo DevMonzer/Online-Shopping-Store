@@ -29,7 +29,6 @@ const firebaseConfig = {
   appId: "1:781141198881:web:11e2a65056cdc75fedfb60",
 };
 
-// Setting up firebase authentication settings
 const firebaseApp = initializeApp(firebaseConfig);
 
 const googleProvider = new GoogleAuthProvider();
@@ -105,7 +104,6 @@ export const createUserDocumentFromAuth = async (
   return userDocRef;
 };
 
-// Add create user with email and password authentication
 export const createAuthUserWithEmailAndPassword = async (email, password) => {
   if (!email || !password) return;
 
@@ -118,9 +116,7 @@ export const signInAuthUserWithEmailAndPassword = async (email, password) => {
   return await signInWithEmailAndPassword(auth, email, password);
 };
 
-// Add sign out functionality
 export const signOutUser = async () => await signOut(auth);
 
-// Add onAuthStateChanged observer so we easily tell components if state has changed
 export const onAuthStateChangedListener = (callback) =>
   onAuthStateChanged(auth, callback);
