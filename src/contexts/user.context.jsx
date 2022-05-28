@@ -1,47 +1,41 @@
-import { createContext, useReducer, useEffect } from "react";
+import { createContext, useEffect, useReducer } from 'react';
+
+import { createAction } from '../utils/reducer/reducer.utils';
 
 import {
   onAuthStateChangedListener,
   createUserDocumentFromAuth,
-} from "../utils/firebase/firebase.utils";
+} from '../utils/firebase/firebase.utils';
 
 export const UserContext = createContext({
   setCurrentUser: () => null,
   currentUser: null,
 });
 
-// Initialize the userReducer function
+export const USER_ACTION_TYPES = {
+  SET_CURRENT_USER: 'SET_CURRENT_USER',
+};
+
+const INITIAL_STATE = {
+  currentUser: null,
+};
+
 const userReducer = (state, action) => {
   const { type, payload } = action;
-  console.log(action);
 
   switch (type) {
-    case "SET_CURRENT_USER":
-      return { currentUser: payload };
+    case USER_ACTION_TYPES.SET_CURRENT_USER:
+      return { ...state, currentUser: payload };
     default:
       throw new Error(`Unhandled type ${type} in userReducer`);
   }
 };
 
-// The initial state of the user
-const INITIAL_STATE = {
-  currentUser: null,
-};
-
 export const UserProvider = ({ children }) => {
-  // Dispatch the userReducer function using useReducer
-  const [state, dispatch] = useReducer(userReducer, INITIAL_STATE);
+  const [{ currentUser }, dispatch] = useReducer(userReducer, INITIAL_STATE);
 
-  const { currentUser } = state;
-  console.log(currentUser);
-
-  const setCurrentUser = (user) => {
-    dispatch({ type: "SET_CURRENT_USER", payload: user });
-  };
-
-  // const [currentUser, setCurrentUser] = useState(null);
-
-  const value = { currentUser, setCurrentUser };
+  const setCurrentUser = (user) =>
+    dispatch(createAction(USER_ACTION_TYPES.SET_CURRENT_USER, user));
 
   useEffect(() => {
     const unsubscribe = onAuthStateChangedListener((user) => {
@@ -54,11 +48,11 @@ export const UserProvider = ({ children }) => {
     return unsubscribe;
   }, []);
 
+  console.log(currentUser);
+
+  const value = {
+    currentUser,
+  };
+
   return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
 };
-
-/*
-
-    useReducer is widly used with complex state
-
-*/
