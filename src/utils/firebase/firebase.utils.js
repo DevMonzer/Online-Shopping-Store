@@ -21,12 +21,12 @@ import {
 } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCAvgcLhYaI38al1wWBYU1PGi9YLI3h3fo",
-  authDomain: "shoppingstore-67659.firebaseapp.com",
-  projectId: "shoppingstore-67659",
-  storageBucket: "shoppingstore-67659.appspot.com",
-  messagingSenderId: "482275811117",
-  appId: "1:482275811117:web:bb5af24b7dec77a29d3da4",
+  apiKey: "AIzaSyDXGn_G1Jwp1O1pAa2E69-JNc38Cl41nhg",
+  authDomain: "shoppingstore-bb8f3.firebaseapp.com",
+  projectId: "shoppingstore-bb8f3",
+  storageBucket: "shoppingstore-bb8f3.appspot.com",
+  messagingSenderId: "781141198881",
+  appId: "1:781141198881:web:11e2a65056cdc75fedfb60",
 };
 
 // Setting up firebase authentication settings
