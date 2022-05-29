@@ -12,6 +12,8 @@ import { CartContext } from "../../contexts/cart.context";
 import { ReactComponent as CrwnLogo } from "../../assets/crown.svg";
 import { signOutUser } from "../../utils/firebase/firebase.utils";
 
+import { selectCurrentUser } from "../../store/user/user.selector";
+
 import {
   NavigationContainer,
   NavLinks,
@@ -23,7 +25,7 @@ const Navigation = () => {
   // const { currentUser } = useContext(UserContext);
 
   // Here we are getting the user's state from redux
-  const currentUser = useSelector((state) => state.user.currentUser);
+  const currentUser = useSelector(selectCurrentUser);
   const { isCartOpen } = useContext(CartContext);
 
   return (
