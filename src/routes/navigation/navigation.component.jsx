@@ -21,6 +21,8 @@ import {
 
 const Navigation = () => {
   // const { currentUser } = useContext(UserContext);
+
+  // Here we are getting the user's state from redux
   const currentUser = useSelector((state) => state.user.currentUser);
   const { isCartOpen } = useContext(CartContext);
 
