@@ -6,8 +6,6 @@ import { selectCategoriesMap } from "../../store/categories/categories.selector"
 
 import ProductCard from "../../components/product-card/product-card.component";
 
-import { CategoriesContext } from "../../contexts/categories.context";
-
 import { CategoryContainer, Title } from "./category.styles";
 
 const Category = () => {
