@@ -1,4 +1,4 @@
-import CATEGORIES_ACTION_TYPES from './categories.types';
+import CATEGORIES_ACTION_TYPES from "./categories.types";
 
 export const CATEGORIES_INITIAL_STATE = {
   categories: [],
@@ -17,3 +17,13 @@ export const categoriesReducer = (
       return state;
   }
 };
+
+/*
+
+  [1]
+
+  The first step is to initialize the CATEGORIES state, and then create the action and export the code to the root reducer.
+
+  The default state is usually the same state. 
+
+*/

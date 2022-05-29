@@ -8,3 +8,5 @@ export const selectCategoriesMap = (state) => {
   );
   return categoriesMap;
 };
+
+// This is to get the categories state from redux and do some js on to get specific items
