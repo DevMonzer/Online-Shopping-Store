@@ -37,3 +37,11 @@ export const store = createStore(
 );
 
 export const persistor = persistStore(store);
+
+/*
+
+    persistConfig is the config object that will persist the checkout data into the local storage so we don't lose it with the refresh
+
+    blacklist contains the things we don't want to persist such as the user cuz it's comping from the firebase auth 
+
+*/
