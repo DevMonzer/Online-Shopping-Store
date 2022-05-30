@@ -18,6 +18,10 @@ const loggerMiddleware = (store) => (next) => (action) => {
   console.log("next state: ", store.getState());
 };
 
-const composedEnhancers = compose(applyMiddleware(...middleWares));
+const middleWares = [loggerMiddleware];
 
-export const store = createStore(rootReducer, undefined, composedEnhancers);
+const persistConfig = {
+  key: "root",
+  storage,
+  blacklist: ["user"],
+};
