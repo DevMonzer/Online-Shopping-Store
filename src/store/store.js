@@ -35,3 +35,5 @@ export const store = createStore(
   undefined,
   composedEnhancers
 );
+
+export const persistor = persistStore(store);
