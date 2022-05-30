@@ -25,3 +25,13 @@ const persistConfig = {
   storage,
   blacklist: ["user"],
 };
+
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
+const composedEnhancers = compose(applyMiddleware(...middleWares));
+
+export const store = createStore(
+  persistedReducer,
+  undefined,
+  composedEnhancers
+);
