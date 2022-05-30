@@ -44,4 +44,6 @@ export const persistor = persistStore(store);
 
     blacklist contains the things we don't want to persist such as the user cuz it's comping from the firebase auth 
 
+    we should add this to the index component
+
 */
