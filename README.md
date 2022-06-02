@@ -7,7 +7,7 @@ You can see the fork button in the top right corner of every GitHub project; cli
  
 After forking the project, simply clone it the way you would from the new forked project in your own GitHub repository and you can commit and push to it freely!
 
-# After you fork and clone:  
+# After you fork and clone:   
  
 ## Install dependencies
 In your terminal after you clone your project down, remember to run either `yarn` or `npm install` to build all the dependencies in the project.
