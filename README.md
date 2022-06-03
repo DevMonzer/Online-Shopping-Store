@@ -1,6 +1,6 @@
 # Online-Shopping-Store
 
-Nexter app watch live -> 
+Nexter app watch live -> https://online-shopping-store.vercel.app/
 
 ## What to do 
 1. Clone this repo     
