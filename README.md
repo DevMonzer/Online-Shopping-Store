@@ -15,4 +15,5 @@ Nexter app watch live -> https://online-shopping-store.vercel.app/
 * React JavaScript
 * Redux
 * React-Redux
+* React Router
 * Firebase and Firestore for both authentication and storing the shop data
