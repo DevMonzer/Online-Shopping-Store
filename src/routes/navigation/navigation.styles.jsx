@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const NavigationContainer = styled.div`
   height: 70px;
@@ -7,6 +7,11 @@ export const NavigationContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  @media screen and (max-width: 800px) {
+    height: 60px;
+    padding: 10px;
+    marginbottom: 20px;
+  }
 `;
 
 export const LogoContainer = styled(Link)`
