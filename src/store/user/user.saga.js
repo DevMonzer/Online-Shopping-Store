@@ -15,6 +15,7 @@ import {
   signInWithGooglePopup,
   signInAuthUserWithEmailAndPassword,
   createAuthUserWithEmailAndPassword,
+  signOutUser,
 } from "../../utils/firebase/firebase.utils";
 
 export function* getSnapshotFromUserAuth(userAuth, additionalDetails) {
@@ -62,6 +63,15 @@ export function* signUp({ payload: { email, password, displayName } }) {
     yield put(signUpSuccess(user, { displayName }));
   } catch (error) {
     yield put(signUpFailed(error));
+  }
+}
+
+export function* signOut() {
+  try {
+    yield call(signOutUser);
+    // yield put(signOutSuccess());
+  } catch (error) {
+    // yield put(signOutFailed(error));
   }
 }
 
