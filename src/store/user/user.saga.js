@@ -2,7 +2,7 @@ import { takeLatest, put, all, call } from "redux-saga/effects";
 
 import { USER_ACTION_TYPES } from "./user.types";
 
-import { signInSuccess, signInFailed } from "./user.action";
+import { signInSuccess, signInFailed, signUpSuccess } from "./user.action";
 
 import {
   getCurrentUser,
@@ -54,10 +54,14 @@ export function* signUp({ payload: { email, password, displayName } }) {
       email,
       password
     );
-    // yield put(signUpSuccess(user, { displayName }));
+    yield put(signUpSuccess(user, { displayName }));
   } catch (error) {
     // yield put(signUpFailed(error));
   }
+}
+
+export function* signInAfterSignUp({ payload: { user, additionalDetails } }) {
+  yield call(getSnapshotFromUserAuth, user, additionalDetails);
 }
 
 export function* isUserAuthenticated() {
@@ -84,6 +88,10 @@ export function* onEmailSignInStart() {
 
 export function* onSignUpStart() {
   yield takeLatest(USER_ACTION_TYPES.SIGN_UP_START, signUp);
+}
+
+export function* onSignUpSuccess() {
+  yield takeLatest(USER_ACTION_TYPES.SIGN_UP_SUCCESS, signInAfterSignUp);
 }
 
 export function* userSagas() {
