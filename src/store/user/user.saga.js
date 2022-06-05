@@ -7,8 +7,9 @@ import {
   signInFailed,
   signUpSuccess,
   signUpFailed,
+  signOutSuccess,
+  signOutFailed,
 } from "./user.action";
-
 import {
   getCurrentUser,
   createUserDocumentFromAuth,
