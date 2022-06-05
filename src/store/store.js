@@ -2,13 +2,16 @@ import { compose, createStore, applyMiddleware } from "redux";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import logger from "redux-logger";
-import thunk from "redux-thunk";
-
+// import thunk from "redux-thunk";
+import createSagaMiddleware from "redux-saga";
 import { rootReducer } from "./root-reducer";
+
+const sagaMiddleware = createSagaMiddleware();
 
 const middleWares = [
   process.env.NODE_ENV === "development" && logger,
-  thunk,
+  // thunk,
+  sagaMiddleware,
 ].filter(Boolean);
 
 const composeEnhancer =
