@@ -2,6 +2,8 @@ import CATEGORIES_ACTION_TYPES from "./categories.types";
 
 export const CATEGORIES_INITIAL_STATE = {
   categories: [],
+  isLoading: false,
+  error: null,
 };
 
 export const categoriesReducer = (

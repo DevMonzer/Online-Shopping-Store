@@ -2,13 +2,15 @@ import { compose, createStore, applyMiddleware } from "redux";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import logger from "redux-logger";
+// import thunk from "redux-thunk";
 
 import { rootReducer } from "./root-reducer";
 
 // Only run this middleWare in development mode
-const middleWares = [process.env.NODE_ENV === "development" && logger].filter(
-  Boolean
-);
+const middleWares = [
+  process.env.NODE_ENV === "development" && logger,
+  // thunk,
+].filter(Boolean);
 
 // Run this if we are not in production mode and we are opening it on a window not server and we have redux extension installed on our browser (it gives us a better experience when it comes to feedback from the redux store)
 const composeEnhancer =
