@@ -70,9 +70,9 @@ export function* signUp({ payload: { email, password, displayName } }) {
 export function* signOut() {
   try {
     yield call(signOutUser);
-    // yield put(signOutSuccess());
+    yield put(signOutSuccess());
   } catch (error) {
-    // yield put(signOutFailed(error));
+    yield put(signOutFailed(error));
   }
 }
 
