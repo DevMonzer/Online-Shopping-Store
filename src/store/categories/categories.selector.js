@@ -17,6 +17,11 @@ export const selectCategoriesMap = createSelector(
     }, {})
 );
 
+export const selectIsLoading = createSelector(
+  [selectCategoryReducer],
+  (categoriesSlice) => categoriesSlice.isLoading
+);
+
 /* 
 
     This is to get the categories state from redux and do some js on to get specific items 
