@@ -104,5 +104,7 @@ export function* userSagas() {
     call(onCheckUserSession),
     call(onGoogleSignInStart),
     call(onEmailSignInStart),
+    call(onSignUpStart),
+    call(onSignUpSuccess),
   ]);
 }
