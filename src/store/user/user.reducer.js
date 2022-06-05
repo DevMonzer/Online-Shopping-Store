@@ -1,10 +1,10 @@
-import USER_ACTION_TYPES from "./user.types";
+import { USER_ACTION_TYPES } from './user.types';
 
-export const USER_INITIAL_STATE = {
+const INITIAL_STATE = {
   currentUser: null,
 };
 
-export const userReducer = (state = USER_INITIAL_STATE, action = {}) => {
+export const userReducer = (state = INITIAL_STATE, action) => {
   const { type, payload } = action;
 
   switch (type) {
@@ -14,13 +14,3 @@ export const userReducer = (state = USER_INITIAL_STATE, action = {}) => {
       return state;
   }
 };
-
-/*
-
-  [1]
-
-  The first step is to initialize the user's state, and then create the action and export the code to the root reducer.
-
-  The default state is usually same state. 
-
-*/
