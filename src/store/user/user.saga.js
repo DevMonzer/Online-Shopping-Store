@@ -2,7 +2,12 @@ import { takeLatest, put, all, call } from "redux-saga/effects";
 
 import { USER_ACTION_TYPES } from "./user.types";
 
-import { signInSuccess, signInFailed, signUpSuccess } from "./user.action";
+import {
+  signInSuccess,
+  signInFailed,
+  signUpSuccess,
+  signUpFailed,
+} from "./user.action";
 
 import {
   getCurrentUser,
@@ -56,7 +61,7 @@ export function* signUp({ payload: { email, password, displayName } }) {
     );
     yield put(signUpSuccess(user, { displayName }));
   } catch (error) {
-    // yield put(signUpFailed(error));
+    yield put(signUpFailed(error));
   }
 }
 
