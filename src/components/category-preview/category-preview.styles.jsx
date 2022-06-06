@@ -32,3 +32,9 @@ export const Preview = styled.div`
     grid-template-columns: repeat(1, 1fr);
   }
 `;
+
+export const Margin = styled.h2`
+  @media screen and (max-width: 400px) {
+    margin-left: 35px;
+  }
+`;
