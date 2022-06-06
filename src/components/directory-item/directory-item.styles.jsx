@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const BackgroundImage = styled.div`
   width: 100%;
@@ -44,6 +44,14 @@ export const DirectoryItemContainer = styled.div`
   border: 1px solid black;
   margin: 0 7.5px 15px;
   overflow: hidden;
+
+  @media screen and (max-width: 700px) {
+    min-width: 40%;
+  }
+
+  @media screen and (max-width: 500px) {
+    min-width: 50%;
+  }
 
   &:first-child {
     margin-right: 7.5px;
