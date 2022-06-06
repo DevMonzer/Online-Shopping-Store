@@ -28,6 +28,8 @@ export const ProductCartContainer = styled.div`
 
     @media screen and (max-width: 800px) {
       display: block;
+      opacity: 0.9;
+      min-width: unset;
     }
 
     @media screen and (max-width: 400px) {
