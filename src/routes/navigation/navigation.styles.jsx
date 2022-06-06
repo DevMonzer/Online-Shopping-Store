@@ -41,12 +41,4 @@ export const NavLinks = styled.div`
 export const NavLink = styled(Link)`
   padding: 10px 15px;
   cursor: pointer;
-
-  @media screen and (max-width: 800px) {
-    padding: 5px 10px;
-  }
-
-  @media screen and (max-width: 500px) {
-    padding: 5px;
-  }
 `;
