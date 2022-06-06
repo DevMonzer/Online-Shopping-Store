@@ -30,6 +30,7 @@ export const ProductCartContainer = styled.div`
       display: block;
       opacity: 0.9;
       min-width: unset;
+      padding: 0 10px 0 10px;
     }
 
     @media screen and (max-width: 400px) {
