@@ -21,7 +21,14 @@ export const Preview = styled.div`
 
   @media screen and (max-width: 900px) {
     grid-template-columns: repeat(3, 1fr);
-    overflow-y: scroll;
-    overflow-x: hidden;
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 550px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 400px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 `;
