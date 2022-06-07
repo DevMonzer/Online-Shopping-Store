@@ -47,4 +47,8 @@ export const Value = styled.span`
 export const RemoveButton = styled.div`
   padding-left: 12px;
   cursor: pointer;
+
+  @media screen and (max-width: 800px) {
+    padding-left: 15px;
+  }
 `;
