@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CheckoutContainer = styled.div`
   width: 55%;
@@ -7,6 +7,22 @@ export const CheckoutContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 50px auto 0;
+
+  @media screen and (max-width: 990px) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: 990px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 580px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 580px) {
+    width: 95%;
+  }
 `;
 
 export const CheckoutHeader = styled.div`
