@@ -7,10 +7,10 @@ export const AuthenticationContainer = styled.div`
   margin: 30px auto;
 
   @media screen and (max-width: 900px) {
-    width: 100%;
+    width: 80%;
     align-items: center;
     flex-direction: column;
-    margin: 0;
+    margin: 0 auto;
   }
 `;
 
