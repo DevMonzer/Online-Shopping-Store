@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
 
-import { SignUpContainer } from "./sign-up-form.styles";
+import { SignUpContainer, Margin } from "./sign-up-form.styles";
 import { signUpStart } from "../../store/user/user.action";
 
 const defaultFormFields = {
@@ -51,8 +51,10 @@ const SignUpForm = () => {
 
   return (
     <SignUpContainer>
-      <h2>Don't have an account?</h2>
-      <span>Sign up with your email and password</span>
+      <Margin>
+        <h2>Don't have an account?</h2>
+        <span>Sign up with your email and password</span>
+      </Margin>
       <form onSubmit={handleSubmit}>
         <FormInput
           label="Display Name"

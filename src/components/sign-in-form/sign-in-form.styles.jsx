@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const SignInContainer = styled.div`
   display: flex;
@@ -13,4 +13,8 @@ export const SignInContainer = styled.div`
 export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: space-between;
+`;
+
+export const Margin = styled.div`
+  margin-left: 20px;
 `;
