@@ -7,7 +7,7 @@ Online-Shopping-Store app watch live -> https://online-store-puce.vercel.app/
 2. Run `npm install` to download the node_modules folder   
 3. Run `npm start`
    
-## Technologies ⚙️  
+## Technologies ⚙️   
  
 * HTML5   
 * CSS3 
