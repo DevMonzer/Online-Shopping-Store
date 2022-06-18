@@ -16,7 +16,8 @@ export const CategoryContainer = styled.div`
   }
 
   @media screen and (max-width: 400px) {
-    gap: 20px 0;
+    column-gap: 0px;
+    row-gap: 20px;
   }
 `;
 
