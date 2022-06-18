@@ -16,7 +16,7 @@ export const CategoryContainer = styled.div`
   }
 
   @media screen and (max-width: 400px) {
-    grid-template-columns: repeat(1, 1fr);
+    gap: 20px 0;
   }
 `;
 
