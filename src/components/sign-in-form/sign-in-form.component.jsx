@@ -22,6 +22,8 @@ const defaultFormFields = {
 };
 
 const SignInForm = () => {
+  const navigate = useNavigate();
+
   const dispatch = useDispatch();
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { email, password } = formFields;
