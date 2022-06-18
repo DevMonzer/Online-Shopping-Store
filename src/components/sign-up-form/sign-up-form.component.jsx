@@ -45,6 +45,9 @@ const SignUpForm = () => {
         console.log("user creation encountered an error", error);
       }
     }
+
+    // redirect to /shop
+    navigate("/shop");
   };
 
   const handleChange = (event) => {
