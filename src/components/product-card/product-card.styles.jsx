@@ -15,7 +15,7 @@ export const ProductCartContainer = styled.div`
     margin-bottom: 5px;
 
     @media screen and (max-width: 400px) {
-      width: 80%;
+      width: 90%;
     }
   }
 
