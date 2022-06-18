@@ -45,6 +45,9 @@ const SignInForm = () => {
     } catch (error) {
       console.log("user sign in failed", error);
     }
+
+    // redirect to /shop
+    navigate("/shop");
   };
 
   const handleChange = (event) => {
