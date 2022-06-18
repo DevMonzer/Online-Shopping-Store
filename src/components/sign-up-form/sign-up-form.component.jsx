@@ -7,6 +7,8 @@ import Button from "../button/button.component";
 import { SignUpContainer, Margin } from "./sign-up-form.styles";
 import { signUpStart } from "../../store/user/user.action";
 
+import { useNavigate } from "react-router-dom";
+
 const defaultFormFields = {
   displayName: "",
   email: "",
