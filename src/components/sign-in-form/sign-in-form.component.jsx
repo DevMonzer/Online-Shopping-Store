@@ -34,6 +34,9 @@ const SignInForm = () => {
 
   const signInWithGoogle = async () => {
     dispatch(googleSignInStart());
+
+    // redirect to /shop
+    navigate("/shop");
   };
 
   const handleSubmit = async (event) => {
