@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SignInContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 460px;
 
   margin: 0 auto;
 
