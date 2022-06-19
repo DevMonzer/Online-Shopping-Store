@@ -32,4 +32,10 @@ export const LinkStyle = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 20px;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
 `;
