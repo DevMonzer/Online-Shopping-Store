@@ -27,5 +27,7 @@ export const ButtonsContainer = styled.div`
 `;
 
 export const Margin = styled.div`
-  margin-left: 20px;
+  @media screen and (max-width: 400px) {
+    margin-left: 20px;
+  }
 `;
