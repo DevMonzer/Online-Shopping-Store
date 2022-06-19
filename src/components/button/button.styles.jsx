@@ -19,6 +19,10 @@ export const BaseButton = styled.button`
   justify-content: center;
   align-items: center;
 
+  @media screen and (max-width: 480px) {
+    font-size: 13px;
+  }
+
   @media screen and (max-width: 400px) {
     min-width: 120px;
     margin: 0 auto;
