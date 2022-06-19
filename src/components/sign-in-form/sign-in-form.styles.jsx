@@ -25,3 +25,7 @@ export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: space-between;
 `;
+
+export const Margin = styled.div`
+  margin-left: 20px;
+`;
