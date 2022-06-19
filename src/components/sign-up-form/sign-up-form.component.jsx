@@ -100,7 +100,7 @@ const SignUpForm = () => {
         />
         <SignUpContainer>
           <Button type="submit">Sign Up</Button>
-          <Link className="link-style" to="/auth">
+          <Link className="link-style" to="/sign-in">
             <LinkStyle>Go to sign in page</LinkStyle>
           </Link>
         </SignUpContainer>
