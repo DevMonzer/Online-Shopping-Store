@@ -43,6 +43,12 @@ export const LinkStyle = styled.div`
   cursor: pointer;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
+
+  @media screen and (max-width: 400px) {
+    width: 80%;
+    margin: 20px auto;
+  }
 
   &:hover {
     background-color: white;
