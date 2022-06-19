@@ -25,7 +25,7 @@ export const ButtonsContainer = styled.div`
   justify-content: space-between;
 
   @media screen and (max-width: 400px) {
-    margin-right: 15px;
+    margin-right: 10px;
   }
 `;
 
