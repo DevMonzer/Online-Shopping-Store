@@ -21,4 +21,9 @@ export const LinkStyle = styled.div`
   letter-spacing: 0.5px;
   line-height: 50px;
   padding: 0 35px 0 35px;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Open Sans Condensed";
 `;
