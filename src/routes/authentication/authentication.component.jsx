@@ -7,8 +7,8 @@ const Authentication = () => {
   return (
     <AuthenticationContainer>
       <SignInForm />
-      <MarginBottom />
-      <SignUpForm />
+      {/* <MarginBottom />
+      <SignUpForm /> */}
     </AuthenticationContainer>
   );
 };
