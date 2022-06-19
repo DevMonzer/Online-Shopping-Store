@@ -44,9 +44,9 @@ const SignInForm = () => {
       dispatch(emailSignInStart(email, password));
       resetFormFields();
       // redirect to /shop if user signed in successfully
-      // navigate("/shop");
+      navigate("/shop");
     } catch (error) {
-      alert("user sign in failed", error);
+      console.log("user sign in failed", error);
     }
   };
 

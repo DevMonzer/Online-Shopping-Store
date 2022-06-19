@@ -44,7 +44,7 @@ const SignUpForm = () => {
       dispatch(signUpStart(email, password, displayName));
       resetFormFields();
       // redirect to /shop if user signed in successfully
-      // navigate("/shop");
+      navigate("/shop");
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {
         alert("Cannot create user, email already in use");
