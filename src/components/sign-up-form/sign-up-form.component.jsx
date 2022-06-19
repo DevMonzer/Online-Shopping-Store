@@ -43,6 +43,8 @@ const SignUpForm = () => {
     try {
       dispatch(signUpStart(email, password, displayName));
       resetFormFields();
+      // redirect to /shop if user signed in successfully
+      // navigate("/shop");
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {
         alert("Cannot create user, email already in use");
@@ -50,9 +52,6 @@ const SignUpForm = () => {
         console.log("user creation encountered an error", error);
       }
     }
-
-    // redirect to /shop
-    navigate("/shop");
   };
 
   const handleChange = (event) => {
