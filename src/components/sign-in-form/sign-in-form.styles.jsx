@@ -47,4 +47,7 @@ export const LinkStyle = styled.div`
   font-weight: bolder;
   border: none;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 `;
