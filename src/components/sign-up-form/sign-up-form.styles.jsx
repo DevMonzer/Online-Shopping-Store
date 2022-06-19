@@ -10,6 +10,10 @@ export const SignUpContainer = styled.div`
   h2 {
     margin: 10px 0;
   }
+
+  @media screen and (max-width: 600px) {
+    width: 380px;
+  }
 `;
 
 export const Margin = styled.div`
