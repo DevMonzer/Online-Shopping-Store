@@ -8,6 +8,7 @@ import {
   SignInContainer,
   ButtonsContainer,
   Margin,
+  LinkStyle,
 } from "./sign-in-form.styles";
 import {
   googleSignInStart,
@@ -94,7 +95,7 @@ const SignInForm = () => {
           </Button>
         </ButtonsContainer>
         <Link className="link-style" to="sign-up">
-          Don't have an account?
+          <LinkStyle>Don't have an account?</LinkStyle>
         </Link>
       </form>
     </SignInContainer>
