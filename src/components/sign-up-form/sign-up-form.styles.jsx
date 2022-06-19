@@ -13,3 +13,8 @@ export const SignUpContainer = styled.div`
 export const Margin = styled.div`
   margin-left: 20px;
 `;
+
+export const LinkStyle = styled.div`
+  min-width: 165px;
+  width: auto;
+`;
