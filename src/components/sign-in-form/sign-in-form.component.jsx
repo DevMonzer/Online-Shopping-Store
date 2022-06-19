@@ -93,6 +93,9 @@ const SignInForm = () => {
             Sign In With Google
           </Button>
         </ButtonsContainer>
+        <Link className="link-style" to="sign-up">
+          Don't have an account?
+        </Link>
       </form>
     </SignInContainer>
   );
