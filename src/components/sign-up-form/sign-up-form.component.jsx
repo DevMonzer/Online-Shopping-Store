@@ -4,7 +4,12 @@ import { useDispatch } from "react-redux";
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
 
-import { SignUpContainer, Margin, LinkStyle } from "./sign-up-form.styles";
+import {
+  SignUpContainer,
+  ButtonsContainer,
+  Margin,
+  LinkStyle,
+} from "./sign-up-form.styles";
 import { signUpStart } from "../../store/user/user.action";
 
 import { Link, useNavigate } from "react-router-dom";
@@ -98,12 +103,12 @@ const SignUpForm = () => {
           name="confirmPassword"
           value={confirmPassword}
         />
-        <SignUpContainer>
+        <ButtonsContainer>
           <Button type="submit">Sign Up</Button>
           <Link className="link-style" to="/sign-in">
             <LinkStyle>Go to sign in page</LinkStyle>
           </Link>
-        </SignUpContainer>
+        </ButtonsContainer>
       </form>
     </SignUpContainer>
   );
