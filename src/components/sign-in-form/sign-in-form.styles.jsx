@@ -11,6 +11,11 @@ export const SignInContainer = styled.div`
     width: 380px;
   }
 
+  @media screen and (max-width: 480px) {
+    width: 350px;
+    margin: 0;
+  }
+
   h2 {
     margin: 10px 0;
   }
@@ -19,8 +24,4 @@ export const SignInContainer = styled.div`
 export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: space-between;
-`;
-
-export const Margin = styled.div`
-  margin-left: 20px;
 `;
