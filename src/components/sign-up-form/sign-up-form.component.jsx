@@ -98,10 +98,12 @@ const SignUpForm = () => {
           name="confirmPassword"
           value={confirmPassword}
         />
-        <Button type="submit">Sign Up</Button>
-        <Link className="link-style" to="sign-up">
-          <LinkStyle>Don't have an account?</LinkStyle>
-        </Link>
+        <SignUpContainer>
+          <Button type="submit">Sign Up</Button>
+          <Link className="link-style" to="/auth">
+            <LinkStyle>Go to sign in page</LinkStyle>
+          </Link>
+        </SignUpContainer>
       </form>
     </SignUpContainer>
   );
