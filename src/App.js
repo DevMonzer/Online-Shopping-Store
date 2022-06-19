@@ -8,7 +8,7 @@ import Navigation from "./routes/navigation/navigation.component";
 import Authentication from "./routes/authentication/authentication.component";
 import Shop from "./routes/shop/shop.component";
 import Checkout from "./routes/checkout/checkout.component";
-import SignUp from "./components/sign-up/sign-up-form.component";
+import SignUp from "./components/sign-up-form/sign-up-form.component";
 
 import { checkUserSession } from "./store/user/user.action";
 
