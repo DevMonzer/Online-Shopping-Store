@@ -7,6 +7,10 @@ export const SignInContainer = styled.div`
 
   margin: 0 auto;
 
+  @media screen and (max-width: 600px) {
+    width: 380px;
+  }
+
   h2 {
     margin: 10px 0;
   }
