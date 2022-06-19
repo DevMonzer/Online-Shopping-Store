@@ -14,6 +14,11 @@ export const SignUpContainer = styled.div`
   @media screen and (max-width: 600px) {
     width: 380px;
   }
+
+  @media screen and (max-width: 480px) {
+    width: 350px;
+    margin: 0;
+  }
 `;
 
 export const Margin = styled.div`
