@@ -7,10 +7,6 @@ export const SignUpContainer = styled.div`
 
   margin: 0 auto;
 
-  h2 {
-    margin: 10px 0;
-  }
-
   @media screen and (max-width: 600px) {
     width: 380px;
   }
@@ -18,6 +14,10 @@ export const SignUpContainer = styled.div`
   @media screen and (max-width: 480px) {
     width: 350px;
     margin: 0;
+  }
+
+  h2 {
+    margin: 10px 0;
   }
 `;
 
