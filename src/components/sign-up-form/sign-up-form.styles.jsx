@@ -23,6 +23,10 @@ export const SignUpContainer = styled.div`
 export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 400px) {
+    margin-right: 15px;
+  }
 `;
 
 export const Margin = styled.div`
