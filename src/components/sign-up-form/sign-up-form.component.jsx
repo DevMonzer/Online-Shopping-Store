@@ -4,10 +4,10 @@ import { useDispatch } from "react-redux";
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
 
-import { SignUpContainer, Margin } from "./sign-up-form.styles";
+import { SignUpContainer, Margin, LinkStyle } from "./sign-up-form.styles";
 import { signUpStart } from "../../store/user/user.action";
 
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const defaultFormFields = {
   displayName: "",
@@ -99,6 +99,9 @@ const SignUpForm = () => {
           value={confirmPassword}
         />
         <Button type="submit">Sign Up</Button>
+        <Link className="link-style" to="sign-up">
+          <LinkStyle>Don't have an account?</LinkStyle>
+        </Link>
       </form>
     </SignUpContainer>
   );
