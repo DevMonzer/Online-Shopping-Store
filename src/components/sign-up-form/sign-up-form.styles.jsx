@@ -49,7 +49,6 @@ export const LinkStyle = styled.div`
   cursor: pointer;
   display: flex;
   justify-content: center;
-  margin-top: 20px;
 
   &:hover {
     background-color: white;
