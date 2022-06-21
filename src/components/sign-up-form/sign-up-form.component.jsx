@@ -23,6 +23,7 @@ const defaultFormFields = {
 
 const SignUpForm = () => {
   const navigate = useNavigate();
+  const currentUser = useSelector(selectCurrentUser);
 
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { displayName, email, password, confirmPassword } = formFields;
