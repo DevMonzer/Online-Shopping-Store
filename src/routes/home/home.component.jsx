@@ -7,10 +7,9 @@ const Home = () => {
     <div>
       <Directory />
       <Outlet />
-      <p style={{ fontSize: "1.2rem" }}>
+      <p style={{ fontSize: "1.2rem", textAlign: "center" }}>
         This app is built by:
         <a style={{ color: "blue" }} href="https://dev-monzer.vercel.app/">
-          {" "}
           Monzer
         </a>
       </p>
