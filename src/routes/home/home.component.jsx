@@ -13,6 +13,7 @@ const Home = () => {
           style={{ color: "blue" }}
           target="_blank"
           href="https://dev-monzer.vercel.app/"
+          rel="noreferrer"
         >
           Monzer
         </a>
