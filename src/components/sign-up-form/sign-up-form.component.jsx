@@ -27,6 +27,10 @@ const SignUpForm = () => {
   const navigate = useNavigate();
   const currentUser = useSelector(selectCurrentUser);
 
+  useEffect(() => {
+    if (currentUser) navigate("/shop");
+  }, [currentUser, navigate]);
+
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { displayName, email, password, confirmPassword } = formFields;
   const dispatch = useDispatch();
