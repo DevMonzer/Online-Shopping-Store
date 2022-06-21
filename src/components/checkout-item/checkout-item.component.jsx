@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import { selectCartItems } from "../../store/cart/cart.selector";
@@ -22,7 +23,9 @@ import { setIsCartOpen } from "../../store/cart/cart.action.js";
 const CheckoutItem = ({ cartItem }) => {
   const dispatch = useDispatch();
 
-  dispatch(setIsCartOpen(false));
+  useEffect(() => {
+    dispatch(setIsCartOpen(false));
+  });
 
   const { name, imageUrl, price, quantity } = cartItem;
   const cartItems = useSelector(selectCartItems);
