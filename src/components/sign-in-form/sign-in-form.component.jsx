@@ -15,6 +15,8 @@ import {
   emailSignInStart,
 } from "../../store/user/user.action";
 
+import { selectCurrentUser } from "../../store/user/user.selector";
+
 import { Link, useNavigate } from "react-router-dom";
 
 const defaultFormFields = {
