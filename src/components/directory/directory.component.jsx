@@ -26,14 +26,12 @@ const categories = [
     title: "women",
     imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
     route: "shop/womens",
-    size: "large",
   },
   {
     id: 5,
     title: "men",
     imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
     route: "shop/mens",
-    size: "large",
   },
 ];
 
