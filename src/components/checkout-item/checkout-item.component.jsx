@@ -23,6 +23,7 @@ import { setIsCartOpen } from "../../store/cart/cart.action.js";
 const CheckoutItem = ({ cartItem }) => {
   const dispatch = useDispatch();
 
+  // Close the cart dropdown when a user navigates to the checkout component
   useEffect(() => {
     dispatch(setIsCartOpen(false));
   });
