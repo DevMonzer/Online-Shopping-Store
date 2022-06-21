@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useSelector } from "react";
 import { useDispatch } from "react-redux";
 
 import FormInput from "../form-input/form-input.component";
@@ -26,6 +26,7 @@ const defaultFormFields = {
 
 const SignInForm = () => {
   const navigate = useNavigate();
+  const currentUser = useSelector(selectCurrentUser);
 
   const dispatch = useDispatch();
   const [formFields, setFormFields] = useState(defaultFormFields);
