@@ -13,6 +13,9 @@ import {
 } from "./product-card.styles";
 
 const ProductCard = ({ product }) => {
+  // Getting the currentUser state
+  const currentUser = useSelector(selectCurrentUser);
+
   const { name, price, imageUrl } = product;
   const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
