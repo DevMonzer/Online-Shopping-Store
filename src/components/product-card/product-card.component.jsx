@@ -35,12 +35,15 @@ const ProductCard = ({ product }) => {
         <Price>${price}</Price>
       </Footer>
       {currentUser ? (
-      <Button
-        buttonType={BUTTON_TYPE_CLASSES.inverted}
-        onClick={addProductToCart}
-      >
-        Add to card
-      </Button>) : ()}
+        <Button
+          buttonType={BUTTON_TYPE_CLASSES.inverted}
+          onClick={addProductToCart}
+        >
+          Add to card
+        </Button>
+      ) : (
+        <Button onClick={logInHandler}>Log in FIRST</Button>
+      )}
     </ProductCartContainer>
   );
 };
