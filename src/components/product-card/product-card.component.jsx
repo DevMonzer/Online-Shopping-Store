@@ -25,6 +25,9 @@ const ProductCard = ({ product }) => {
 
   const addProductToCart = () => dispatch(addItemToCart(cartItems, product));
 
+  const logInHandler = () =>
+    alert("Please log in to your account before adding products");
+
   return (
     <ProductCartContainer>
       <img src={imageUrl} alt={`${name}`} />
