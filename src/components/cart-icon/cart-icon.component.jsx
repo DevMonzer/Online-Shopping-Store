@@ -28,6 +28,7 @@ const CartIcon = () => {
       <ItemCount>
       {currentUser ? (
         {cartCount}
+        ) : (
         
         </ItemCount>
     </CartIconContainer>
