@@ -44,7 +44,7 @@ const ProductCard = ({ product }) => {
       ) : (
         <Button onClick={logInHandler}>Log in FIRST</Button>
       )}
-    </ProductCartContainer>
+    </>
   );
 };
 
