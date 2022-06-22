@@ -40,7 +40,7 @@ const ProductCard = ({ product }) => {
         onClick={addProductToCart}
       >
         Add to card
-      </Button>
+      </Button>) : ()}
     </ProductCartContainer>
   );
 };
