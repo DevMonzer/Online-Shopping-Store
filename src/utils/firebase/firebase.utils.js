@@ -111,6 +111,11 @@ export const createUserDocumentFromAuth = async (
 export const createAuthUserWithEmailAndPassword = async (email, password) => {
   if (!email || !password) return;
 
+  if (password.length < 8) {
+    alert("password should be at least 8 characters");
+    return;
+  }
+
   return await createUserWithEmailAndPassword(auth, email, password);
 };
 
