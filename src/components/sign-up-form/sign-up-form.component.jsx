@@ -137,9 +137,9 @@ const SignUpForm = () => {
           <FormInput
             type={passwordType}
             onChange={handleChange}
-            value={password}
-            name="password"
-            label="Password"
+            value={confirmPassword}
+            name="confirmPassword"
+            label="Confirm Password"
             required
           />
           <ShowPassword onClick={togglePassword}>
@@ -155,14 +155,6 @@ const SignUpForm = () => {
           </ShowPassword>
         </PasswordContainer>
 
-        <FormInput
-          label="Confirm Password"
-          type="password"
-          required
-          onChange={handleChange}
-          name="confirmPassword"
-          value={confirmPassword}
-        />
         <Center>
           <Button type="submit">Sign Up</Button>
         </Center>
