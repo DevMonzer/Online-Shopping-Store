@@ -50,8 +50,6 @@ const SignInForm = () => {
     try {
       dispatch(emailSignInStart(email, password));
       resetFormFields();
-      // redirect to /shop if user signed in successfully
-      navigate("/shop");
     } catch (error) {
       console.log("user sign in failed", error);
     }
