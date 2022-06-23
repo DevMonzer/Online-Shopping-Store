@@ -21,6 +21,10 @@ const Checkout = () => {
   const cartItems = useSelector(selectCartItems);
   const cartTotal = useSelector(selectCartTotal);
 
+  const renderingProducts = cartItems.map((cartItem) => (
+    <CheckoutItem key={cartItem.id} cartItem={cartItem} />
+  ));
+
   return (
     <CheckoutContainer>
       <CheckoutHeader>
@@ -41,11 +45,8 @@ const Checkout = () => {
         </HeaderBlock>
       </CheckoutHeader>
 
-      {currentUser &&
-        cartItems.map((cartItem) => (
-          <CheckoutItem key={cartItem.id} cartItem={cartItem} />
-        ))}
-      <Total>Total: {currentUser ? { cartTotal } : 0}</Total>
+      {renderingProducts}
+      <Total>Total: ${cartTotal}</Total>
 
       <PaymentForm />
     </CheckoutContainer>
@@ -53,3 +54,13 @@ const Checkout = () => {
 };
 
 export default Checkout;
+
+/*
+
+  {currentUser &&
+        cartItems.map((cartItem) => (
+          <CheckoutItem key={cartItem.id} cartItem={cartItem} />
+        ))}
+      <Total>Total: {currentUser ? ({cartTotal}) : (0)}</Total>
+
+*/
