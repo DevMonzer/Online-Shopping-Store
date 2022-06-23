@@ -71,4 +71,8 @@ export const ShowPassword = styled.div`
   position: absolute;
   margin-top: -70px;
   margin-left: 92%;
+
+  @media screen and (max-width: 400px) {
+    margin-left: 88%;
+  }
 `;
