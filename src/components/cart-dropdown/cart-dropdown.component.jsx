@@ -13,6 +13,8 @@ import {
 } from "./cart-dropdown.styles";
 
 const CartDropdown = () => {
+  const currentUser = useSelector(selectCurrentUser);
+
   const cartItems = useSelector(selectCartItems);
   const navigate = useNavigate();
 
