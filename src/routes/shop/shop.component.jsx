@@ -13,9 +13,9 @@ import { addCollectionAndDocuments } from "../../utils/firebase/firebase.utils";
 const Shop = () => {
   const dispatch = useDispatch();
 
-  // useEffect(() => {
-  //   dispatch(fetchCategoriesStart());
-  // }, []);
+  useEffect(() => {
+    dispatch(fetchCategoriesStart());
+  }, []);
 
   // Update the SHOP_DATA on firestore database
   // useEffect(() => {
