@@ -35,8 +35,4 @@ export const Preview = styled.div`
 
 export const Margin = styled.h2`
   text-align: center;
-
-  @media screen and (max-width: 400px) {
-    margin-left: 35px;
-  }
 `;
