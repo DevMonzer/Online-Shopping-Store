@@ -35,7 +35,9 @@ const Checkout = () => {
         </HeaderBlock>
         <HeaderBlock>
           <span>Price</span>
+          <span>Price</span>
         </HeaderBlock>
+        <HeaderBlock>
         <HeaderBlock>
           <span>Remove</span>
         </HeaderBlock>
