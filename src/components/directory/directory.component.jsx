@@ -14,7 +14,6 @@ const categories = [
   {
     id: 2,
     title: "jackets",
-    // imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
     imageUrl:
       "https://unsplash.com/photos/jddw6iA31sE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8amFja2V0cyUyMGNvbGxlY3Rpb258ZW58MHx8fHwxNjU1OTY4NzM1&force=true&w=640",
     route: "shop/jackets",
@@ -35,7 +34,6 @@ const categories = [
   {
     id: 5,
     title: "men",
-    // imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
     imageUrl:
       "https://unsplash.com/photos/5hDqrxz5Rpc/download?force=true&w=640",
     route: "shop/mens",
