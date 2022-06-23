@@ -52,6 +52,11 @@ const SignUpForm = () => {
       return;
     }
 
+    if (password.length < 8) {
+      alert("password should be at least 8 characters");
+      return;
+    }
+
     try {
       dispatch(signUpStart(email, password, displayName));
       resetFormFields();
