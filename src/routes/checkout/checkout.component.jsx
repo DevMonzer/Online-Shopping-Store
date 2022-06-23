@@ -45,10 +45,7 @@ const Checkout = () => {
         cartItems.map((cartItem) => (
           <CheckoutItem key={cartItem.id} cartItem={cartItem} />
         ))}
-      <Total>Total: 
-        {currentUser ? (${cartTotal}) : (0)}
-      
-        </Total>
+      <Total>Total: {currentUser ? { cartTotal } : 0}</Total>
 
       <PaymentForm />
     </CheckoutContainer>
