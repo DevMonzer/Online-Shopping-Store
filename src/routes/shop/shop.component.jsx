@@ -17,13 +17,14 @@ const Shop = () => {
   //   dispatch(fetchCategoriesStart());
   // }, []);
 
-  useEffect(() => {
-    const getCategoriesMap = async () => {
-      addCollectionAndDocuments("categories", SHOP_DATA);
-    };
+  // Update the SHOP_DATA on firestore database
+  // useEffect(() => {
+  //   const getCategoriesMap = async () => {
+  //     addCollectionAndDocuments("categories", SHOP_DATA);
+  //   };
 
-    getCategoriesMap();
-  }, []);
+  //   getCategoriesMap();
+  // }, []);
 
   return (
     <Routes>
