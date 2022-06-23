@@ -353,6 +353,68 @@ const SHOP_DATA = [
       },
     ],
   },
+
+  {
+    title: "Kids",
+    items: [
+      {
+        id: 53,
+        name: "Sweater",
+        imageUrl:
+          "https://unsplash.com/photos/JZ51o_-UOY8/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NHx8Y2hpbGR8ZW58MHx8fHwxNjU1OTkwMjA2&force=true&w=640",
+        price: 80,
+      },
+      {
+        id: 54,
+        name: "White Polka",
+        imageUrl:
+          "https://unsplash.com/photos/e6lWMBIgNso/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8OHx8Y2hpbGQlMjBjbG90aGVzfGVufDB8fHx8MTY1NTk5MDIyNA&force=true&w=640",
+        price: 70,
+      },
+      {
+        id: 55,
+        name: "Black T-shirt",
+        imageUrl:
+          "https://unsplash.com/photos/fwJMG9zm3dI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTV8fGNoaWxkJTIwY2xvdGhlc3xlbnwwfHx8fDE2NTU5OTAyMjQ&force=true&w=640",
+        price: 50,
+      },
+      {
+        id: 56,
+        name: "White T-shirt",
+        imageUrl:
+          "https://unsplash.com/photos/tRSOnb_SBvk/download?force=true&w=640",
+        price: 50,
+      },
+      {
+        id: 57,
+        name: "Yellow dress",
+        imageUrl:
+          "https://unsplash.com/photos/luvoSGWkyX0/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NzV8fGNoaWxkJTIwY2xvdGhlc3xlbnwwfHx8fDE2NTU5OTA4MDg&force=true&w=640",
+        price: 80,
+      },
+      {
+        id: 58,
+        name: "Full clothes set",
+        imageUrl:
+          "https://unsplash.com/photos/2rIxe0j1wi4/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NDR8fGNoaWxkJTIwY2xvdGhlc3xlbnwwfHx8fDE2NTU5OTA4MDQ&force=true&w=640",
+        price: 130,
+      },
+      {
+        id: 59,
+        name: "Full clothes set",
+        imageUrl:
+          "https://unsplash.com/photos/zhikqyvJrmY/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NTJ8fGNoaWxkJTIwY2xvdGhlc3xlbnwwfHx8fDE2NTU5OTA4MDQ&force=true&w=640",
+        price: 120,
+      },
+      {
+        id: 60,
+        name: "Full clothes set",
+        imageUrl:
+          "https://unsplash.com/photos/NV_IPwv0Saw/download?force=true&w=640",
+        price: 150,
+      },
+    ],
+  },
 ];
 
 export default SHOP_DATA;
