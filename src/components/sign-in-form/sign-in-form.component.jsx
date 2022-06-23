@@ -22,6 +22,7 @@ import {
   Margin,
   LinkStyle,
   PasswordContainer,
+  ShowPassword,
 } from "./sign-in-form.styles";
 
 const defaultFormFields = {
@@ -97,15 +98,6 @@ const SignInForm = () => {
           name="email"
           value={email}
         />
-
-        {/* <FormInput
-          label="Password"
-          type="password"
-          required
-          onChange={handleChange}
-          name="password"
-          value={password}
-        /> */}
 
         <PasswordContainer>
           <FormInput
