@@ -5,6 +5,7 @@ export const setCurrentUser = (user) =>
   createAction(USER_ACTION_TYPES.SET_CURRENT_USER, user);
 
 /*
+/*
 CHECK_USER_SESSION: 'user/CHECK_USER_SESSION',
   GOOGLE_SIGN_IN_START: 'user/GOOGLE_SIGN_IN_START',
   EMAIL_SIGN_IN_START: 'user/EMAIL_SIGN_IN_START',
