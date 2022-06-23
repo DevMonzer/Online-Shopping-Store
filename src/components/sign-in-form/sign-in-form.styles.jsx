@@ -65,3 +65,9 @@ export const LinkStyle = styled.div`
 export const PasswordContainer = styled.div`
   position: relative;
 `;
+
+export const ShowPassword = styled(p)`
+  position: absolute;
+  margin-top: -70px;
+  margin-left: 365px;
+`;
