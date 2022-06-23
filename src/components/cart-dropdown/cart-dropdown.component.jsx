@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 import { selectCartItems } from "../../store/cart/cart.selector";
@@ -16,6 +16,8 @@ import {
 } from "./cart-dropdown.styles";
 
 const CartDropdown = () => {
+  const dispatch = useDispatch();
+
   // Close the cart dropdown when a user navigates to the checkout component
   useEffect(() => {
     dispatch(setIsCartOpen(false));
