@@ -45,8 +45,8 @@ const Checkout = () => {
         </HeaderBlock>
       </CheckoutHeader>
 
-      {renderingProducts}
-      <Total>Total: ${cartTotal}</Total>
+      {currentUser & renderingProducts}
+      <Total>Total: {currentUser & cartTotal}</Total>
 
       <PaymentForm />
     </CheckoutContainer>
@@ -54,13 +54,3 @@ const Checkout = () => {
 };
 
 export default Checkout;
-
-/*
-
-  {currentUser &&
-        cartItems.map((cartItem) => (
-          <CheckoutItem key={cartItem.id} cartItem={cartItem} />
-        ))}
-      <Total>Total: {currentUser ? ({cartTotal}) : (0)}</Total>
-
-*/
