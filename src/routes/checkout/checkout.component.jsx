@@ -41,7 +41,7 @@ const Checkout = () => {
         </HeaderBlock>
       </CheckoutHeader>
 
-      {currentUser &
+      {currentUser &&
         cartItems.map((cartItem) => (
           <CheckoutItem key={cartItem.id} cartItem={cartItem} />
         ))}
