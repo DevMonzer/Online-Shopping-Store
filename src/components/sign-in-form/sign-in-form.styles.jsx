@@ -61,3 +61,5 @@ export const LinkStyle = styled.div`
     border: 1px solid black;
   }
 `;
+
+export const PasswordContainer = styled.div``;

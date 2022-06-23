@@ -96,14 +96,36 @@ const SignInForm = () => {
           value={email}
         />
 
-        <FormInput
+        {/* <FormInput
           label="Password"
           type="password"
           required
           onChange={handleChange}
           name="password"
           value={password}
-        />
+        /> */}
+
+        <div className="passwordContainer">
+          <FormInput
+            type={passwordType}
+            onChange={handleChange}
+            value={password}
+            name="password"
+            label="Password"
+            required
+          />
+          <p className="showPassword" onClick={togglePassword}>
+            {passwordType === "password" ? (
+              <span>
+                <EyeOpen />
+              </span>
+            ) : (
+              <span>
+                <EyeClose />
+              </span>
+            )}
+          </p>
+        </div>
         <ButtonsContainer>
           <Button type="submit">Sign In</Button>
           <Button
