@@ -31,7 +31,6 @@ const ProductCard = ({ product }) => {
       <Footer>
         <Name>{name}</Name>
         <Price>${price}</Price>
-        <Price>${price}</Price>
       </Footer>
       {currentUser ? (
         <Button
