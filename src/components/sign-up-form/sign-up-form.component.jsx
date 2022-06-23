@@ -17,6 +17,8 @@ import {
   Margin,
   LinkStyle,
   Center,
+  PasswordContainer,
+  ShowPassword,
 } from "./sign-up-form.styles";
 
 const defaultFormFields = {
