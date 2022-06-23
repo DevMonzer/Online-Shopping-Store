@@ -107,7 +107,7 @@ const SignInForm = () => {
           value={password}
         /> */}
 
-        <div className="passwordContainer">
+        <PasswordContainer>
           <FormInput
             type={passwordType}
             onChange={handleChange}
@@ -127,7 +127,7 @@ const SignInForm = () => {
               </span>
             )}
           </p>
-        </div>
+        </PasswordContainer>
         <ButtonsContainer>
           <Button type="submit">Sign In</Button>
           <Button
