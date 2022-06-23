@@ -45,8 +45,8 @@ const Checkout = () => {
         </HeaderBlock>
       </CheckoutHeader>
 
-      {currentUser & renderingProducts}
-      <Total>Total: {currentUser & cartTotal}</Total>
+      {currentUser && renderingProducts}
+      <Total>Total: {currentUser && cartTotal}</Total>
 
       <PaymentForm />
     </CheckoutContainer>
