@@ -108,7 +108,7 @@ const SignInForm = () => {
             label="Password"
             required
           />
-          <p className="showPassword" onClick={togglePassword}>
+          <ShowPassword onClick={togglePassword}>
             {passwordType === "password" ? (
               <span>
                 <EyeOpen />
@@ -118,7 +118,7 @@ const SignInForm = () => {
                 <EyeClose />
               </span>
             )}
-          </p>
+          </ShowPassword>
         </PasswordContainer>
         <ButtonsContainer>
           <Button type="submit">Sign In</Button>
