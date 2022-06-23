@@ -70,7 +70,7 @@ export const PasswordContainer = styled.div`
 export const ShowPassword = styled.div`
   position: absolute;
   margin-top: -70px;
-  margin-left: 92%;
+  margin-left: 95%;
 
   @media screen and (max-width: 400px) {
     margin-left: 88%;
