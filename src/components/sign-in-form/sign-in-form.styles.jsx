@@ -62,4 +62,6 @@ export const LinkStyle = styled.div`
   }
 `;
 
-export const PasswordContainer = styled.div``;
+export const PasswordContainer = styled.div`
+  position: relative;
+`;
