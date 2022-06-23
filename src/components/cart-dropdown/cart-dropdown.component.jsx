@@ -13,6 +13,11 @@ import {
 } from "./cart-dropdown.styles";
 
 const CartDropdown = () => {
+  // Close the cart dropdown when a user navigates to the checkout component
+  useEffect(() => {
+    dispatch(setIsCartOpen(false));
+  });
+
   const currentUser = useSelector(selectCurrentUser);
 
   const cartItems = useSelector(selectCartItems);
