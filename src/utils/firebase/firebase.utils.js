@@ -122,6 +122,11 @@ export const createAuthUserWithEmailAndPassword = async (email, password) => {
 export const signInAuthUserWithEmailAndPassword = async (email, password) => {
   if (!email || !password) return;
 
+  if (password.length < 8) {
+    alert("password should be at least 8 characters");
+    return;
+  }
+
   return await signInWithEmailAndPassword(auth, email, password);
 };
 
