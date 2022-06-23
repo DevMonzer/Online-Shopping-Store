@@ -6,7 +6,6 @@ const categories = [
   {
     id: 1,
     title: "hats",
-    // imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
     imageUrl:
       "https://unsplash.com/photos/V0OsHPIh4To/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8aGF0cyUyMGNvbGxlY3Rpb258ZW58MHx8fHwxNjU1OTY4NjI3&force=true&w=640ntL1/hats.png",
     route: "shop/hats",
