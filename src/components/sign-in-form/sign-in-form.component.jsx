@@ -4,6 +4,9 @@ import { useSelector, useDispatch } from "react-redux";
 import FormInput from "../form-input/form-input.component";
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
+import { ReactComponent as EyeOpen } from "../../assets/eye-fill.svg";
+import { ReactComponent as EyeClose } from "../../assets/eye-slash-fill.svg";
+
 import {
   SignInContainer,
   ButtonsContainer,
