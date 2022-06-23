@@ -133,6 +133,28 @@ const SignUpForm = () => {
           </ShowPassword>
         </PasswordContainer>
 
+        <PasswordContainer>
+          <FormInput
+            type={passwordType}
+            onChange={handleChange}
+            value={password}
+            name="password"
+            label="Password"
+            required
+          />
+          <ShowPassword onClick={togglePassword}>
+            {passwordType === "password" ? (
+              <span>
+                <EyeOpen />
+              </span>
+            ) : (
+              <span>
+                <EyeClose />
+              </span>
+            )}
+          </ShowPassword>
+        </PasswordContainer>
+
         <FormInput
           label="Confirm Password"
           type="password"
