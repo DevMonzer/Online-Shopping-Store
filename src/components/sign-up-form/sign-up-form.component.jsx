@@ -1,8 +1,16 @@
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
 
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
+
+import { ReactComponent as EyeOpen } from "../../assets/eye-fill.svg";
+import { ReactComponent as EyeClose } from "../../assets/eye-slash-fill.svg";
+
+import { signUpStart } from "../../store/user/user.action";
+
+import { selectCurrentUser } from "../../store/user/user.selector";
 
 import {
   SignUpContainer,
@@ -10,11 +18,6 @@ import {
   LinkStyle,
   Center,
 } from "./sign-up-form.styles";
-import { signUpStart } from "../../store/user/user.action";
-
-import { selectCurrentUser } from "../../store/user/user.selector";
-
-import { Link, useNavigate } from "react-router-dom";
 
 const defaultFormFields = {
   displayName: "",
