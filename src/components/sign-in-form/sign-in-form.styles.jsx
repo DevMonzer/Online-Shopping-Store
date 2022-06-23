@@ -69,5 +69,5 @@ export const PasswordContainer = styled.div`
 export const ShowPassword = styled.div`
   position: absolute;
   margin-top: -70px;
-  margin-left: 365px;
+  margin-left: 92%;
 `;
