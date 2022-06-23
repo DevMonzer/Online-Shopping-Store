@@ -68,6 +68,22 @@ const SignUpForm = () => {
     setFormFields({ ...formFields, [name]: value });
   };
 
+  //////////////////////////////////////////////////
+  ////// Show and hide password functionality //////
+  const [passwordType, setPasswordType] = useState("password");
+
+  const togglePassword = (e) => {
+    e.preventDefault();
+
+    if (passwordType === "password") {
+      setPasswordType("text");
+      return;
+    }
+    setPasswordType("password");
+  };
+
+  //////////////////////////////////////////////////
+
   return (
     <SignUpContainer>
       <Margin>
