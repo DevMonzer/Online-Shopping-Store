@@ -37,6 +37,13 @@ const categories = [
       "https://unsplash.com/photos/5hDqrxz5Rpc/download?force=true&w=640",
     route: "shop/mens",
   },
+  {
+    id: 6,
+    title: "kids",
+    imageUrl:
+      "https://unsplash.com/photos/r_Tnjj6TB30/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTB8fGNoaWxkJTIwY2xvdGhlc3xlbnwwfHx8fDE2NTU5OTAyMjQ&force=true&w=640",
+    route: "shop/kids",
+  },
 ];
 
 const Directory = () => {
