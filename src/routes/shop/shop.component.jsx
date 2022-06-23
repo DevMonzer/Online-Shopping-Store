@@ -13,18 +13,19 @@ import { addCollectionAndDocuments } from "../../utils/firebase/firebase.utils";
 const Shop = () => {
   const dispatch = useDispatch();
 
-  // useEffect(() => {
-  //   dispatch(fetchCategoriesStart());
-  // }, []);
+  useEffect(() => {
+    dispatch(fetchCategoriesStart());
+  }, []);
 
   // Update the SHOP_DATA on firestore database
-  useEffect(() => {
-    const getCategoriesMap = async () => {
-      addCollectionAndDocuments("categories", SHOP_DATA);
-    };
+  // useEffect(() => {
+  //   const getCategoriesMap = async () => {
+  //     addCollectionAndDocuments("categories", SHOP_DATA);
+  //     console.log("donnnnne")
+  //   };
 
-    getCategoriesMap();
-  }, []);
+  //   getCategoriesMap();
+  // });
 
   return (
     <Routes>

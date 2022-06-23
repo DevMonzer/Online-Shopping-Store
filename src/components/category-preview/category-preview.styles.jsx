@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const CategoryPreviewContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 `;
 
 export const Title = styled(Link)`
@@ -34,6 +34,8 @@ export const Preview = styled.div`
 `;
 
 export const Margin = styled.h2`
+  text-align: center;
+
   @media screen and (max-width: 400px) {
     margin-left: 35px;
   }
