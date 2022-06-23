@@ -56,6 +56,27 @@ const SHOP_DATA = [
         imageUrl: "https://i.ibb.co/X2VJP2W/blue-snapback.png",
         price: 16,
       },
+      {
+        id: 50,
+        name: "Blak Snapback",
+        imageUrl:
+          "https://unsplash.com/photos/ai5E0zE7S_E/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MjZ8fGhhdHN8ZW58MHx8fHwxNjU1OTgwODk5&force=true&w=640",
+        price: 18,
+      },
+      {
+        id: 51,
+        name: "Blak Kint Cap",
+        imageUrl:
+          "https://unsplash.com/photos/jlschz0iV7Q/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MjN8fGhhdHN8ZW58MHx8fHwxNjU1OTgwODk5&force=true&w=640",
+        price: 25,
+      },
+      {
+        id: 52,
+        name: "Grey Cap",
+        imageUrl:
+          "https://unsplash.com/photos/FwVnAY_xMaY/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MzN8fGhhdHN8ZW58MHx8fHwxNjU1OTgwODk5&force=true&w=640",
+        price: 25,
+      },
     ],
   },
   {
@@ -144,6 +165,55 @@ const SHOP_DATA = [
         imageUrl: "https://i.ibb.co/M6hHc3F/brown-trench.png",
         price: 185,
       },
+      {
+        id: 43,
+        name: "Outstanding Trench",
+        imageUrl:
+          "https://unsplash.com/photos/Hng0RpHDgHI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8amFja2V0c3xlbnwwfHx8fDE2NTU5ODA0NjI&force=true&w=640",
+        price: 100,
+      },
+      {
+        id: 44,
+        name: "Black Jacket",
+        imageUrl:
+          "https://unsplash.com/photos/EvxwJ6ls2vc/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8OHx8amFja2V0c3xlbnwwfHx8fDE2NTU5ODA0NjI&force=true&w=640",
+        price: 210,
+      },
+      {
+        id: 45,
+        name: "Dark Blue",
+        imageUrl:
+          "https://unsplash.com/photos/Lss2BdwBKho/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8OXx8amFja2V0c3xlbnwwfHx8fDE2NTU5ODA0NjI&force=true&w=640",
+        price: 180,
+      },
+      {
+        id: 46,
+        name: "Grey Jacket",
+        imageUrl:
+          "https://unsplash.com/photos/CjB-8NY5at8/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTB8fGphY2tldHN8ZW58MHx8fHwxNjU1OTgwNDYy&force=true&w=640",
+        price: 100,
+      },
+      {
+        id: 47,
+        name: "Black and Brown Jacket",
+        imageUrl:
+          "https://unsplash.com/photos/WIWVM_Z1x7c/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTN8fGphY2tldHN8ZW58MHx8fHwxNjU1OTgwNDYy&force=true&w=640",
+        price: 170,
+      },
+      {
+        id: 48,
+        name: "Blue Jeans Jacket",
+        imageUrl:
+          "https://unsplash.com/photos/i49yJtWD57w/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTZ8fGphY2tldHN8ZW58MHx8fHwxNjU1OTgwNDYy&force=true&w=640",
+        price: 210,
+      },
+      {
+        id: 49,
+        name: "Dark Green Jacket",
+        imageUrl:
+          "https://unsplash.com/photos/9wM5SCjhsOM/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mjl8fGphY2tldHN8ZW58MHx8fHwxNjU1OTgwNjAz&force=true&w=640",
+        price: 160,
+      },
     ],
   },
   {
@@ -189,7 +259,14 @@ const SHOP_DATA = [
         id: 29,
         name: "White Blouse",
         imageUrl: "https://i.ibb.co/qBcrsJg/white-vest.png",
-        price: 20,
+        price: 50,
+      },
+      {
+        id: 42,
+        name: "Grey Shirt",
+        imageUrl:
+          "https://unsplash.com/photos/D1W3rQGaNhI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8d29tZW4lMjB0JTIwc2hpcnRzfGVufDB8fHx8MTY1NTk4MDM3Nw&force=true&w=640",
+        price: 35,
       },
     ],
   },
@@ -266,6 +343,13 @@ const SHOP_DATA = [
         imageUrl:
           "https://unsplash.com/photos/hAMJpesMeDE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MjR8fG1lbiUyMHNoaXJ0c3xlbnwwfHx8fDE2NTU5NzczMjg&force=true&w=640",
         price: 20,
+      },
+      {
+        id: 41,
+        name: "Mixed Red and Black T-shirt",
+        imageUrl:
+          "https://unsplash.com/photos/1u5NxJITm0E/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NDR8fG1lbiUyMHNoaXJ0c3xlbnwwfHx8fDE2NTU5Nzc5OTE&force=true&w=640",
+        price: 25,
       },
     ],
   },

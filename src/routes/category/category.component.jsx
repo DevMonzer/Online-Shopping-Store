@@ -1,6 +1,6 @@
 import { useState, useEffect, Fragment } from "react";
 import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 import ProductCard from "../../components/product-card/product-card.component";
 import Spinner from "../../components/spinner/spinner.component";
@@ -24,7 +24,9 @@ const Category = () => {
 
   return (
     <Fragment>
-      <Title>{category.toUpperCase()}</Title>
+      <Title>
+        <Link to="/shop">{category.toUpperCase()}</Link>
+      </Title>
       {isLoading ? (
         <Spinner />
       ) : (
