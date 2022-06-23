@@ -17,6 +17,7 @@ import {
 } from "./checkout.styles";
 
 const Checkout = () => {
+  const currentUser = useSelector(selectCurrentUser);
   const cartItems = useSelector(selectCartItems);
   const cartTotal = useSelector(selectCartTotal);
 
