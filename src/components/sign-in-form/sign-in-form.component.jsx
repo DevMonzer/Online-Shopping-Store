@@ -1,20 +1,18 @@
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-
-import FormInput from "../form-input/form-input.component";
-import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
+import { Link, useNavigate } from "react-router-dom";
 
 import { ReactComponent as EyeOpen } from "../../assets/eye-fill.svg";
 import { ReactComponent as EyeClose } from "../../assets/eye-slash-fill.svg";
+
+import FormInput from "../form-input/form-input.component";
+import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 import {
   googleSignInStart,
   emailSignInStart,
 } from "../../store/user/user.action";
-
 import { selectCurrentUser } from "../../store/user/user.selector";
-
-import { Link, useNavigate } from "react-router-dom";
 
 import {
   SignInContainer,
