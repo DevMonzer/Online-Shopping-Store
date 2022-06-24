@@ -121,9 +121,9 @@ export function* signInAfterSignUp({ payload: { user, additionalDetails } }) {
   yield call(getSnapshotFromUserAuth, user, additionalDetails);
 }
 
-export function* onGoogleSignInStart() {
-  yield takeLatest(USER_ACTION_TYPES.GOOGLE_SIGN_IN_START, signInWithGoogle);
-}
+// export function* onGoogleSignInStart() {
+//   yield takeLatest(USER_ACTION_TYPES.GOOGLE_SIGN_IN_START, signInWithGoogle);
+// }
 
 export function* onGoogleSignInWithRedirectStart() {
   yield takeLatest(
@@ -132,12 +132,12 @@ export function* onGoogleSignInWithRedirectStart() {
   );
 }
 
-export function* onFacebookSignInStart() {
-  yield takeLatest(
-    USER_ACTION_TYPES.FACEBOOK_SIGN_IN_START,
-    signInWithFacebook
-  );
-}
+// export function* onFacebookSignInStart() {
+//   yield takeLatest(
+//     USER_ACTION_TYPES.FACEBOOK_SIGN_IN_START,
+//     signInWithFacebook
+//   );
+// }
 
 export function* onFacebookSignInWithRedirectStart() {
   yield takeLatest(
