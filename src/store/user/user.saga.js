@@ -105,6 +105,13 @@ export function* onGoogleSignInStart() {
   yield takeLatest(USER_ACTION_TYPES.GOOGLE_SIGN_IN_START, signInWithGoogle);
 }
 
+export function* onFacebookSignInStart() {
+  yield takeLatest(
+    USER_ACTION_TYPES.FACEBOOK_SIGN_IN_START,
+    signInWithFacebook
+  );
+}
+
 export function* onCheckUserSession() {
   yield takeLatest(USER_ACTION_TYPES.CHECK_USER_SESSION, isUserAuthenticated);
 }
