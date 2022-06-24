@@ -78,4 +78,8 @@ export const ShowPassword = styled.div`
 
 export const Center = styled.div`
   margin: 20px 25%;
+
+  @media screen and (max-width: 600px) {
+    margin 20px 23%;
+  }
 `;
