@@ -33,10 +33,10 @@ const composedEnhancers = composeEnhancer(applyMiddleware(...middleWares));
 
 export const store = createStore(
   persistedReducer,
-  undefined
-  // composedEnhancers
+  undefined,
+  composedEnhancers
 );
 
-// sagaMiddleware.run(rootSaga);
+sagaMiddleware.run(rootSaga);
 
 export const persistor = persistStore(store);
