@@ -152,5 +152,7 @@ export const getCurrentUser = () => {
 export const signInWithFacebook = () => {
   const facebookProvider = new FacebookAuthProvider();
 
-  signInWithPopup(facebookProvider);
+  signInWithPopup(auth, facebookProvider).then((result) => {
+    console.log(result);
+  });
 };
