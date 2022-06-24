@@ -16,14 +16,14 @@ CHECK_USER_SESSION: 'user/CHECK_USER_SESSION',
 export const checkUserSession = () =>
   createAction(USER_ACTION_TYPES.CHECK_USER_SESSION);
 
-// export const googleSignInStart = () =>
-//   createAction(USER_ACTION_TYPES.GOOGLE_SIGN_IN_START);
+export const googleSignInStart = () =>
+  createAction(USER_ACTION_TYPES.GOOGLE_SIGN_IN_START);
 
 export const googleSignInWithRedirectStart = () =>
   createAction(USER_ACTION_TYPES.GOOGLE_REDIRECT_SIGN_IN_START);
 
-// export const facebookSignInStart = () =>
-//   createAction(USER_ACTION_TYPES.FACEBOOK_SIGN_IN_START);
+export const facebookSignInStart = () =>
+  createAction(USER_ACTION_TYPES.FACEBOOK_SIGN_IN_START);
 
 export const facebookSignInWithRedirectStart = () =>
   createAction(USER_ACTION_TYPES.FACEBOOK_REDIRECT_SIGN_IN_START);
