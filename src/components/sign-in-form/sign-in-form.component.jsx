@@ -51,6 +51,10 @@ const SignInForm = () => {
     // dispatch(googleSignInWithRedirectStart());
   };
 
+  const signInWithFacebook = async () => {
+    dispatch(facebookSignInStart());
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
