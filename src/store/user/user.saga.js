@@ -13,6 +13,7 @@ import {
 
 import {
   getCurrentUser,
+  signInWithGoogleRedirect,
   createUserDocumentFromAuth,
   signInWithGooglePopup,
   signInAuthUserWithEmailAndPassword,
@@ -36,6 +37,15 @@ export function* getSnapshotFromUserAuth(userAuth, additionalDetails) {
 export function* signInWithGoogle() {
   try {
     const { user } = yield call(signInWithGooglePopup);
+    yield call(getSnapshotFromUserAuth, user);
+  } catch (error) {
+    yield put(signInFailed(error));
+  }
+}
+
+export function* signInWithGoogleRedir() {
+  try {
+    const { user } = yield call(signInWithGoogleRedirect);
     yield call(getSnapshotFromUserAuth, user);
   } catch (error) {
     yield put(signInFailed(error));
