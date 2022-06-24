@@ -149,4 +149,6 @@ export const getCurrentUser = () => {
   });
 };
 
-export const signInWithFacebook = () => {};
+export const signInWithFacebook = () => {
+  const facebookProvider = new FacebookAuthProvider();
+};
