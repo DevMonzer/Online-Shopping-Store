@@ -15,6 +15,7 @@ import {
   getCurrentUser,
   createUserDocumentFromAuth,
   signInWithGooglePopup,
+  signInWithFacebookPopup,
   signInAuthUserWithEmailAndPassword,
   createAuthUserWithEmailAndPassword,
   signOutUser,
