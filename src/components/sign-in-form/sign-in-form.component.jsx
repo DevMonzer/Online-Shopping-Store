@@ -14,7 +14,7 @@ import {
 } from "../../store/user/user.action";
 import { selectCurrentUser } from "../../store/user/user.selector";
 
-import signInWithFacebook from "../../utils/firebase/firebase.utils";
+import { signInWithFacebook } from "../../utils/firebase/firebase.utils";
 
 import {
   SignInContainer,
@@ -129,15 +129,16 @@ const SignInForm = () => {
           >
             Sign In With Google
           </Button>
-          <Button
-            buttonType={BUTTON_TYPE_CLASSES.google}
-            type="button"
-            onClick={signInWithFacebook}
-          >
-            Sign In With Facebook
-          </Button>
         </ButtonsContainer>
-        <Link className="link-style" to="/sign-up">
+        <br />
+        <Button
+          buttonType={BUTTON_TYPE_CLASSES.google}
+          type="button"
+          onClick={signInWithFacebook}
+        >
+          Sign In With Facebook
+        </Button>
+        <Link to="/sign-up">
           <LinkStyle>Don't have an account?</LinkStyle>
         </Link>
       </form>
