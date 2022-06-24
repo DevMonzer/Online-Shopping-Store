@@ -139,6 +139,13 @@ export function* onFacebookSignInStart() {
   );
 }
 
+export function* onFacebookSignInWithRedirectStart() {
+  yield takeLatest(
+    USER_ACTION_TYPES.FACEBOOK_SIGN_IN_START,
+    signInWithFacebookRedir
+  );
+}
+
 export function* onCheckUserSession() {
   yield takeLatest(USER_ACTION_TYPES.CHECK_USER_SESSION, isUserAuthenticated);
 }
