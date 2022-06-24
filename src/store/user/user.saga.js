@@ -169,9 +169,9 @@ export function* onSignOutStart() {
 export function* userSagas() {
   yield all([
     call(onCheckUserSession),
-    call(onGoogleSignInStart),
+    // call(onGoogleSignInStart),
     call(onGoogleSignInWithRedirectStart),
-    call(onFacebookSignInStart),
+    // call(onFacebookSignInStart),
     call(onFacebookSignInWithRedirectStart),
     call(onEmailSignInStart),
     call(onSignUpStart),
