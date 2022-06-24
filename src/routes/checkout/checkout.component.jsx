@@ -46,7 +46,7 @@ const Checkout = () => {
       </CheckoutHeader>
 
       {currentUser && renderingProducts}
-      <Total>Total: {currentUser && cartTotal}</Total>
+      <Total>Total: {currentUser && "$" + cartTotal}</Total>
 
       <PaymentForm />
     </CheckoutContainer>
