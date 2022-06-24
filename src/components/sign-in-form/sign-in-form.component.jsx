@@ -10,6 +10,7 @@ import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 import {
   googleSignInStart,
+  facebookSignInStart,
   googleSignInWithRedirectStart,
   emailSignInStart,
 } from "../../store/user/user.action";
@@ -130,6 +131,15 @@ const SignInForm = () => {
             Sign In With Google
           </Button>
         </ButtonsContainer>
+        <Center>
+          <Button
+            buttonType={BUTTON_TYPE_CLASSES.google}
+            type="button"
+            onClick={signInWithFacebook}
+          >
+            Sign In With Facebook
+          </Button>
+        </Center>
         <Link className="link-style" to="/sign-up">
           <LinkStyle>Don't have an account?</LinkStyle>
         </Link>
