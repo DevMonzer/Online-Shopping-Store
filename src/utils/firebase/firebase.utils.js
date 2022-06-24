@@ -63,7 +63,7 @@ export const signInWithGooglePopup = () =>
   signInWithPopup(auth, googleProvider);
 export const signInWithGoogleRedirect = () =>
   signInWithRedirect(auth, googleProvider);
-export const signInWithFacebook = () => signInWithPopup(auth, googleProvider);
+export const signInWithFacebook = () => signInWithPopup(auth, facebookProvider);
 
 export const db = getFirestore();
 
