@@ -23,6 +23,7 @@ import {
   LinkStyle,
   PasswordContainer,
   ShowPassword,
+  Center,
 } from "./sign-in-form.styles";
 
 const defaultFormFields = {
