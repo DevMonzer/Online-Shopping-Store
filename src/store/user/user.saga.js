@@ -170,7 +170,9 @@ export function* userSagas() {
   yield all([
     call(onCheckUserSession),
     call(onGoogleSignInStart),
+    call(onGoogleSignInWithRedirectStart),
     call(onFacebookSignInStart),
+    call(onFacebookSignInWithRedirectStart),
     call(onEmailSignInStart),
     call(onSignUpStart),
     call(onSignUpSuccess),
