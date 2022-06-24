@@ -105,6 +105,13 @@ export function* onGoogleSignInStart() {
   yield takeLatest(USER_ACTION_TYPES.GOOGLE_SIGN_IN_START, signInWithGoogle);
 }
 
+export function* onGoogleSignInWithRedirectStart() {
+  yield takeLatest(
+    USER_ACTION_TYPES.GOOGLE_REDIRECT_SIGN_IN_START,
+    signInWithGoogleRedir
+  );
+}
+
 export function* onCheckUserSession() {
   yield takeLatest(USER_ACTION_TYPES.CHECK_USER_SESSION, isUserAuthenticated);
 }
