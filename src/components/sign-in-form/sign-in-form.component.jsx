@@ -10,8 +10,9 @@ import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 import {
   googleSignInStart,
-  onGoogleSignInWithRedirectStart,
+  googleSignInWithRedirectStart,
   facebookSignInStart,
+  facebookSignInWithRedirectStart,
   emailSignInStart,
 } from "../../store/user/user.action";
 import { selectCurrentUser } from "../../store/user/user.selector";
@@ -48,7 +49,7 @@ const SignInForm = () => {
   };
 
   const signInWithGoogle = async () => {
-    dispatch(googleSignInStart());
+    dispatch(googleSignInWithRedirectStart());
   };
 
   const signInWithFacebook = async () => {
