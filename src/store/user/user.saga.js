@@ -15,9 +15,6 @@ import {
   getCurrentUser,
   createUserDocumentFromAuth,
   signInWithGooglePopup,
-  signInWithGoogleRedirect,
-  signInWithFacebookPopup,
-  signInWithFacebookRedirect,
   signInAuthUserWithEmailAndPassword,
   createAuthUserWithEmailAndPassword,
   signOutUser,
@@ -39,33 +36,6 @@ export function* getSnapshotFromUserAuth(userAuth, additionalDetails) {
 export function* signInWithGoogle() {
   try {
     const { user } = yield call(signInWithGooglePopup);
-    yield call(getSnapshotFromUserAuth, user);
-  } catch (error) {
-    yield put(signInFailed(error));
-  }
-}
-
-export function* signInWithGoogleRedir() {
-  try {
-    const { user } = yield call(signInWithGoogleRedirect);
-    yield call(getSnapshotFromUserAuth, user);
-  } catch (error) {
-    yield put(signInFailed(error));
-  }
-}
-
-export function* signInWithFacebook() {
-  try {
-    const { user } = yield call(signInWithFacebookPopup);
-    yield call(getSnapshotFromUserAuth, user);
-  } catch (error) {
-    yield put(signInFailed(error));
-  }
-}
-
-export function* signInWithFacebookRedir() {
-  try {
-    const { user } = yield call(signInWithFacebookRedirect);
     yield call(getSnapshotFromUserAuth, user);
   } catch (error) {
     yield put(signInFailed(error));
@@ -125,27 +95,6 @@ export function* onGoogleSignInStart() {
   yield takeLatest(USER_ACTION_TYPES.GOOGLE_SIGN_IN_START, signInWithGoogle);
 }
 
-export function* onGoogleSignInWithRedirectStart() {
-  yield takeLatest(
-    USER_ACTION_TYPES.GOOGLE_REDIRECT_SIGN_IN_START,
-    signInWithGoogleRedir
-  );
-}
-
-export function* onFacebookSignInStart() {
-  yield takeLatest(
-    USER_ACTION_TYPES.FACEBOOK_SIGN_IN_START,
-    signInWithFacebook
-  );
-}
-
-export function* onFacebookSignInWithRedirectStart() {
-  yield takeLatest(
-    USER_ACTION_TYPES.FACEBOOK_REDIRECT_SIGN_IN_START,
-    signInWithFacebookRedir
-  );
-}
-
 export function* onCheckUserSession() {
   yield takeLatest(USER_ACTION_TYPES.CHECK_USER_SESSION, isUserAuthenticated);
 }
@@ -170,9 +119,6 @@ export function* userSagas() {
   yield all([
     call(onCheckUserSession),
     call(onGoogleSignInStart),
-    call(onGoogleSignInWithRedirectStart),
-    call(onFacebookSignInStart),
-    call(onFacebookSignInWithRedirectStart),
     call(onEmailSignInStart),
     call(onSignUpStart),
     call(onSignUpSuccess),

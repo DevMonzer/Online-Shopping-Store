@@ -9,10 +9,7 @@ import FormInput from "../form-input/form-input.component";
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 import {
-  // googleSignInStart,
-  googleSignInWithRedirectStart,
-  // facebookSignInStart,
-  facebookSignInWithRedirectStart,
+  googleSignInStart,
   emailSignInStart,
 } from "../../store/user/user.action";
 import { selectCurrentUser } from "../../store/user/user.selector";
@@ -24,7 +21,6 @@ import {
   LinkStyle,
   PasswordContainer,
   ShowPassword,
-  Center,
 } from "./sign-in-form.styles";
 
 const defaultFormFields = {
@@ -49,11 +45,7 @@ const SignInForm = () => {
   };
 
   const signInWithGoogle = async () => {
-    dispatch(googleSignInWithRedirectStart());
-  };
-
-  const signInWithFacebook = async () => {
-    dispatch(facebookSignInWithRedirectStart());
+    dispatch(googleSignInStart());
   };
 
   const handleSubmit = async (event) => {
@@ -136,16 +128,7 @@ const SignInForm = () => {
             Sign In With Google
           </Button>
         </ButtonsContainer>
-        <Center>
-          <Button
-            buttonType={BUTTON_TYPE_CLASSES.google}
-            type="button"
-            onClick={signInWithFacebook}
-          >
-            Sign In With Facebook
-          </Button>
-        </Center>
-        <Link to="/sign-up">
+        <Link className="link-style" to="/sign-up">
           <LinkStyle>Don't have an account?</LinkStyle>
         </Link>
       </form>
