@@ -14,9 +14,9 @@ import {
 import {
   getCurrentUser,
   createUserDocumentFromAuth,
-  // signInWithGooglePopup,
+  signInWithGooglePopup,
   signInWithGoogleRedirect,
-  // signInWithFacebookPopup,
+  signInWithFacebookPopup,
   signInWithFacebookRedirect,
   signInAuthUserWithEmailAndPassword,
   createAuthUserWithEmailAndPassword,
@@ -36,14 +36,14 @@ export function* getSnapshotFromUserAuth(userAuth, additionalDetails) {
   }
 }
 
-// export function* signInWithGoogle() {
-//   try {
-//     const { user } = yield call(signInWithGooglePopup);
-//     yield call(getSnapshotFromUserAuth, user);
-//   } catch (error) {
-//     yield put(signInFailed(error));
-//   }
-// }
+export function* signInWithGoogle() {
+  try {
+    const { user } = yield call(signInWithGooglePopup);
+    yield call(getSnapshotFromUserAuth, user);
+  } catch (error) {
+    yield put(signInFailed(error));
+  }
+}
 
 export function* signInWithGoogleRedir() {
   try {
@@ -54,14 +54,14 @@ export function* signInWithGoogleRedir() {
   }
 }
 
-// export function* signInWithFacebook() {
-//   try {
-//     const { user } = yield call(signInWithFacebookPopup);
-//     yield call(getSnapshotFromUserAuth, user);
-//   } catch (error) {
-//     yield put(signInFailed(error));
-//   }
-// }
+export function* signInWithFacebook() {
+  try {
+    const { user } = yield call(signInWithFacebookPopup);
+    yield call(getSnapshotFromUserAuth, user);
+  } catch (error) {
+    yield put(signInFailed(error));
+  }
+}
 
 export function* signInWithFacebookRedir() {
   try {
@@ -121,9 +121,9 @@ export function* signInAfterSignUp({ payload: { user, additionalDetails } }) {
   yield call(getSnapshotFromUserAuth, user, additionalDetails);
 }
 
-// export function* onGoogleSignInStart() {
-//   yield takeLatest(USER_ACTION_TYPES.GOOGLE_SIGN_IN_START, signInWithGoogle);
-// }
+export function* onGoogleSignInStart() {
+  yield takeLatest(USER_ACTION_TYPES.GOOGLE_SIGN_IN_START, signInWithGoogle);
+}
 
 export function* onGoogleSignInWithRedirectStart() {
   yield takeLatest(
@@ -132,12 +132,12 @@ export function* onGoogleSignInWithRedirectStart() {
   );
 }
 
-// export function* onFacebookSignInStart() {
-//   yield takeLatest(
-//     USER_ACTION_TYPES.FACEBOOK_SIGN_IN_START,
-//     signInWithFacebook
-//   );
-// }
+export function* onFacebookSignInStart() {
+  yield takeLatest(
+    USER_ACTION_TYPES.FACEBOOK_SIGN_IN_START,
+    signInWithFacebook
+  );
+}
 
 export function* onFacebookSignInWithRedirectStart() {
   yield takeLatest(
@@ -169,9 +169,9 @@ export function* onSignOutStart() {
 export function* userSagas() {
   yield all([
     call(onCheckUserSession),
-    // call(onGoogleSignInStart),
+    call(onGoogleSignInStart),
     call(onGoogleSignInWithRedirectStart),
-    // call(onFacebookSignInStart),
+    call(onFacebookSignInStart),
     call(onFacebookSignInWithRedirectStart),
     call(onEmailSignInStart),
     call(onSignUpStart),
