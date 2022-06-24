@@ -346,7 +346,7 @@ const SHOP_DATA = [
       },
       {
         id: 41,
-        name: "Mixed Red and Black T-shirt",
+        name: "Mixed colors T-shirt",
         imageUrl:
           "https://unsplash.com/photos/1u5NxJITm0E/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NDR8fG1lbiUyMHNoaXJ0c3xlbnwwfHx8fDE2NTU5Nzc5OTE&force=true&w=640",
         price: 25,
@@ -362,56 +362,112 @@ const SHOP_DATA = [
         name: "Sweater",
         imageUrl:
           "https://unsplash.com/photos/JZ51o_-UOY8/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NHx8Y2hpbGR8ZW58MHx8fHwxNjU1OTkwMjA2&force=true&w=640",
-        price: 80,
+        price: 20,
       },
       {
         id: 54,
         name: "White Polka",
         imageUrl:
           "https://unsplash.com/photos/e6lWMBIgNso/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8OHx8Y2hpbGQlMjBjbG90aGVzfGVufDB8fHx8MTY1NTk5MDIyNA&force=true&w=640",
-        price: 70,
+        price: 25,
       },
       {
         id: 55,
         name: "Black T-shirt",
         imageUrl:
           "https://unsplash.com/photos/fwJMG9zm3dI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTV8fGNoaWxkJTIwY2xvdGhlc3xlbnwwfHx8fDE2NTU5OTAyMjQ&force=true&w=640",
-        price: 50,
+        price: 20,
       },
       {
         id: 56,
         name: "White T-shirt",
         imageUrl:
           "https://unsplash.com/photos/tRSOnb_SBvk/download?force=true&w=640",
-        price: 50,
+        price: 15,
       },
       {
         id: 57,
         name: "Yellow dress",
         imageUrl:
           "https://unsplash.com/photos/luvoSGWkyX0/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NzV8fGNoaWxkJTIwY2xvdGhlc3xlbnwwfHx8fDE2NTU5OTA4MDg&force=true&w=640",
-        price: 80,
+        price: 30,
       },
       {
         id: 58,
         name: "Full clothes set",
         imageUrl:
           "https://unsplash.com/photos/2rIxe0j1wi4/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NDR8fGNoaWxkJTIwY2xvdGhlc3xlbnwwfHx8fDE2NTU5OTA4MDQ&force=true&w=640",
-        price: 130,
+        price: 80,
       },
       {
         id: 59,
         name: "Full clothes set",
         imageUrl:
           "https://unsplash.com/photos/zhikqyvJrmY/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NTJ8fGNoaWxkJTIwY2xvdGhlc3xlbnwwfHx8fDE2NTU5OTA4MDQ&force=true&w=640",
-        price: 120,
+        price: 80,
       },
       {
         id: 60,
         name: "Full clothes set",
         imageUrl:
           "https://unsplash.com/photos/NV_IPwv0Saw/download?force=true&w=640",
-        price: 150,
+        price: 90,
+      },
+      {
+        id: 61,
+        name: "Pink Jersey bow",
+        imageUrl:
+          "https://sa.hm.com/sites/g/files/hm/styles/product_zoom_medium_606x504/brand/assets-shared/HNM/13988025/47bb833ee7a3b1c96e68ce7762a0f8f335257c99/1/47bb833ee7a3b1c96e68ce7762a0f8f335257c99.jpg?itok=KIj-ICSb",
+        price: 15,
+      },
+      {
+        id: 62,
+        name: "Blue Jersey bow",
+        imageUrl:
+          "https://sa.hm.com/sites/g/files/hm/styles/product_zoom_medium_606x504/brand/assets-shared/HNM/13993933/a9c2457635c5f115e531fd0c1a02a22a3f96e239/1/a9c2457635c5f115e531fd0c1a02a22a3f96e239.jpg?itok=NsFC_FQU",
+        price: 15,
+      },
+      {
+        id: 63,
+        name: "Black Jersey bow",
+        imageUrl:
+          "https://sa.hm.com/sites/g/files/hm/styles/product_zoom_medium_606x504/brand/assets-shared/HNM/13989061/54fe3cecb55ed0e001ecf1b417745b007b2efe0f/1/54fe3cecb55ed0e001ecf1b417745b007b2efe0f.jpg?itok=dFPTaX_a",
+        price: 15,
+      },
+      {
+        id: 64,
+        name: "Red cotton dress",
+        imageUrl:
+          "https://sa.hm.com/sites/g/files/hm/styles/product_zoom_medium_606x504/brand/assets-shared/HNM/13652747/70b288b45c9ada7672e7c01f0049e9e5e06e4968/1/70b288b45c9ada7672e7c01f0049e9e5e06e4968.jpg?itok=7tkN9_7a",
+        price: 50,
+      },
+      {
+        id: 65,
+        name: "Beige cotton dress",
+        imageUrl:
+          "https://sa.hm.com/sites/g/files/hm/styles/product_zoom_medium_606x504/brand/assets-shared/HNM/13645301/3e5d305bc68fcf9b3ad9b56a08451bcba65a350f/1/3e5d305bc68fcf9b3ad9b56a08451bcba65a350f.jpg?itok=DEQ6gqAq",
+        price: 50,
+      },
+      {
+        id: 66,
+        name: "Dark beige cotton dress",
+        imageUrl:
+          "https://sa.hm.com/sites/g/files/hm/styles/product_zoom_medium_606x504/brand/assets-shared/HNM/14316661/4a66994da2afe6c27968f8c7ff37ea7a314dd08d/1/4a66994da2afe6c27968f8c7ff37ea7a314dd08d.jpg?itok=JDGyc8K3",
+        price: 50,
+      },
+      {
+        id: 67,
+        name: "Full clothes set",
+        imageUrl:
+          "https://sa.hm.com/sites/g/files/hm/styles/product_zoom_medium_606x504/brand/assets-shared/HNM/13989127/0d50e4a499b26507b0444b8331c01c241d60b796/1/0d50e4a499b26507b0444b8331c01c241d60b796.jpg?itok=lkxPrDoN",
+        price: 35,
+      },
+      {
+        id: 68,
+        name: "Full clothes set",
+        imageUrl:
+          "https://sa.hm.com/sites/g/files/hm/styles/product_zoom_medium_606x504/brand/assets-shared/HNM/13689140/190f831be0a5a847ff6deca40e35eee31f7e4ba0/1/190f831be0a5a847ff6deca40e35eee31f7e4ba0.jpg?itok=TxPbhbeK",
+        price: 35,
       },
     ],
   },
