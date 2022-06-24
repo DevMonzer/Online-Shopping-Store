@@ -52,7 +52,7 @@ export const LinkStyle = styled.div`
   margin: 20px auto;
 
   @media screen and (max-width: 400px) {
-    width: 325px;
+    width: 320px;
   }
 
   &:hover {
