@@ -138,7 +138,7 @@ const SignInForm = () => {
         >
           Sign In With Facebook
         </Button>
-        <Link className="link-style" to="/sign-up">
+        <Link to="/sign-up">
           <LinkStyle>Don't have an account?</LinkStyle>
         </Link>
       </form>
