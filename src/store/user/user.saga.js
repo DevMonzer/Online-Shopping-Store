@@ -125,6 +125,13 @@ export function* onGoogleSignInStart() {
   yield takeLatest(USER_ACTION_TYPES.GOOGLE_SIGN_IN_START, signInWithGoogle);
 }
 
+export function* onGoogleSignInWithRedirectStart() {
+  yield takeLatest(
+    USER_ACTION_TYPES.GOOGLE_SIGN_IN_START,
+    signInWithGoogleRedir
+  );
+}
+
 export function* onFacebookSignInStart() {
   yield takeLatest(
     USER_ACTION_TYPES.FACEBOOK_SIGN_IN_START,
