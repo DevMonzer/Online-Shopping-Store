@@ -29,7 +29,8 @@ export const Preview = styled.div`
   }
 
   @media screen and (max-width: 400px) {
-    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0px;
+    row-gap: 20px;
   }
 `;
 
