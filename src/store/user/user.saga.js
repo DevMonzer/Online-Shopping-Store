@@ -127,7 +127,7 @@ export function* signInAfterSignUp({ payload: { user, additionalDetails } }) {
 
 export function* onGoogleSignInWithRedirectStart() {
   yield takeLatest(
-    USER_ACTION_TYPES.GOOGLE_SIGN_IN_START,
+    USER_ACTION_TYPES.GOOGLE_REDIRECT_SIGN_IN_START,
     signInWithGoogleRedir
   );
 }
@@ -141,7 +141,7 @@ export function* onGoogleSignInWithRedirectStart() {
 
 export function* onFacebookSignInWithRedirectStart() {
   yield takeLatest(
-    USER_ACTION_TYPES.FACEBOOK_SIGN_IN_START,
+    USER_ACTION_TYPES.FACEBOOK_REDIRECT_SIGN_IN_START,
     signInWithFacebookRedir
   );
 }
