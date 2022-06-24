@@ -9,9 +9,9 @@ import FormInput from "../form-input/form-input.component";
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 import {
-  googleSignInStart,
+  // googleSignInStart,
   googleSignInWithRedirectStart,
-  facebookSignInStart,
+  // facebookSignInStart,
   facebookSignInWithRedirectStart,
   emailSignInStart,
 } from "../../store/user/user.action";
@@ -53,7 +53,7 @@ const SignInForm = () => {
   };
 
   const signInWithFacebook = async () => {
-    dispatch(facebookSignInStart());
+    dispatch(facebookSignInWithRedirectStart());
   };
 
   const handleSubmit = async (event) => {
