@@ -153,6 +153,8 @@ export const signInWithFacebook = () => {
   const facebookProvider = new FacebookAuthProvider();
 
   signInWithPopup(auth, facebookProvider).then((result) => {
-    console.log(result);
+    console.log(result).catch((err) => {
+      console.log(err);
+    });
   });
 };
