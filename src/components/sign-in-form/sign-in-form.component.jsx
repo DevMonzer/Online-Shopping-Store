@@ -23,6 +23,7 @@ import {
   LinkStyle,
   PasswordContainer,
   ShowPassword,
+  Center,
 } from "./sign-in-form.styles";
 
 const defaultFormFields = {
@@ -130,14 +131,15 @@ const SignInForm = () => {
             Sign In With Google
           </Button>
         </ButtonsContainer>
-        <br />
-        <Button
-          buttonType={BUTTON_TYPE_CLASSES.google}
-          type="button"
-          onClick={signInWithFacebookPopup}
-        >
-          Sign In With Facebook
-        </Button>
+        <Center>
+          <Button
+            buttonType={BUTTON_TYPE_CLASSES.google}
+            type="button"
+            onClick={signInWithFacebookPopup}
+          >
+            Sign In With Facebook
+          </Button>
+        </Center>
         <Link to="/sign-up">
           <LinkStyle>Don't have an account?</LinkStyle>
         </Link>

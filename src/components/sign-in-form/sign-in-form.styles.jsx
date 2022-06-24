@@ -75,3 +75,7 @@ export const ShowPassword = styled.div`
     margin-left: 89%;
   }
 `;
+
+export const Center = styled.div`
+  margin: 20px 25%;
+`;
