@@ -43,6 +43,15 @@ export function* signInWithGoogle() {
   }
 }
 
+export function* signInWithFacebook() {
+  try {
+    const { user } = yield call(signInWithFacebookPopup);
+    yield call(getSnapshotFromUserAuth, user);
+  } catch (error) {
+    yield put(signInFailed(error));
+  }
+}
+
 export function* signInWithEmail({ payload: { email, password } }) {
   try {
     const { user } = yield call(
