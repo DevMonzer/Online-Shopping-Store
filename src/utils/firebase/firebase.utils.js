@@ -44,16 +44,6 @@ const firebaseApp = initializeApp(firebaseConfig);
 const googleProvider = new GoogleAuthProvider();
 const facebookProvider = new FacebookAuthProvider();
 
-// export const signInWithFacebook = () => {
-//   signInWithPopup(auth, facebookProvider)
-//     .then((result) => {
-//       console.log(result);
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//     });
-// };
-
 googleProvider.setCustomParameters({
   prompt: "select_account",
 });
