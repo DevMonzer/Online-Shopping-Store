@@ -46,7 +46,8 @@ const SignInForm = () => {
   };
 
   const signInWithGoogle = async () => {
-    dispatch(googleSignInStart());
+    // dispatch(googleSignInStart());
+    dispatch(googleSignInWithRedirectStart());
   };
 
   const handleSubmit = async (event) => {
