@@ -138,7 +138,7 @@ const SignInForm = () => {
         </ButtonsContainer>
         <Center>
           <Button
-            buttonType={BUTTON_TYPE_CLASSES.google}
+            buttonType={BUTTON_TYPE_CLASSES.facebook}
             type="button"
             onClick={signInWithFacebook}
           >
