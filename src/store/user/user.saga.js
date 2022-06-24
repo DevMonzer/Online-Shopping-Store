@@ -14,9 +14,9 @@ import {
 import {
   getCurrentUser,
   createUserDocumentFromAuth,
-  signInWithGooglePopup,
+  // signInWithGooglePopup,
   signInWithGoogleRedirect,
-  signInWithFacebookPopup,
+  // signInWithFacebookPopup,
   signInWithFacebookRedirect,
   signInAuthUserWithEmailAndPassword,
   createAuthUserWithEmailAndPassword,
@@ -36,14 +36,14 @@ export function* getSnapshotFromUserAuth(userAuth, additionalDetails) {
   }
 }
 
-export function* signInWithGoogle() {
-  try {
-    const { user } = yield call(signInWithGooglePopup);
-    yield call(getSnapshotFromUserAuth, user);
-  } catch (error) {
-    yield put(signInFailed(error));
-  }
-}
+// export function* signInWithGoogle() {
+//   try {
+//     const { user } = yield call(signInWithGooglePopup);
+//     yield call(getSnapshotFromUserAuth, user);
+//   } catch (error) {
+//     yield put(signInFailed(error));
+//   }
+// }
 
 export function* signInWithGoogleRedir() {
   try {
@@ -54,14 +54,14 @@ export function* signInWithGoogleRedir() {
   }
 }
 
-export function* signInWithFacebook() {
-  try {
-    const { user } = yield call(signInWithFacebookPopup);
-    yield call(getSnapshotFromUserAuth, user);
-  } catch (error) {
-    yield put(signInFailed(error));
-  }
-}
+// export function* signInWithFacebook() {
+//   try {
+//     const { user } = yield call(signInWithFacebookPopup);
+//     yield call(getSnapshotFromUserAuth, user);
+//   } catch (error) {
+//     yield put(signInFailed(error));
+//   }
+// }
 
 export function* signInWithFacebookRedir() {
   try {
