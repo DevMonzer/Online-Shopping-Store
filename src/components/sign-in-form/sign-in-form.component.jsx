@@ -10,11 +10,10 @@ import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 import {
   googleSignInStart,
+  facebookSignInStart,
   emailSignInStart,
 } from "../../store/user/user.action";
 import { selectCurrentUser } from "../../store/user/user.selector";
-
-import { signInWithFacebookPopup } from "../../utils/firebase/firebase.utils";
 
 import {
   SignInContainer,
@@ -49,6 +48,10 @@ const SignInForm = () => {
 
   const signInWithGoogle = async () => {
     dispatch(googleSignInStart());
+  };
+
+  const signInWithFacebook = async () => {
+    dispatch(facebookSignInStart());
   };
 
   const handleSubmit = async (event) => {
@@ -135,7 +138,7 @@ const SignInForm = () => {
           <Button
             buttonType={BUTTON_TYPE_CLASSES.google}
             type="button"
-            onClick={signInWithFacebookPopup}
+            onClick={signInWithFacebook}
           >
             Sign In With Facebook
           </Button>
