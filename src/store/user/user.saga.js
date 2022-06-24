@@ -17,6 +17,7 @@ import {
   signInWithGooglePopup,
   signInWithGoogleRedirect,
   signInWithFacebookPopup,
+  signInWithFacebookRedirect,
   signInAuthUserWithEmailAndPassword,
   createAuthUserWithEmailAndPassword,
   signOutUser,
@@ -44,9 +45,27 @@ export function* signInWithGoogle() {
   }
 }
 
+export function* signInWithGoogleRedir() {
+  try {
+    const { user } = yield call(signInWithGoogleRedirect);
+    yield call(getSnapshotFromUserAuth, user);
+  } catch (error) {
+    yield put(signInFailed(error));
+  }
+}
+
 export function* signInWithFacebook() {
   try {
     const { user } = yield call(signInWithFacebookPopup);
+    yield call(getSnapshotFromUserAuth, user);
+  } catch (error) {
+    yield put(signInFailed(error));
+  }
+}
+
+export function* signInWithFacebookRedir() {
+  try {
+    const { user } = yield call(signInWithFacebookRedirect);
     yield call(getSnapshotFromUserAuth, user);
   } catch (error) {
     yield put(signInFailed(error));
