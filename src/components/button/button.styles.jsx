@@ -41,6 +41,7 @@ export const GoogleSignInButton = styled(BaseButton)`
 
   &:hover {
     background-color: #f4b400;
+    color: white;
     border: none;
   }
 `;
@@ -50,7 +51,8 @@ export const FacebookSignInButton = styled(BaseButton)`
   color: white;
 
   &:hover {
-    background-color: #357ae8;
+    background-color: #898f9c;
+    color: white;
     border: none;
   }
 `;
