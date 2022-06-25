@@ -59,7 +59,9 @@ export const signInWithGooglePopup = () =>
     .catch((error) => console.log(error));
 
 export const signInWithGoogleRedirect = () =>
-  signInWithRedirect(auth, googleProvider);
+  signInWithRedirect(auth, googleProvider)
+    .then((result) => console.log(result))
+    .catch((error) => console.log(error));
 
 export const signInWithFacebookPopup = () =>
   signInWithPopup(auth, facebookProvider)
@@ -67,7 +69,9 @@ export const signInWithFacebookPopup = () =>
     .catch((error) => console.log(error));
 
 export const signInWithFacebookRedirect = () =>
-  signInWithRedirect(auth, facebookProvider);
+  signInWithRedirect(auth, facebookProvider)
+    .then((result) => console.log(result))
+    .catch((error) => console.log(error));
 
 export const db = getFirestore();
 
