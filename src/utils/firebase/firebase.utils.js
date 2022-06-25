@@ -54,13 +54,17 @@ facebookProvider.setCustomParameters({
 
 export const auth = getAuth();
 export const signInWithGooglePopup = () =>
-  signInWithPopup(auth, googleProvider);
+  signInWithPopup(auth, googleProvider)
+    .then((result) => console.log(result))
+    .catch((error) => console.log(error));
 
 export const signInWithGoogleRedirect = () =>
   signInWithRedirect(auth, googleProvider);
 
 export const signInWithFacebookPopup = () =>
-  signInWithPopup(auth, facebookProvider);
+  signInWithPopup(auth, facebookProvider)
+    .then((result) => console.log(result))
+    .catch((error) => console.log(error));
 
 export const signInWithFacebookRedirect = () =>
   signInWithRedirect(auth, facebookProvider);
