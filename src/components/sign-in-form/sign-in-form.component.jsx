@@ -49,7 +49,6 @@ const SignInForm = () => {
 
   const signInWithGoogle = async () => {
     dispatch(googleSignInStart());
-    // dispatch(googleSignInWithRedirectStart());
   };
 
   const signInWithFacebook = async () => {
