@@ -7,6 +7,7 @@ import {
   Margin,
 } from "./category-preview.styles";
 
+// Shop Page
 const CategoryPreview = ({ title, products }) => {
   return (
     <CategoryPreviewContainer>

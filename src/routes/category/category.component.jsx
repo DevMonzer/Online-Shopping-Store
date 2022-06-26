@@ -12,6 +12,7 @@ import {
 
 import { CategoryContainer, Title } from "./category.styles";
 
+// Categories Pages inside the Shop Page
 const Category = () => {
   const { category } = useParams();
   const categoriesMap = useSelector(selectCategoriesMap);
