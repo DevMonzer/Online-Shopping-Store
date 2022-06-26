@@ -23,7 +23,16 @@ const Category = () => {
 
   // Pagination Code
   const [pageNumber, setPageNumber] = useState(0);
-  const productsPerPage = 8;
+  const productsPerPage = 12;
+  const pagesVisited = pageNumber * productsPerPage;
+
+  // console.log(products);
+
+  const displayUsers =
+    products &&
+    products
+      .slice(pagesVisited, pagesVisited + productsPerPage)
+      .map((product) => <ProductCard key={product.id} product={product} />);
 
   useEffect(() => {
     setProducts(categoriesMap[category]);
@@ -38,11 +47,11 @@ const Category = () => {
         <Spinner />
       ) : (
         <CategoryContainer>
-          {products &&
+          {/* {products &&
             products.map((product) => (
               <ProductCard key={product.id} product={product} />
-            ))}
-          <br />
+            ))} */}
+          {displayUsers}
         </CategoryContainer>
       )}
     </Fragment>
