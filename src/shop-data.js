@@ -369,7 +369,7 @@ const SHOP_DATA = [
       },
       {
         id: 31,
-        name: "Floral T-shirt",
+        name: "Floral Shirt",
         imageUrl: "https://i.ibb.co/qMQ75QZ/floral-shirt.png",
         price: 20,
       },
@@ -381,7 +381,7 @@ const SHOP_DATA = [
       },
       {
         id: 33,
-        name: "Pink T-shirt",
+        name: "Pink Shirt",
         imageUrl: "https://i.ibb.co/RvwnBL8/pink-shirt.png",
         price: 25,
       },
@@ -393,65 +393,79 @@ const SHOP_DATA = [
       },
       {
         id: 35,
-        name: "Burgundy T-shirt",
+        name: "Burgundy Shirt",
         imageUrl: "https://i.ibb.co/mh3VM1f/polka-dot-shirt.png",
         price: 25,
       },
       {
         id: 36,
-        name: "Blue T-shirt",
+        name: "Blue Shirt",
         imageUrl:
           "https://unsplash.com/photos/2O1EUSTRBrY/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MjB8fG1lbiUyMHNoaXJ0c3xlbnwwfHx8fDE2NTU5NzczMjA&force=true&w=640",
         price: 30,
       },
       {
         id: 37,
-        name: "Blak T-shirt",
+        name: "Blak Shirt",
         imageUrl:
           "https://unsplash.com/photos/t8yimzM2bEY/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MjJ8fG1lbiUyMHNoaXJ0c3xlbnwwfHx8fDE2NTU5NzczMjg&force=true&w=640",
         price: 30,
       },
       {
         id: 38,
-        name: "Standing T-shirt",
+        name: "Standing Shirt",
         imageUrl:
           "https://unsplash.com/photos/KAPRQjlSzCA/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8OHx8bWVuJTIwc2hpcnRzfGVufDB8fHx8MTY1NTk3NzMyMA&force=true&w=640",
         price: 18,
       },
       {
         id: 39,
-        name: "Brown T-shirt",
+        name: "Brown Shirt",
         imageUrl:
           "https://unsplash.com/photos/vKnRYW-mtek/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTN8fG1lbiUyMHNoaXJ0c3xlbnwwfHx8fDE2NTU5NzczMjA&force=true&w=640",
         price: 25,
       },
       {
         id: 40,
-        name: "White T-shirt",
+        name: "White Shirt",
         imageUrl:
           "https://unsplash.com/photos/hAMJpesMeDE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MjR8fG1lbiUyMHNoaXJ0c3xlbnwwfHx8fDE2NTU5NzczMjg&force=true&w=640",
         price: 20,
       },
       {
         id: 41,
-        name: "Mixed colors T-shirt",
+        name: "Mixed colors Shirt",
         imageUrl:
           "https://unsplash.com/photos/1u5NxJITm0E/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NDR8fG1lbiUyMHNoaXJ0c3xlbnwwfHx8fDE2NTU5Nzc5OTE&force=true&w=640",
         price: 25,
       },
       {
         id: 81,
-        name: "Dark Green T-shirt",
+        name: "Dark Green Shirt",
         imageUrl:
           "https://unsplash.com/photos/4V4t0JcOM5E/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8bWVuJTIwc2hpcnRzfGVufDB8fHx8MTY1NjIzOTQyNg&force=true&w=640",
         price: 35,
       },
       {
         id: 82,
-        name: "Black T-shirt",
+        name: "Black Shirt",
         imageUrl:
           "https://unsplash.com/photos/6RTha8KJEqI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTZ8fG1lbiUyMHNoaXJ0c3xlbnwwfHx8fDE2NTYyMzk0MjY&force=true&w=640",
         price: 35,
+      },
+      {
+        id: 83,
+        name: "Grey T-shirt",
+        imageUrl:
+          "https://unsplash.com/photos/sYhUhse5uT8/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NDZ8fG1lbiUyMHNoaXJ0c3xlbnwwfHx8fDE2NTYyMzk1NDE&force=true&w=640",
+        price: 18,
+      },
+      {
+        id: 84,
+        name: "Black T-shirt",
+        imageUrl:
+          "https://unsplash.com/photos/wzRKn-AjKf4/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NTB8fG1lbiUyMHNoaXJ0c3xlbnwwfHx8fDE2NTYyMzk1NDE&force=true&w=640",
+        price: 22,
       },
     ],
   },
