@@ -4,16 +4,16 @@ import {
   CategoryPreviewContainer,
   Title,
   Preview,
-  Margin,
+  Center,
 } from "./category-preview.styles";
 
 // Shop Page
 const CategoryPreview = ({ title, products }) => {
   return (
     <CategoryPreviewContainer>
-      <Margin>
+      <Center>
         <Title to={title}>{title.toUpperCase()}</Title>
-      </Margin>
+      </Center>
       <Preview>
         {products
           .filter((_, idx) => idx < 4)

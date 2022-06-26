@@ -34,6 +34,6 @@ export const Preview = styled.div`
   }
 `;
 
-export const Margin = styled.h2`
+export const Center = styled.h2`
   text-align: center;
 `;
