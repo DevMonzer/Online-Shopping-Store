@@ -2,6 +2,8 @@ import { useState, useEffect, Fragment } from "react";
 import { useSelector } from "react-redux";
 import { useParams, Link } from "react-router-dom";
 
+import ReactPaginate from "react-paginate";
+
 import ProductCard from "../../components/product-card/product-card.component";
 import Spinner from "../../components/spinner/spinner.component";
 
@@ -18,6 +20,10 @@ const Category = () => {
   const categoriesMap = useSelector(selectCategoriesMap);
   const isLoading = useSelector(selectCategoriesIsLoading);
   const [products, setProducts] = useState(categoriesMap[category]);
+
+  // Pagination Code
+  const [pageNumber, setPageNumber] = useState(0);
+  const productsPerPage = 8;
 
   useEffect(() => {
     setProducts(categoriesMap[category]);
