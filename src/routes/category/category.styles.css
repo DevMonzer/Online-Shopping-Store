@@ -5,13 +5,12 @@
   align-items: center;
   color: grey;
   font-size: 16px;
-  /* font-weight: bold; */
 }
 
 .paginationBttns a {
   margin: 0 10px;
   padding: 10px;
-  border-radius: 50px;
+  border-radius: 50%;
   border: 1px solid gray;
   cursor: pointer;
 }
