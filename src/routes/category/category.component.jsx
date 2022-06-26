@@ -38,6 +38,9 @@ const Category = () => {
     setProducts(categoriesMap[category]);
   }, [category, categoriesMap]);
 
+  // Calculationg the pageNumber
+  const pageCount = Math.ceil(products.length / productsPerPage);
+
   return (
     <Fragment>
       <Title>
@@ -47,7 +50,12 @@ const Category = () => {
         <Spinner />
       ) : (
         <CategoryContainer>
-          {displayUsers} <ReactPaginate />
+          {displayUsers}
+          <ReactPaginate
+            previousLabel={"Previous"}
+            nextLabel={"Next"}
+            pageCount={pageCount}
+          />
         </CategoryContainer>
       )}
     </Fragment>
