@@ -250,110 +250,99 @@ const SHOP_DATA = [
     items: [
       {
         id: 23,
-        name: "Floral Dress",
-        imageUrl:
-          "https://unsplash.com/photos/xgNSlx7DjYM/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8d29tZW4lMjBjbG90aGluZ3xlbnwwfHx8fDE2NTYyMzY3NDE&force=true&w=640",
-        price: 35,
-      },
-      {
-        id: 24,
-        name: "Floral Crew Dress",
-        imageUrl:
-          "https://unsplash.com/photos/PaqF5u-qfCs/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MjV8fHdvbWVuJTIwY2xvdGhpbmd8ZW58MHx8fHwxNjU2MjM3MTMy&force=true&w=640",
-        price: 50,
+        name: "Black Dress",
+        imageUrl: "https://i.ibb.co/vQ6BRgQ/Black-Dress.jpg",
+        price: 45,
       },
       {
         id: 25,
-        name: "Sleeve Shirt",
-        imageUrl:
-          "https://unsplash.com/photos/2HTX85gxynM/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NTN8fHdvbWVuJTIwY2xvdGhpbmd8ZW58MHx8fHwxNjU2MjM3MjAx&force=true&w=640",
-        price: 30,
+        name: "Blue Dress",
+        imageUrl: "https://i.ibb.co/T145CDT/Blue-Dress.webp",
+        price: 45,
       },
       {
-        id: 26,
-        name: "Red Dots Dress",
-        imageUrl: "https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png",
-        price: 50,
+        id: 69,
+        name: "Green Dress",
+        imageUrl: "https://i.ibb.co/YtFQzmF/Green-Dress.webp",
+        price: 45,
       },
       {
-        id: 27,
-        name: "Striped Sweater",
-        imageUrl: "https://i.ibb.co/KmSkMbH/striped-sweater.png",
+        id: 74,
+        name: "Purple Dress",
+        imageUrl: "https://i.ibb.co/7Wmjwk3/Purple-Dress.jpg ",
         price: 45,
       },
       {
         id: 28,
-        name: "Yellow Track Suit",
-        imageUrl: "https://i.ibb.co/v1cvwNf/yellow-track-suit.png",
-        price: 75,
+        name: "Dark Red Dress",
+        imageUrl: "https://i.ibb.co/zVj5GCf/Dark-Red-Dress.jpg",
+        price: 45,
       },
       {
-        id: 29,
-        name: "White Blouse",
-        imageUrl: "https://i.ibb.co/qBcrsJg/white-vest.png",
+        id: 24,
+        name: "Black Sleeve Dress",
+        imageUrl: "https://i.ibb.co/2ZS2j86/Black-Sleeve-Dress.webp",
+        price: 50,
+      },
+      {
+        id: 27,
+        name: "Brown Sleeve Dress",
+        imageUrl: "https://i.ibb.co/XVHFxqH/Brown-Sleeve-Dress.jpg",
         price: 50,
       },
       {
         id: 42,
-        name: "Grey Shirt",
-        imageUrl:
-          "https://unsplash.com/photos/D1W3rQGaNhI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8d29tZW4lMjB0JTIwc2hpcnRzfGVufDB8fHx8MTY1NTk4MDM3Nw&force=true&w=640",
-        price: 35,
+        name: "Gray Sleeve Dress",
+        imageUrl: "https://i.ibb.co/y87Mns6/Gray-Sleeve-Dress.webp",
+        price: 50,
       },
       {
-        id: 69,
-        name: "Sleeve Dress",
-        imageUrl:
-          "https://unsplash.com/photos/y-OMFTKo7UE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8d29tZW4lMjBkcmVzc3xlbnwwfHx8fDE2NTYyMzc3NTc&force=true&w=640",
-        price: 45,
+        id: 26,
+        name: "Blue Geometric",
+        imageUrl: "https://i.ibb.co/pRHN7Qf/Blue-Geometric.webp",
+        price: 50,
+      },
+      {
+        id: 29,
+        name: "Dark Red Geometric",
+        imageUrl: "https://i.ibb.co/HtS2v7J/Dark-Red-Geometric.webp",
+        price: 50,
       },
       {
         id: 70,
-        name: "White Dress",
-        imageUrl:
-          "https://unsplash.com/photos/n2-NM8z8w0w/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Nnx8d29tZW4lMjBkcmVzc3xlbnwwfHx8fDE2NTYyMzc3NTc&force=true&w=640",
+        name: "Green Short Sleeve",
+        imageUrl: "https://i.ibb.co/JBWctDk/Green-Short-Sleeve.webp",
         price: 45,
       },
       {
         id: 71,
-        name: "Floral Dress",
-        imageUrl:
-          "https://unsplash.com/photos/2ZXVU3BJzN4/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTJ8fHdvbWVuJTIwZHJlc3N8ZW58MHx8fHwxNjU2MjM3NzU3&force=true&w=640",
-        price: 50,
+        name: "Maxi Dress 1",
+        imageUrl: "https://i.ibb.co/gVGSdcz/Maxi-Dress-1.webp",
+        price: 60,
       },
       {
         id: 72,
-        name: "Sleeve Dress",
-        imageUrl:
-          "https://unsplash.com/photos/ypKjnJkWyPk/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTl8fHdvbWVuJTIwZHJlc3N8ZW58MHx8fHwxNjU2MjM3NzU3&force=true&w=640",
+        name: "Maxi Dress 2",
+        imageUrl: "https://i.ibb.co/xXfL3mb/Maxi-Dress-2.webp",
         price: 60,
       },
       {
         id: 73,
-        name: "Black Skirt",
-        imageUrl:
-          "https://unsplash.com/photos/bZDTVuDH38M/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mjd8fHdvbWVuJTIwZHJlc3N8ZW58MHx8fHwxNjU2MjM4MDA0&force=true&w=640",
-        price: 65,
+        name: "Maxi Dress 3",
+        imageUrl: "https://i.ibb.co/MktqWFy/Maxi-Dress-3.webp",
+        price: 60,
       },
-      {
-        id: 74,
-        name: "Black Skirt",
-        imageUrl:
-          "https://unsplash.com/photos/lSLq_xQdFNI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTgyfHx3b21lbiUyMGRyZXNzfGVufDB8fHx8MTY1NjIzODI3Mg&force=true&w=640",
-        price: 45,
-      },
+
       {
         id: 75,
-        name: "Floral Blouse",
-        imageUrl:
-          "https://unsplash.com/photos/cMB3D5Ox5KE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8d29tZW4lMjBibG91c2V8ZW58MHx8fHwxNjU2MjM4OTM3&force=true&w=640",
-        price: 35,
+        name: "Swing Dress Maxi 1",
+        imageUrl: "https://i.ibb.co/JWYc1c1/Swing-Dress-Maxi-1.webp",
+        price: 25,
       },
       {
         id: 76,
-        name: "Viscose Rayon",
-        imageUrl:
-          "https://unsplash.com/photos/plsF6obTgms/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTB8fGdpcmx8ZW58MHx8fHwxNjU2MjM4OTk2&force=true&w=640",
+        name: "Swing Dress Maxi 1",
+        imageUrl: "https://i.ibb.co/tx9Pj8J/Swing-Dress-Maxi.webp ",
         price: 25,
       },
     ],
