@@ -36,6 +36,7 @@ const Category = () => {
             products.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
+          <br />
         </CategoryContainer>
       )}
     </Fragment>
