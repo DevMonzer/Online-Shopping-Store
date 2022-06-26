@@ -57,8 +57,8 @@ const Category = () => {
           <CategoryContainer>{displayUsers}</CategoryContainer>
           <Center>
             <ReactPaginate
-              previousLabel={"Previous"}
-              nextLabel={"Next"}
+              previousLabel={"<"}
+              nextLabel={">"}
               pageCount={pageCount}
               onPageChange={changePage}
               containerClassName={"paginationBttns"}
