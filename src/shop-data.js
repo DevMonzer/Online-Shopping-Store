@@ -230,14 +230,14 @@ const SHOP_DATA = [
         price: 50,
       },
       {
-        id: 78,
+        id: 79,
         name: "Dark Green Jacket",
         imageUrl:
           "https://unsplash.com/photos/qQB04yQdosk/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTV8fGphY2tldHN8ZW58MHx8fHwxNjU2MjM4NjQz&force=true&w=640",
         price: 70,
       },
       {
-        id: 79,
+        id: 80,
         name: "Brown Coat",
         imageUrl:
           "https://unsplash.com/photos/hwLiTFTGJCY/download?force=true&w=640",
