@@ -26,3 +26,8 @@ export const Title = styled.h2`
   margin-bottom: 25px;
   text-align: center;
 `;
+
+export const Center = styled.div`
+  // width: 50vw;
+  margin 50px auto;
+`;

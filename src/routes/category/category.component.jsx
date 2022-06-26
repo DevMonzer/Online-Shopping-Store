@@ -12,7 +12,9 @@ import {
   selectCategoriesIsLoading,
 } from "../../store/categories/category.selector";
 
-import { CategoryContainer, Title } from "./category.styles";
+import { CategoryContainer, Title, Center } from "./category.styles";
+
+import "./category.styles.css";
 
 // Categories Pages inside the Shop Page - Pagination needed
 const Category = () => {
@@ -54,20 +56,22 @@ const Category = () => {
       {isLoading ? (
         <Spinner />
       ) : (
-        <CategoryContainer>
-          {displayUsers}
-          <ReactPaginate
-            previousLabel={"Previous"}
-            nextLabel={"Next"}
-            pageCount={pageCount}
-            onPageChange={changePage}
-            containerClassName={"paginationBttns"}
-            previousLinkClassName={"previousBttn"}
-            nextLinkClassName={"nextBttn"}
-            disabledClassName={"paginationDisabled"}
-            activeClassName={"paginationActive"}
-          />
-        </CategoryContainer>
+        <>
+          <CategoryContainer>{displayUsers}</CategoryContainer>
+          <Center>
+            <ReactPaginate
+              previousLabel={"Previous"}
+              nextLabel={"Next"}
+              pageCount={pageCount}
+              onPageChange={changePage}
+              containerClassName={"paginationBttns"}
+              previousLinkClassName={"previousBttn"}
+              nextLinkClassName={"nextBttn"}
+              disabledClassName={"paginationDisabled"}
+              activeClassName={"paginationActive"}
+            />
+          </Center>
+        </>
       )}
     </Fragment>
   );
