@@ -39,8 +39,8 @@ const Category = () => {
   }, [category, categoriesMap]);
 
   // Calculationg the pageNumber
-  const pageCount = Math.ceil(products.length / productsPerPage);
 
+  const pageCount = Math.ceil(products && products.length / productsPerPage);
   // Change the page selection
   const changePage = ({ selected }) => {
     setPageNumber(selected);
