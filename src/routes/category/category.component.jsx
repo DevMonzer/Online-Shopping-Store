@@ -16,7 +16,7 @@ import { CategoryContainer, Title, Center } from "./category.styles";
 
 import "./category.styles.css";
 
-// Categories Pages inside the Shop Page - Pagination needed
+// Categories Pages inside the Shop Page
 const Category = () => {
   const { category } = useParams();
   const categoriesMap = useSelector(selectCategoriesMap);
@@ -27,8 +27,6 @@ const Category = () => {
   const [pageNumber, setPageNumber] = useState(0);
   const productsPerPage = 12;
   const pagesVisited = pageNumber * productsPerPage;
-
-  // console.log(products);
 
   const displayUsers =
     products &&
@@ -41,7 +39,6 @@ const Category = () => {
   }, [category, categoriesMap]);
 
   // Calculationg the pageNumber
-
   const pageCount = Math.ceil(products && products.length / productsPerPage);
   // Change the page selection
   const changePage = ({ selected }) => {
