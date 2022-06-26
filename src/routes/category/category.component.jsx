@@ -47,11 +47,7 @@ const Category = () => {
         <Spinner />
       ) : (
         <CategoryContainer>
-          {/* {products &&
-            products.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))} */}
-          {displayUsers}
+          {displayUsers} <ReactPaginate />
         </CategoryContainer>
       )}
     </Fragment>
