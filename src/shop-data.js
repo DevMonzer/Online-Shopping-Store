@@ -86,49 +86,49 @@ const SHOP_DATA = [
         id: 10,
         name: "Adidas NMD",
         imageUrl: "https://i.ibb.co/0s3pdnc/adidas-nmd.png",
-        price: 220,
+        price: 50,
       },
       {
         id: 11,
         name: "Adidas Yeezy",
         imageUrl: "https://i.ibb.co/dJbG1cT/yeezy.png",
-        price: 280,
+        price: 40,
       },
       {
         id: 12,
         name: "Black Converse",
         imageUrl: "https://i.ibb.co/bPmVXyP/black-converse.png",
-        price: 110,
+        price: 40,
       },
       {
         id: 13,
         name: "Nike White AirForce",
         imageUrl: "https://i.ibb.co/1RcFPk0/white-nike-high-tops.png",
-        price: 160,
+        price: 60,
       },
       {
         id: 14,
         name: "Nike Red High Tops",
         imageUrl: "https://i.ibb.co/QcvzydB/nikes-red.png",
-        price: 160,
+        price: 50,
       },
       {
         id: 15,
         name: "Nike Brown High Tops",
         imageUrl: "https://i.ibb.co/fMTV342/nike-brown.png",
-        price: 160,
+        price: 60,
       },
       {
         id: 16,
         name: "Air Jordan Limited",
         imageUrl: "https://i.ibb.co/w4k6Ws9/nike-funky.png",
-        price: 190,
+        price: 45,
       },
       {
         id: 17,
         name: "Timberlands",
         imageUrl: "https://i.ibb.co/Mhh6wBg/timberlands.png",
-        price: 200,
+        price: 50,
       },
     ],
   },
@@ -139,7 +139,7 @@ const SHOP_DATA = [
         id: 18,
         name: "Black Jean Shearling",
         imageUrl: "https://i.ibb.co/XzcwL5s/black-shearling.png",
-        price: 125,
+        price: 75,
       },
       {
         id: 19,
@@ -157,62 +157,62 @@ const SHOP_DATA = [
         id: 21,
         name: "Brown Shearling",
         imageUrl: "https://i.ibb.co/s96FpdP/brown-shearling.png",
-        price: 165,
+        price: 65,
       },
       {
         id: 22,
         name: "Tan Trench",
         imageUrl: "https://i.ibb.co/M6hHc3F/brown-trench.png",
-        price: 185,
+        price: 85,
       },
       {
         id: 43,
         name: "Outstanding Trench",
         imageUrl:
           "https://unsplash.com/photos/Hng0RpHDgHI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8amFja2V0c3xlbnwwfHx8fDE2NTU5ODA0NjI&force=true&w=640",
-        price: 100,
+        price: 65,
       },
       {
         id: 44,
         name: "Black Jacket",
         imageUrl:
           "https://unsplash.com/photos/EvxwJ6ls2vc/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8OHx8amFja2V0c3xlbnwwfHx8fDE2NTU5ODA0NjI&force=true&w=640",
-        price: 210,
+        price: 70,
       },
       {
         id: 45,
         name: "Dark Blue",
         imageUrl:
           "https://unsplash.com/photos/Lss2BdwBKho/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8OXx8amFja2V0c3xlbnwwfHx8fDE2NTU5ODA0NjI&force=true&w=640",
-        price: 180,
+        price: 50,
       },
       {
         id: 46,
         name: "Grey Jacket",
         imageUrl:
           "https://unsplash.com/photos/CjB-8NY5at8/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTB8fGphY2tldHN8ZW58MHx8fHwxNjU1OTgwNDYy&force=true&w=640",
-        price: 100,
+        price: 70,
       },
       {
         id: 47,
         name: "Black and Brown Jacket",
         imageUrl:
           "https://unsplash.com/photos/WIWVM_Z1x7c/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTN8fGphY2tldHN8ZW58MHx8fHwxNjU1OTgwNDYy&force=true&w=640",
-        price: 170,
+        price: 70,
       },
       {
         id: 48,
         name: "Blue Jeans Jacket",
         imageUrl:
           "https://unsplash.com/photos/i49yJtWD57w/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTZ8fGphY2tldHN8ZW58MHx8fHwxNjU1OTgwNDYy&force=true&w=640",
-        price: 210,
+        price: 70,
       },
       {
         id: 49,
         name: "Dark Green Jacket",
         imageUrl:
           "https://unsplash.com/photos/9wM5SCjhsOM/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mjl8fGphY2tldHN8ZW58MHx8fHwxNjU1OTgwNjAz&force=true&w=640",
-        price: 160,
+        price: 60,
       },
     ],
   },
@@ -221,27 +221,30 @@ const SHOP_DATA = [
     items: [
       {
         id: 23,
-        name: "Blue Tanktop",
-        imageUrl: "https://i.ibb.co/7CQVJNm/blue-tank.png",
-        price: 25,
+        name: "Floral Dress",
+        imageUrl:
+          "https://unsplash.com/photos/xgNSlx7DjYM/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8d29tZW4lMjBjbG90aGluZ3xlbnwwfHx8fDE2NTYyMzY3NDE&force=true&w=640",
+        price: 35,
       },
       {
         id: 24,
-        name: "Floral Blouse",
-        imageUrl: "https://i.ibb.co/4W2DGKm/floral-blouse.png",
-        price: 20,
+        name: "Floral Crew Dress",
+        imageUrl:
+          "https://unsplash.com/photos/PaqF5u-qfCs/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MjV8fHdvbWVuJTIwY2xvdGhpbmd8ZW58MHx8fHwxNjU2MjM3MTMy&force=true&w=640",
+        price: 50,
       },
       {
         id: 25,
-        name: "Floral Dress",
-        imageUrl: "https://i.ibb.co/KV18Ysr/floral-skirt.png",
-        price: 80,
+        name: "Sleeve Shirt",
+        imageUrl:
+          "https://unsplash.com/photos/2HTX85gxynM/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NTN8fHdvbWVuJTIwY2xvdGhpbmd8ZW58MHx8fHwxNjU2MjM3MjAx&force=true&w=640",
+        price: 30,
       },
       {
         id: 26,
         name: "Red Dots Dress",
         imageUrl: "https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png",
-        price: 80,
+        price: 50,
       },
       {
         id: 27,
@@ -253,7 +256,7 @@ const SHOP_DATA = [
         id: 28,
         name: "Yellow Track Suit",
         imageUrl: "https://i.ibb.co/v1cvwNf/yellow-track-suit.png",
-        price: 135,
+        price: 75,
       },
       {
         id: 29,
@@ -267,6 +270,62 @@ const SHOP_DATA = [
         imageUrl:
           "https://unsplash.com/photos/D1W3rQGaNhI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8d29tZW4lMjB0JTIwc2hpcnRzfGVufDB8fHx8MTY1NTk4MDM3Nw&force=true&w=640",
         price: 35,
+      },
+      {
+        id: 69,
+        name: "Sleeve Dress",
+        imageUrl:
+          "https://unsplash.com/photos/y-OMFTKo7UE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8d29tZW4lMjBkcmVzc3xlbnwwfHx8fDE2NTYyMzc3NTc&force=true&w=640",
+        price: 45,
+      },
+      {
+        id: 70,
+        name: "White Dress",
+        imageUrl:
+          "https://unsplash.com/photos/n2-NM8z8w0w/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Nnx8d29tZW4lMjBkcmVzc3xlbnwwfHx8fDE2NTYyMzc3NTc&force=true&w=640",
+        price: 45,
+      },
+      {
+        id: 71,
+        name: "Floral Dress",
+        imageUrl:
+          "https://unsplash.com/photos/2ZXVU3BJzN4/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTJ8fHdvbWVuJTIwZHJlc3N8ZW58MHx8fHwxNjU2MjM3NzU3&force=true&w=640",
+        price: 50,
+      },
+      {
+        id: 72,
+        name: "Sleeve Dress",
+        imageUrl:
+          "https://unsplash.com/photos/ypKjnJkWyPk/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTl8fHdvbWVuJTIwZHJlc3N8ZW58MHx8fHwxNjU2MjM3NzU3&force=true&w=640",
+        price: 60,
+      },
+      {
+        id: 73,
+        name: "Black Skirt",
+        imageUrl:
+          "https://unsplash.com/photos/bZDTVuDH38M/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mjd8fHdvbWVuJTIwZHJlc3N8ZW58MHx8fHwxNjU2MjM4MDA0&force=true&w=640",
+        price: 65,
+      },
+      {
+        id: 74,
+        name: "Black Skirt",
+        imageUrl:
+          "https://unsplash.com/photos/lSLq_xQdFNI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTgyfHx3b21lbiUyMGRyZXNzfGVufDB8fHx8MTY1NjIzODI3Mg&force=true&w=640",
+        price: 45,
+      },
+      {
+        id: 75,
+        name: "Floral Blouse",
+        imageUrl:
+          "https://unsplash.com/photos/cMB3D5Ox5KE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8d29tZW4lMjBibG91c2V8ZW58MHx8fHwxNjU2MjM4OTM3&force=true&w=640",
+        price: 35,
+      },
+      {
+        id: 76,
+        name: "Viscose Rayon",
+        imageUrl:
+          "https://unsplash.com/photos/plsF6obTgms/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTB8fGdpcmx8ZW58MHx8fHwxNjU2MjM4OTk2&force=true&w=640",
+        price: 25,
       },
     ],
   },
