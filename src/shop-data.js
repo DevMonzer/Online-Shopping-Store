@@ -439,6 +439,20 @@ const SHOP_DATA = [
           "https://unsplash.com/photos/1u5NxJITm0E/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NDR8fG1lbiUyMHNoaXJ0c3xlbnwwfHx8fDE2NTU5Nzc5OTE&force=true&w=640",
         price: 25,
       },
+      {
+        id: 81,
+        name: "Dark Green T-shirt",
+        imageUrl:
+          "https://unsplash.com/photos/4V4t0JcOM5E/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8bWVuJTIwc2hpcnRzfGVufDB8fHx8MTY1NjIzOTQyNg&force=true&w=640",
+        price: 35,
+      },
+      {
+        id: 82,
+        name: "Black T-shirt",
+        imageUrl:
+          "https://unsplash.com/photos/6RTha8KJEqI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTZ8fG1lbiUyMHNoaXJ0c3xlbnwwfHx8fDE2NTYyMzk0MjY&force=true&w=640",
+        price: 35,
+      },
     ],
   },
 
