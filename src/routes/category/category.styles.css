@@ -25,4 +25,8 @@
   .paginationBttns {
     font-size: 14px;
   }
+
+  .paginationBttns a {
+    margin: 0 5px;
+  }
 }
