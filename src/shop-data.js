@@ -149,8 +149,9 @@ const SHOP_DATA = [
       },
       {
         id: 20,
-        name: "Grey Jean Jacket",
-        imageUrl: "https://i.ibb.co/N71k1ML/grey-jean-jacket.png",
+        name: "Green Hooodie",
+        imageUrl:
+          "https://unsplash.com/photos/nYnwq0iN2jI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MzB8fGphY2tldHN8ZW58MHx8fHwxNjU2MjM5MTg0&force=true&w=640",
         price: 90,
       },
       {
@@ -213,6 +214,34 @@ const SHOP_DATA = [
         imageUrl:
           "https://unsplash.com/photos/9wM5SCjhsOM/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mjl8fGphY2tldHN8ZW58MHx8fHwxNjU1OTgwNjAz&force=true&w=640",
         price: 60,
+      },
+      {
+        id: 77,
+        name: "Blue Jacket",
+        imageUrl:
+          "https://unsplash.com/photos/GIJilzvYLP8/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NHx8amFja2V0c3xlbnwwfHx8fDE2NTYyMzg2NDM&force=true&w=640",
+        price: 70,
+      },
+      {
+        id: 78,
+        name: "Brown Hooodie Jacket",
+        imageUrl:
+          "https://unsplash.com/photos/6TIoPIpMvLc/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTF8fGphY2tldHN8ZW58MHx8fHwxNjU2MjM4NjQz&force=true&w=640",
+        price: 50,
+      },
+      {
+        id: 78,
+        name: "Dark Green Jacket",
+        imageUrl:
+          "https://unsplash.com/photos/qQB04yQdosk/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTV8fGphY2tldHN8ZW58MHx8fHwxNjU2MjM4NjQz&force=true&w=640",
+        price: 70,
+      },
+      {
+        id: 79,
+        name: "Brown Coat",
+        imageUrl:
+          "https://unsplash.com/photos/hwLiTFTGJCY/download?force=true&w=640",
+        price: 70,
       },
     ],
   },
