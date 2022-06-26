@@ -41,6 +41,11 @@ const Category = () => {
   // Calculationg the pageNumber
   const pageCount = Math.ceil(products.length / productsPerPage);
 
+  // Change the page selection
+  const changePage = ({ selected }) => {
+    setPageNumber(selected);
+  };
+
   return (
     <Fragment>
       <Title>
@@ -55,6 +60,12 @@ const Category = () => {
             previousLabel={"Previous"}
             nextLabel={"Next"}
             pageCount={pageCount}
+            onPageChange={changePage}
+            containerClassName={"paginationBttns"}
+            previousLinkClassName={"previousBttn"}
+            nextLinkClassName={"nextBttn"}
+            disabledClassName={"paginationDisabled"}
+            activeClassName={"paginationActive"}
           />
         </CategoryContainer>
       )}
