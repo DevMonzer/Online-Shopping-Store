@@ -2,7 +2,7 @@
 
 Online-Shopping-Store app watch live -> https://online-store-puce.vercel.app/
 
-<a href="https://ibb.co/FYdYjMd"><img src="https://i.ibb.co/4S0S5G0/oss.jpg" alt="oss" style="border:2px soild black"></a>
+<a href="https://ibb.co/FYdYjMd"><img src="https://i.ibb.co/4S0S5G0/oss.jpg" alt="oss"></a>
 
 ## What to do  
 1. Clone this repo     
