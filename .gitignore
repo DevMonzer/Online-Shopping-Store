@@ -8,8 +8,8 @@
 .env
 
 /firebase
-
 firebase.utils.js
+shop-data.js
 
 
 # testing
