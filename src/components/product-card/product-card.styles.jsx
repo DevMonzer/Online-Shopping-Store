@@ -11,7 +11,7 @@ export const ProductCartContainer = styled.div`
   img {
     width: 100%;
     height: 95%;
-    object-fit: cover;
+    object-fit: center;
     margin-bottom: 5px;
 
     @media screen and (max-width: 400px) {
@@ -63,8 +63,7 @@ export const Footer = styled.div`
 `;
 
 export const Name = styled.span`
-  width: 90%;
-  margin-bottom: 15px;
+  width: 80%;
 `;
 
 export const Price = styled.span`
