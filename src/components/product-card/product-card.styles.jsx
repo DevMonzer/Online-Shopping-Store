@@ -11,7 +11,7 @@ export const ProductCartContainer = styled.div`
   img {
     width: 100%;
     height: 95%;
-    object-fit: center;
+    object-fit: cover;
     margin-bottom: 5px;
 
     @media screen and (max-width: 400px) {
