@@ -1,6 +1,10 @@
 import DirectoryItem from "../directory-item/directory-item.component";
 
-import { DirectoryContainer } from "./directory.styles";
+import { DirectoryContainer, Zindex } from "./directory.styles";
+
+import SHOP_DATA from "../../shop-data";
+
+import SearchBar from "../search-bar/SearchBar";
 
 const categories = [
   {
@@ -47,12 +51,27 @@ const categories = [
 ];
 
 const Directory = () => {
+  const [...items] = SHOP_DATA;
+  const all = [
+    ...items[0].items,
+    ...items[1].items,
+    ...items[2].items,
+    ...items[3].items,
+    ...items[4].items,
+  ];
+
+  // console.log(all);
   return (
-    <DirectoryContainer>
-      {categories.map((category) => (
-        <DirectoryItem key={category.id} category={category} />
-      ))}
-    </DirectoryContainer>
+    <>
+      <Zindex>
+        <SearchBar placeholder="Search" data={all} />
+      </Zindex>
+      <DirectoryContainer>
+        {categories.map((category) => (
+          <DirectoryItem key={category.id} category={category} />
+        ))}
+      </DirectoryContainer>
+    </>
   );
 };
 
