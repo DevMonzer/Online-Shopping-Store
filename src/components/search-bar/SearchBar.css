@@ -97,4 +97,8 @@ img {
   .searchIcon {
     left: 90%;
   }
+
+  .dataResult {
+    width: 84%;
+  }
 }
