@@ -16,14 +16,8 @@ input:focus {
   outline: none;
 }
 
-/* .searchIcon svg {
-  font-size: 35px;
-} */
-
 .dataResult {
-  /* margin-top: 150px; */
-  padding: 5px;
-  width: 350px;
+  width: 100%;
   height: 170px;
   background-color: white;
   color: black;
