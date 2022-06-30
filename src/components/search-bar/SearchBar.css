@@ -85,7 +85,7 @@ img {
 
 @media screen and (max-width: 400px) {
   .search input {
-    height: 25px;
+    height: 30px;
   }
 
   .searchIcon {

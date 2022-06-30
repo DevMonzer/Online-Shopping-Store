@@ -56,6 +56,6 @@ export const Zindex = styled.div`
   }
 
   @media screen and (max-width: 400px) {
-    top: -5%;
+    top: -5.5%;
   }
 `;
