@@ -1,6 +1,6 @@
 import DirectoryItem from "../directory-item/directory-item.component";
 
-import { DirectoryContainer, Zindex } from "./directory.styles";
+import { DirectoryContainer, Container, Zindex } from "./directory.styles";
 
 import SHOP_DATA from "../../shop-data";
 
@@ -63,7 +63,7 @@ const Directory = () => {
   // console.log(allProducts);
 
   return (
-    <>
+    <Container>
       <Zindex>
         <SearchBar placeholder="Search " data={allProducts} />
       </Zindex>
@@ -72,7 +72,7 @@ const Directory = () => {
           <DirectoryItem key={category.id} category={category} />
         ))}
       </DirectoryContainer>
-    </>
+    </Container>
   );
 };
 

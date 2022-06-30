@@ -7,9 +7,8 @@
 
 .searchIcon {
   position: absolute;
-  top: 50%;
-  left: 93%;
-  transform: translate(-50%, -50%);
+  margin-top: -7%;
+  margin-left: 92%;
 }
 
 input:focus {
@@ -66,39 +65,17 @@ img {
   .search input {
     width: 250px;
   }
-
-  .search {
-    margin-top: -50px;
-  }
-  .searchIcon {
-    margin-top: -30px;
-  }
 }
 
 @media screen and (max-width: 500px) {
   .search input {
     width: 200px;
   }
-
-  .search {
-    margin-top: -55px;
-  }
-  .searchIcon {
-    margin-top: -35px;
-  }
 }
 
 @media screen and (max-width: 400px) {
   .search input {
     height: 25px;
-    width: 150px;
-  }
-
-  .searchIcon {
-    left: 90%;
-  }
-
-  .dataResult {
-    width: 84%;
+    /* width: 200px; */
   }
 }

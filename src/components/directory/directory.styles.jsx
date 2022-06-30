@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  position: relative;
+`;
+
 export const DirectoryContainer = styled.div`
   width: 100%;
   display: flex;
@@ -10,27 +14,48 @@ export const DirectoryContainer = styled.div`
 export const Zindex = styled.div`
   position: absolute;
   left: 37%;
+  top: -20%;
 
-  @media screen and (max-width: 2000px) {
-    top: 2%;
-  }
-
-  @media screen and (max-width: 1000px) {
-    left: 33%;
+  @media screen and (max-width: 950px) {
+    left: 31%;
   }
 
   @media screen and (max-width: 900px) {
-    top: 12%;
+    left: 35%;
+  }
+
+  @media screen and (max-width: 800px) {
+    top: -16%;
     left: 36%;
   }
 
   @media screen and (max-width: 750px) {
-    top: 10%;
+    top: -15%;
     left: 34%;
   }
 
-  @media screen and (max-width: 380px) {
-    top: 11%;
-    left: 30%;
+  @media screen and (max-width: 700px) {
+    top: -11%;
+    left: 34%;
+  }
+
+  @media screen and (max-width: 600px) {
+    left: 29%;
+  }
+
+  @media screen and (max-width: 550px) {
+    top: -11%;
+    left: 28%;
+  }
+
+  @media screen and (max-width: 500px) {
+    top: -6%;
+  }
+  @media screen and (max-width: 450px) {
+    left: 25%;
+  }
+
+  @media screen and (max-width: 400px) {
+    top: -5%;
   }
 `;
