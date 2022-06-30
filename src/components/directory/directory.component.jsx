@@ -52,7 +52,7 @@ const categories = [
 
 const Directory = () => {
   const [...items] = SHOP_DATA;
-  const all = [
+  const allProducts = [
     ...items[0].items,
     ...items[1].items,
     ...items[2].items,
@@ -60,11 +60,12 @@ const Directory = () => {
     ...items[4].items,
   ];
 
-  // console.log(all);
+  // console.log(allProducts);
+
   return (
     <>
       <Zindex>
-        <SearchBar placeholder="Search" data={all} />
+        <SearchBar placeholder="Search " data={allProducts} />
       </Zindex>
       <DirectoryContainer>
         {categories.map((category) => (

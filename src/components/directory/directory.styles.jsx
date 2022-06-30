@@ -17,20 +17,20 @@ export const Zindex = styled.div`
 
   @media screen and (max-width: 1000px) {
     left: 33%;
-    top: 1%;
   }
 
   @media screen and (max-width: 900px) {
-    top: 3%;
+    top: 12%;
     left: 36%;
   }
 
   @media screen and (max-width: 750px) {
+    top: 10%;
     left: 34%;
   }
 
-  @media screen and (max-width: 750px) {
-    top: 2.7%;
+  @media screen and (max-width: 380px) {
+    top: 11%;
     left: 30%;
   }
 `;
