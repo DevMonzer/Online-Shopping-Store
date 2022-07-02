@@ -1,11 +1,15 @@
 import { Fragment, useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+
+import { selectCurrentUser } from "../../store/user/user.selector";
+
 import { CategoriesContext } from "../../contexts/categories.context";
 
-import { useNavigate } from "react-router-dom";
+import { selectCurrentUser } from "../../store/user/user.selector";
 
-import { CartContext } from "../../contexts/cart.context";
-import { UserContext } from "../../contexts/user.context";
+import { useDispatch, useSelector } from "react-redux";
+
+import { useNavigate } from "react-router-dom";
 
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
