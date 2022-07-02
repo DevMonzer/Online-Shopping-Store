@@ -2,8 +2,6 @@ import DirectoryItem from "../directory-item/directory-item.component";
 
 import { DirectoryContainer } from "./directory.styles";
 
-import SHOP_DATA from "../../shop-data";
-
 const categories = [
   {
     id: 1,
