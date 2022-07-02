@@ -32,7 +32,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <ProductCartContainer>
-      <img src={imageUrl} alt={`${name}`} />
+      <img src={imageUrl} alt={`${name}`} onClick={onNavigateHandler} />
       <Footer>
         <Name>{name}</Name>
         <Price>${price}</Price>
