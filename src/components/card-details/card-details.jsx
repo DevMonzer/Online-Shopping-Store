@@ -30,7 +30,8 @@ const Card = () => {
     dispatch(fetchCategoriesStart());
   }, []);
 
-  // const addProductToCart = () => dispatch(addItemToCart(cartItems, product));
+  const addProductToCart = () =>
+    dispatch(addItemToCart(cartItems, productCard));
 
   if (window.location.pathname.includes("/shop/hats/")) {
     var data = categoriesMap["hats"];
@@ -85,7 +86,7 @@ const Card = () => {
           {currentUser ? (
             <Button
               buttonType={BUTTON_TYPE_CLASSES.facebook}
-              // onClick={addProductToCart}
+              onClick={addProductToCart}
             >
               Add to card
             </Button>
