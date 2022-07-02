@@ -91,8 +91,8 @@ const Card = () => {
             ) : (
               <Button onClick={logInHandler}>Log in FIRST</Button>
             )}
-            <br />
             <Button
+              className="productCardButton"
               buttonType={BUTTON_TYPE_CLASSES.google}
               onClick={onNavigateHandler}
             >
