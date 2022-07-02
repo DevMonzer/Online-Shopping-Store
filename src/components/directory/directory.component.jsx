@@ -64,7 +64,7 @@ const Directory = () => {
     ];
   }
 
-  console.log(allProducts1);
+  // console.log(allProducts1);
 
   return (
     <DirectoryContainer>
