@@ -81,7 +81,7 @@ const Card = () => {
             This is a {productCard.name} {route.split("/")[2].slice(0, -1)}
             <br /> and you can get only for
           </p>
-          <p>${productCard.price}</p>
+          <p className="productCardDetail">${productCard.price}</p>
           {currentUser ? (
             <Button
               buttonType={BUTTON_TYPE_CLASSES.inverted}
