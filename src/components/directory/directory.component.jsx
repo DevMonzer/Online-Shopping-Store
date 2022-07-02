@@ -51,6 +51,17 @@ const categories = [
 const Directory = () => {
   const categoriesMap = useSelector(selectCategoriesMap);
 
+  const products = Object.values(categoriesMap);
+  if (products && products.length) {
+    var allProducts1 = [
+      ...products[0],
+      ...products[1],
+      ...products[2],
+      ...products[3],
+      ...products[4],
+    ];
+  }
+
   return (
     <DirectoryContainer>
       {categories.map((category) => (
