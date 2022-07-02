@@ -7,7 +7,7 @@ export const NavigationContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
-  // margin-top: 25px;
+  margin-top: 25px;
 
   @media screen and (max-width: 800px) {
     height: 60px;

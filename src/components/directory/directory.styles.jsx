@@ -12,11 +12,11 @@ export const Container = styled.div`
 
 export const Zindex = styled.div`
   position: absolute;
-  left: 37%;
+  left: 35%;
   top: -15%;
 
   @media screen and (max-width: 950px) {
-    left: 31%;
+    left: 30%;
   }
 
   @media screen and (max-width: 900px) {
@@ -24,18 +24,18 @@ export const Zindex = styled.div`
   }
 
   @media screen and (max-width: 800px) {
-    top: -16%;
+    top: -14%;
     left: 36%;
   }
 
   @media screen and (max-width: 750px) {
-    top: -15%;
+    top: -13%;
     left: 34%;
   }
 
   @media screen and (max-width: 700px) {
-    top: -11%;
-    left: 32%;
+    top: -9%;
+    left: 30%;
   }
 
   @media screen and (max-width: 600px) {
