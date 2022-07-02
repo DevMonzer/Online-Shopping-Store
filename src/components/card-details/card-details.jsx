@@ -1,9 +1,9 @@
 import { Fragment, useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
+import { selectCartItems } from "../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../store/user/user.selector";
-
-import { CategoriesContext } from "../../contexts/categories.context";
+import { addItemToCart } from "../../store/cart/cart.action";
 
 import { selectCurrentUser } from "../../store/user/user.selector";
 
@@ -65,11 +65,6 @@ const Card = () => {
   const onNavigateHandler = () => navigate(route);
 
   // Getting the currentUser state
-  const { currentUser } = useContext(UserContext);
-
-  const { addItemToCart } = useContext(CartContext);
-
-  const addProductToCart = () => addItemToCart(productCard);
 
   const logInHandler = () =>
     alert("Please log in to your account before adding products");
