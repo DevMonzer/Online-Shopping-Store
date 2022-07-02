@@ -43,3 +43,25 @@ const Card = () => {
       var data = categoriesMap["kids"];
       var route = "/shop/kids";
     }
+
+    
+  useEffect(() => {
+    if (data) {
+      const product = data.filter((product) => product.id == cardId);
+      setProductCard(product[0]);
+    }
+  }, []);
+
+  // Navigate to the product card detail page via its route
+  const navigate = useNavigate();
+  const onNavigateHandler = () => navigate(route);
+
+  // Getting the currentUser state
+  const { currentUser } = useContext(UserContext);
+
+  const { addItemToCart } = useContext(CartContext);
+
+  const addProductToCart = () => addItemToCart(productCard);
+
+  const logInHandler = () =>
+    alert("Please log in to your account before adding products");
