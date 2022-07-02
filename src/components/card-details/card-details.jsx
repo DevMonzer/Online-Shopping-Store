@@ -77,7 +77,10 @@ const Card = () => {
           alt={`${productCard.name}`}
         />
         <div className="productCardDetails">
-          <p>{productCard.name}</p>
+          <p className="productCardDetail">
+            This is a {productCard.name} {route.split("/")[2].slice(0, -1)}
+            <br /> and you can get only for
+          </p>
           <p>${productCard.price}</p>
           {currentUser ? (
             <Button
