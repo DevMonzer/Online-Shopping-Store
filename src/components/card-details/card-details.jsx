@@ -84,7 +84,7 @@ const Card = () => {
           <p className="productCardDetail">${productCard.price}</p>
           {currentUser ? (
             <Button
-              buttonType={BUTTON_TYPE_CLASSES.inverted}
+              buttonType={BUTTON_TYPE_CLASSES.facebook}
               // onClick={addProductToCart}
             >
               Add to card
@@ -94,7 +94,7 @@ const Card = () => {
           )}
           <br />
           <Button
-            buttonType={BUTTON_TYPE_CLASSES.inverted}
+            buttonType={BUTTON_TYPE_CLASSES.google}
             onClick={onNavigateHandler}
           >
             Go Back
