@@ -68,37 +68,41 @@ const Card = () => {
 
   return (
     <Fragment>
-      <div className="productCardContainer">
-        <img
-          className="productCardImage"
-          src={productCard.imageUrl}
-          alt={`${productCard.name}`}
-        />
-        <div className="productCardDetails">
-          <p className="productCardDetail">
-            This is a {productCard.name} {route.split("/")[2].slice(0, -1)}
-            <br /> and you can get only for
-          </p>
-          <p className="productCardDetail">${productCard.price}</p>
-          {currentUser ? (
+      {!data?.length ? (
+        <Spinner />
+      ) : (
+        <div className="productCardContainer">
+          <img
+            className="productCardImage"
+            src={productCard.imageUrl}
+            alt={`${productCard.name}`}
+          />
+          <div className="productCardDetails">
+            <p className="productCardDetail">
+              This is a {productCard.name} {route.split("/")[2].slice(0, -1)}
+              <br /> and you can get only for
+            </p>
+            <p className="productCardDetail">${productCard.price}</p>
+            {currentUser ? (
+              <Button
+                buttonType={BUTTON_TYPE_CLASSES.facebook}
+                onClick={addProductToCart}
+              >
+                Add to card
+              </Button>
+            ) : (
+              <Button onClick={logInHandler}>Log in FIRST</Button>
+            )}
+            <br />
             <Button
-              buttonType={BUTTON_TYPE_CLASSES.facebook}
-              onClick={addProductToCart}
+              buttonType={BUTTON_TYPE_CLASSES.google}
+              onClick={onNavigateHandler}
             >
-              Add to card
+              Go Back
             </Button>
-          ) : (
-            <Button onClick={logInHandler}>Log in FIRST</Button>
-          )}
-          <br />
-          <Button
-            buttonType={BUTTON_TYPE_CLASSES.google}
-            onClick={onNavigateHandler}
-          >
-            Go Back
-          </Button>
+          </div>
         </div>
-      </div>
+      )}
     </Fragment>
   );
 };
