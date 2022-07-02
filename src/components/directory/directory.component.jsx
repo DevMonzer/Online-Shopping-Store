@@ -1,3 +1,5 @@
+import { useSelector } from "react-redux";
+
 import DirectoryItem from "../directory-item/directory-item.component";
 
 import { selectCategoriesMap } from "../../store/categories/category.selector";
@@ -61,6 +63,8 @@ const Directory = () => {
       ...products[4],
     ];
   }
+
+  console.log(allProducts1);
 
   return (
     <DirectoryContainer>
