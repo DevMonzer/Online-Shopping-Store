@@ -1,15 +1,11 @@
 import { Fragment, useContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate, useParams } from "react-router-dom";
 
 import { selectCartItems } from "../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../store/user/user.selector";
 import { addItemToCart } from "../../store/cart/cart.action";
-
 import { selectCurrentUser } from "../../store/user/user.selector";
-
-import { useDispatch, useSelector } from "react-redux";
-
-import { useNavigate } from "react-router-dom";
 
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
