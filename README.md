@@ -14,6 +14,7 @@ Online-Shopping-Store app watch live -> https://online-store-puce.vercel.app/
 * HTML5   
 * CSS3 
 * React js
+* React Paginate Library
 * Redux
 * React Redux
 * React Router
