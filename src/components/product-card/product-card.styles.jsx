@@ -13,6 +13,7 @@ export const ProductCartContainer = styled.div`
     height: 95%;
     object-fit: cover;
     margin-bottom: 5px;
+    cursor: pointer;
 
     @media screen and (max-width: 400px) {
       width: 90%;
