@@ -23,6 +23,12 @@ const Card = () => {
   const { categoriesMap } = useContext(CategoriesContext);
   const [productCard, setProductCard] = useState([]);
 
+  const currentUser = useSelector(selectCurrentUser);
+
+  const cartItems = useSelector(selectCartItems);
+
+  const addProductToCart = () => dispatch(addItemToCart(cartItems, product));
+
   if (window.location.pathname.includes("/shop/hats/")) {
     var data = categoriesMap["hats"];
     var route = "/shop/hats";
