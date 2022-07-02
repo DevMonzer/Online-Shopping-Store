@@ -15,16 +15,13 @@ import "./card-details.scss";
 import Spinner from "../spinner/spinner.component";
 
 const Card = () => {
-  const categoriesMap = useSelector(selectCategoriesMap);
-
   const { cardId } = useParams();
+  const [productCard, setProductCard] = useState([]);
 
+  const categoriesMap = useSelector(selectCategoriesMap);
   const currentUser = useSelector(selectCurrentUser);
   const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
-
-  //   const { categoriesMap } = useContext(CategoriesContext);
-  const [productCard, setProductCard] = useState([]);
 
   useEffect(() => {
     dispatch(fetchCategoriesStart());
