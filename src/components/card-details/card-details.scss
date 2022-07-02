@@ -4,7 +4,7 @@
   align-items: center;
   column-gap: 50px;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     flex-direction: column;
     row-gap: 50px;
   }
