@@ -19,6 +19,7 @@ import Spinner from "../spinner/spinner.component";
 
 const Card = () => {
   const { cardId } = useParams();
+  //   const { categoriesMap } = useContext(CategoriesContext);
   const [productCard, setProductCard] = useState([]);
 
   const currentUser = useSelector(selectCurrentUser);
