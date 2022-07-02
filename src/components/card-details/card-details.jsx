@@ -1,32 +1,36 @@
-import { Fragment, useContext, useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 
+import { selectCategoriesMap } from "../../store/categories/category.selector";
 import { selectCartItems } from "../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../store/user/user.selector";
 import { addItemToCart } from "../../store/cart/cart.action";
+import { fetchCategoriesStart } from "../../store/categories/category.action";
 
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
-import {
-  ProductCartContainer,
-  Footer,
-  Name,
-  Price,
-} from "./card-details.styles.scss";
+import "./card-details.scss";
 
 import Spinner from "../spinner/spinner.component";
 
 const Card = () => {
+  const categoriesMap = useSelector(selectCategoriesMap);
+
   const { cardId } = useParams();
-  //   const { categoriesMap } = useContext(CategoriesContext);
-  const [productCard, setProductCard] = useState([]);
 
   const currentUser = useSelector(selectCurrentUser);
   const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
 
-  const addProductToCart = () => dispatch(addItemToCart(cartItems, product));
+  //   const { categoriesMap } = useContext(CategoriesContext);
+  const [productCard, setProductCard] = useState([]);
+
+  useEffect(() => {
+    dispatch(fetchCategoriesStart());
+  }, []);
+
+  // const addProductToCart = () => dispatch(addItemToCart(cartItems, product));
 
   if (window.location.pathname.includes("/shop/hats/")) {
     var data = categoriesMap["hats"];
@@ -53,7 +57,7 @@ const Card = () => {
       const product = data.filter((product) => product.id == cardId);
       setProductCard(product[0]);
     }
-  }, []);
+  }, [data]);
 
   // Navigate to the product card detail page via its route
   const navigate = useNavigate();
@@ -78,7 +82,7 @@ const Card = () => {
           {currentUser ? (
             <Button
               buttonType={BUTTON_TYPE_CLASSES.inverted}
-              onClick={addProductToCart}
+              // onClick={addProductToCart}
             >
               Add to card
             </Button>

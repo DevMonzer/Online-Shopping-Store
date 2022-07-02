@@ -1,0 +1,38 @@
+.productCardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+}
+
+.productCardDetails {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.productCardDetail {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.productCardImage {
+  height: 60vh;
+  border-radius: 10px;
+
+  &:hover {
+    transform: scale(1.3);
+    transition: all 1s ease-in;
+
+    @media screen and (max-width: 600px) {
+      transform: scale(1);
+    }
+  }
+}
