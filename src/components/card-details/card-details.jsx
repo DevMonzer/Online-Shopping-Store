@@ -61,8 +61,6 @@ const Card = () => {
   const navigate = useNavigate();
   const onNavigateHandler = () => navigate(route);
 
-  // Getting the currentUser state
-
   const logInHandler = () =>
     alert("Please log in to your account before adding products");
 

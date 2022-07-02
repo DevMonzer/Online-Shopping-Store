@@ -16,7 +16,7 @@ import {
 const ProductCard = ({ product }) => {
   const currentUser = useSelector(selectCurrentUser);
 
-  const { name, price, imageUrl } = product;
+  const { name, price, imageUrl, route } = product;
   const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
 
@@ -24,6 +24,10 @@ const ProductCard = ({ product }) => {
 
   const logInHandler = () =>
     alert("Please log in to your account before adding products");
+
+  // Navigate to the product card detail page via its route
+  const navigate = useNavigate();
+  const onNavigateHandler = () => navigate(route);
 
   return (
     <ProductCartContainer>
