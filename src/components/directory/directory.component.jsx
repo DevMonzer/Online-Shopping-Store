@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 
 import DirectoryItem from "../directory-item/directory-item.component";
+import SearchBar from "../search-bar/SearchBar";
 
 import { selectCategoriesMap } from "../../store/categories/category.selector";
 
