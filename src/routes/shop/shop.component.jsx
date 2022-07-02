@@ -29,7 +29,9 @@ const Shop = () => {
 
   return (
     <Routes>
+      {/* Shop Component */}
       <Route index element={<CategoriesPreview />} />
+      {/* Nested Shop Categories Components (Hats, jackets, etc.) */}
       <Route path=":category" element={<Category />} />
     </Routes>
   );
