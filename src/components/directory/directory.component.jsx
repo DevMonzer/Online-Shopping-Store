@@ -67,11 +67,16 @@ const Directory = () => {
   // console.log(allProducts1);
 
   return (
-    <DirectoryContainer>
-      {categories.map((category) => (
-        <DirectoryItem key={category.id} category={category} />
-      ))}
-    </DirectoryContainer>
+    <Container>
+      <Zindex>
+        <SearchBar placeholder="Search " data={allProducts1} />
+      </Zindex>
+      <DirectoryContainer>
+        {categories.map((category) => (
+          <DirectoryItem key={category.id} category={category} />
+        ))}
+      </DirectoryContainer>
+    </Container>
   );
 };
 
