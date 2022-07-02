@@ -4,7 +4,7 @@ import DirectoryItem from "../directory-item/directory-item.component";
 
 import { selectCategoriesMap } from "../../store/categories/category.selector";
 
-import { DirectoryContainer } from "./directory.styles";
+import { DirectoryContainer, Container, Zindex } from "./directory.styles";
 
 const categories = [
   {
