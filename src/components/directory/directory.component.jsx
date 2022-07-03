@@ -65,8 +65,7 @@ const Directory = () => {
 
   const products = Object.values(categoriesMap);
   if (products && products.length) {
-    // products?.map((product) => console.log(product));
-    var allProducts1 = [
+    var allProducts = [
       ...products[0],
       ...products[1],
       ...products[2],
@@ -79,9 +78,9 @@ const Directory = () => {
   return (
     <>
       <Container>
-        {allProducts1 && allProducts1.length ? (
+        {allProducts && allProducts.length ? (
           <Zindex>
-            <SearchBar placeholder="Search " data={allProducts1} />
+            <SearchBar placeholder="Search " data={allProducts} />
           </Zindex>
         ) : null}
         <DirectoryContainer>
