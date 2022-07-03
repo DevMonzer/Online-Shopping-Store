@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import DirectoryItem from "../directory-item/directory-item.component";
 import SearchBar from "../search-bar/SearchBar";
+import Spinner from "../spinner/spinner.component";
 
 import { selectCategoriesMap } from "../../store/categories/category.selector";
 import { fetchCategoriesStart } from "../../store/categories/category.action";
@@ -81,7 +82,9 @@ const Directory = () => {
         <Zindex>
           <SearchBar placeholder="Search " data={allProducts1} />
         </Zindex>
-      ) : null}
+      ) : (
+        <Spinner />
+      )}
       <DirectoryContainer>
         {categories.map((category) => (
           <DirectoryItem key={category.id} category={category} />
