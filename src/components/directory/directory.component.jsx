@@ -78,20 +78,18 @@ const Directory = () => {
 
   return (
     <>
-      {allProducts1 && allProducts1.length ? (
-        <Container>
+      <Container>
+        {allProducts1 && allProducts1.length ? (
           <Zindex>
             <SearchBar placeholder="Search " data={allProducts1} />
           </Zindex>
-          <DirectoryContainer>
-            {categories.map((category) => (
-              <DirectoryItem key={category.id} category={category} />
-            ))}
-          </DirectoryContainer>
-        </Container>
-      ) : (
-        <Spinner />
-      )}
+        ) : null}
+        <DirectoryContainer>
+          {categories.map((category) => (
+            <DirectoryItem key={category.id} category={category} />
+          ))}
+        </DirectoryContainer>
+      </Container>
     </>
   );
 };
