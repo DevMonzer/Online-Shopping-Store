@@ -64,7 +64,6 @@ const Directory = () => {
       ...products[4],
     ];
   }
-
   // console.log(allProducts1);
 
   return (
