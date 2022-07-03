@@ -5,6 +5,7 @@ import DirectoryItem from "../directory-item/directory-item.component";
 import SearchBar from "../search-bar/SearchBar";
 
 import { selectCategoriesMap } from "../../store/categories/category.selector";
+import { fetchCategoriesStart } from "../../store/categories/category.action";
 
 import { DirectoryContainer, Container, Zindex } from "./directory.styles";
 
