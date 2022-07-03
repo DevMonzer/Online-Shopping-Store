@@ -77,20 +77,22 @@ const Directory = () => {
   // console.log(allProducts1);
 
   return (
-    <Container>
+    <>
       {allProducts1 && allProducts1.length ? (
-        <Zindex>
-          <SearchBar placeholder="Search " data={allProducts1} />
-        </Zindex>
+        <Container>
+          <Zindex>
+            <SearchBar placeholder="Search " data={allProducts1} />
+          </Zindex>
+          <DirectoryContainer>
+            {categories.map((category) => (
+              <DirectoryItem key={category.id} category={category} />
+            ))}
+          </DirectoryContainer>
+        </Container>
       ) : (
         <Spinner />
       )}
-      <DirectoryContainer>
-        {categories.map((category) => (
-          <DirectoryItem key={category.id} category={category} />
-        ))}
-      </DirectoryContainer>
-    </Container>
+    </>
   );
 };
 
