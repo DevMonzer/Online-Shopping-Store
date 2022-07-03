@@ -77,9 +77,11 @@ const Directory = () => {
 
   return (
     <Container>
-      <Zindex>
-        <SearchBar placeholder="Search " data={allProducts1} />
-      </Zindex>
+      {allProducts1 && allProducts1.length ? (
+        <Zindex>
+          <SearchBar placeholder="Search " data={allProducts1} />
+        </Zindex>
+      ) : null}
       <DirectoryContainer>
         {categories.map((category) => (
           <DirectoryItem key={category.id} category={category} />
