@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useSelector } from "react-redux";
 
 import DirectoryItem from "../directory-item/directory-item.component";
@@ -53,9 +54,11 @@ const categories = [
 
 const Directory = () => {
   const categoriesMap = useSelector(selectCategoriesMap);
+  const [data, setData] = useState([]);
 
   const products = Object.values(categoriesMap);
   if (products && products.length) {
+    // products?.map((product) => console.log(product));
     var allProducts1 = [
       ...products[0],
       ...products[1],
@@ -64,6 +67,7 @@ const Directory = () => {
       ...products[4],
     ];
   }
+  // console.log(data);
   // console.log(allProducts1);
 
   return (
