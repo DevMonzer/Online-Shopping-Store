@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 
 import DirectoryItem from "../directory-item/directory-item.component";
 import SearchBar from "../search-bar/SearchBar";
