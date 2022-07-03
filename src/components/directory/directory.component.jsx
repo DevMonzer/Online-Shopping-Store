@@ -54,8 +54,13 @@ const categories = [
 ];
 
 const Directory = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchCategoriesStart());
+  }, []);
+
   const categoriesMap = useSelector(selectCategoriesMap);
-  const [data, setData] = useState([]);
 
   const products = Object.values(categoriesMap);
   if (products && products.length) {
@@ -68,7 +73,6 @@ const Directory = () => {
       ...products[4],
     ];
   }
-  // console.log(data);
   // console.log(allProducts1);
 
   return (
