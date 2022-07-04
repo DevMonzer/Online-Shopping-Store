@@ -61,6 +61,6 @@ export const SearchContainer = styled.div`
   }
 
   @media screen and (max-width: 700px) {
-    top: -17%;
+    top: 10%;
   }
 `;
