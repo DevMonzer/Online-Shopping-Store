@@ -90,12 +90,12 @@ a:hover {
 
   .searchIcon {
     margin-top: -12%;
+    margin-left: 88%;
   }
 }
 
 @media screen and (max-width: 400px) {
   .searchIcon {
     margin-top: -12%;
-    margin-left: 88%;
   }
 }
