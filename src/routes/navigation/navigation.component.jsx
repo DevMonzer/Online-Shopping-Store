@@ -39,16 +39,16 @@ const Navigation = () => {
   }, []);
 
   // Getting all categoriesMap products and spread them into one variable
-  const products = Object.values(categoryMap);
-  if (products && products.length) {
-    var allProducts = [
-      ...products[0],
-      ...products[1],
-      ...products[2],
-      ...products[3],
-      ...products[4],
-    ];
-  }
+  // const products = Object.values(categoryMap);
+  // if (products && products.length) {
+  //   var allProducts = [
+  //     ...products[0],
+  //     ...products[1],
+  //     ...products[2],
+  //     ...products[3],
+  //     ...products[4],
+  //   ];
+  // }
   // console.log(allProducts);
   ////////////////////////////////////////////////////////
 
@@ -62,9 +62,10 @@ const Navigation = () => {
     <Fragment>
       <Container>
         <SearchContainer>
-          {products && products.length ? (
+          hhh
+          {/* {products && products.length ? (
             <SearchBar placeholder="Search " data={allProducts} />
-          ) : null}
+          ) : null} */}
         </SearchContainer>
         <NavigationContainer>
           <LogoContainer to="/">
