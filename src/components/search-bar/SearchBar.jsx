@@ -29,6 +29,13 @@ function SearchBar({ placeholder, data }) {
     setWordEntered("");
   };
 
+  // Navigate to the product card detail page via its route
+  const navigate = useNavigate();
+  const onNavigateHandler = (id) => {
+    navigate(id);
+    clearInput();
+  };
+
   return (
     <div className="search">
       <div className="searchInputs">
