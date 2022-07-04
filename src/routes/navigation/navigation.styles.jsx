@@ -43,3 +43,24 @@ export const NavLink = styled(Link)`
   padding: 10px 15px;
   cursor: pointer;
 `;
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+`;
+
+export const SearchContainer = styled.div`
+  position: absolute;
+  top: 20%;
+
+  @media screen and (max-width: 900px) {
+    top: 15%;
+  }
+
+  @media screen and (max-width: 700px) {
+    top: -17%;
+  }
+`;
