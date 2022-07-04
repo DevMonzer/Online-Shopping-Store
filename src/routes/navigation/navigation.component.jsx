@@ -62,7 +62,7 @@ const Navigation = () => {
     <Fragment>
       <Container>
         <SearchContainer>
-          hhh
+          SearchBar
           {/* {products && products.length ? (
             <SearchBar placeholder="Search " data={allProducts} />
           ) : null} */}
