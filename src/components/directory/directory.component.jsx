@@ -1,14 +1,6 @@
-import { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-
 import DirectoryItem from "../directory-item/directory-item.component";
-import SearchBar from "../search-bar/SearchBar";
-import Spinner from "../spinner/spinner.component";
 
-import { selectCategoriesMap } from "../../store/categories/category.selector";
-import { fetchCategoriesStart } from "../../store/categories/category.action";
-
-import { DirectoryContainer, Container, Zindex } from "./directory.styles";
+import { DirectoryContainer } from "./directory.styles";
 
 const categories = [
   {
@@ -55,40 +47,13 @@ const categories = [
 ];
 
 const Directory = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchCategoriesStart());
-  }, []);
-
-  const categoriesMap = useSelector(selectCategoriesMap);
-
-  const products = Object.values(categoriesMap);
-  if (products && products.length) {
-    var allProducts = [
-      ...products[0],
-      ...products[1],
-      ...products[2],
-      ...products[3],
-      ...products[4],
-    ];
-  }
-  // console.log(allProducts1);
-
   return (
     <>
-      <Container>
-        {allProducts && allProducts.length ? (
-          <Zindex>
-            <SearchBar placeholder="Search " data={allProducts} />
-          </Zindex>
-        ) : null}
-        <DirectoryContainer>
-          {categories.map((category) => (
-            <DirectoryItem key={category.id} category={category} />
-          ))}
-        </DirectoryContainer>
-      </Container>
+      <DirectoryContainer>
+        {categories.map((category) => (
+          <DirectoryItem key={category.id} category={category} />
+        ))}
+      </DirectoryContainer>
     </>
   );
 };
