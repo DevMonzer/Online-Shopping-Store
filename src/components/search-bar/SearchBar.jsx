@@ -58,7 +58,10 @@ function SearchBar({ placeholder, data }) {
           {filteredData.slice(0, 15).map((value) => {
             return (
               <div key={value.id}>
-                <Link className="dataItem" to={value.route}>
+                <div
+                  className="dataItem"
+                  onClick={() => onNavigateHandler(value.route)}
+                >
                   <div className="search-container">
                     <p>{value.name} </p>
                     <img
@@ -67,7 +70,7 @@ function SearchBar({ placeholder, data }) {
                       alt={value.name}
                     />
                   </div>
-                </Link>
+                </div>
               </div>
             );
           })}
