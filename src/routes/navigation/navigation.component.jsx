@@ -84,8 +84,8 @@ const Navigation = () => {
           </NavLinks>
           {isCartOpen && <CartDropdown />}
         </NavigationContainer>
-        <Outlet />
       </Container>
+      <Outlet />
     </Fragment>
   );
 };
