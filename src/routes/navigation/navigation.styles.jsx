@@ -63,4 +63,8 @@ export const SearchContainer = styled.div`
   @media screen and (max-width: 700px) {
     top: 10%;
   }
+
+  @media screen and (max-width: 450px) {
+    top: 7%;
+  }
 `;
