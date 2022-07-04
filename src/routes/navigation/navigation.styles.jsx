@@ -12,7 +12,7 @@ export const NavigationContainer = styled.div`
     height: 60px;
     padding: 10px 20px;
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 `;
 
@@ -61,10 +61,6 @@ export const SearchContainer = styled.div`
   }
 
   @media screen and (max-width: 700px) {
-    top: 10%;
-  }
-
-  @media screen and (max-width: 450px) {
-    top: 7%;
+    top: 4%;
   }
 `;
