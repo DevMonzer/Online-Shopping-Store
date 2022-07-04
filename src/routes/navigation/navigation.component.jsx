@@ -10,6 +10,9 @@ import { selectIsCartOpen } from "../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../store/user/user.selector";
 import { signOutStart } from "../../store/user/user.action";
 
+import { selectCategoriesMap } from "../../store/categories/category.selector";
+import { fetchCategoriesStart } from "../../store/categories/category.action";
+
 import { ReactComponent as CrwnLogo } from "../../assets/crown.svg";
 
 import { getCategoriesAndDocuments } from "../../utils/firebase/firebase.utils";
@@ -56,7 +59,6 @@ const Navigation = () => {
     <Fragment>
       <Container>
         <SearchContainer>
-          SearchBar
           {products && products.length ? (
             <SearchBar placeholder="Search " data={allProducts} />
           ) : null}
