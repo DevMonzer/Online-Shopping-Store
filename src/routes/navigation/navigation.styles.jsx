@@ -7,12 +7,12 @@ export const NavigationContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
-  // margin-top: 25px;
 
   @media screen and (max-width: 800px) {
     height: 60px;
     padding: 10px 20px;
     margin-bottom: 20px;
+    margin-top: 10px;
   }
 `;
 
@@ -54,7 +54,7 @@ export const Container = styled.div`
 
 export const SearchContainer = styled.div`
   position: absolute;
-  top: 35%;
+  top: 20%;
 
   @media screen and (max-width: 900px) {
     top: 15%;
