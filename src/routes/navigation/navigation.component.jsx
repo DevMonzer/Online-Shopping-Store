@@ -24,48 +24,42 @@ import {
 } from "./navigation.styles";
 
 const Navigation = () => {
-  //////////////////// SearchBar Code ////////////////////
-  const [categoryMap, setCategoriesMap] = useState([]);
-
-  // Getting the stored data in the shop data on our firestore database
-  useEffect(() => {
-    // Getting back the shop data as an array of objects from the firestore database
-    const getCategoriesMap = async () => {
-      const categoryMap = await getCategoriesAndDocuments("categories");
-      setCategoriesMap(categoryMap);
-    };
-
-    getCategoriesMap();
-  }, []);
-
-  // Getting all categoriesMap products and spread them into one variable
-  // const products = Object.values(categoryMap);
-  // if (products && products.length) {
-  //   var allProducts = [
-  //     ...products[0],
-  //     ...products[1],
-  //     ...products[2],
-  //     ...products[3],
-  //     ...products[4],
-  //   ];
-  // }
-  // console.log(allProducts);
-  ////////////////////////////////////////////////////////
-
   const dispatch = useDispatch();
   const currentUser = useSelector(selectCurrentUser);
   const isCartOpen = useSelector(selectIsCartOpen);
 
   const signOutUser = () => dispatch(signOutStart());
 
+  //////////////////// SearchBar Code ////////////////////
+
+  useEffect(() => {
+    dispatch(fetchCategoriesStart());
+  }, []);
+
+  const categoriesMap = useSelector(selectCategoriesMap);
+
+  const products = Object.values(categoriesMap);
+  if (products && products.length) {
+    var allProducts = [
+      ...products[0],
+      ...products[1],
+      ...products[2],
+      ...products[3],
+      ...products[4],
+    ];
+  }
+  // console.log(allProducts);
+
+  ////////////////////////////////////////////////////////
+
   return (
     <Fragment>
       <Container>
         <SearchContainer>
           SearchBar
-          {/* {products && products.length ? (
+          {products && products.length ? (
             <SearchBar placeholder="Search " data={allProducts} />
-          ) : null} */}
+          ) : null}
         </SearchContainer>
         <NavigationContainer>
           <LogoContainer to="/">
