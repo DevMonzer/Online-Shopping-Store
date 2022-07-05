@@ -89,7 +89,12 @@ const Card = () => {
                 Add to card
               </Button>
             ) : (
-              <Button onClick={logInHandler}>Log in FIRST</Button>
+              <Button
+                buttonType={BUTTON_TYPE_CLASSES.facebook}
+                onClick={logInHandler}
+              >
+                Log in FIRST
+              </Button>
             )}
             <br />
             <Button
