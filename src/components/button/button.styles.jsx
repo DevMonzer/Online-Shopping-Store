@@ -69,18 +69,6 @@ export const InvertedButton = styled(BaseButton)`
   }
 `;
 
-export const YellowButton = styled(BaseButton)`
-  background-color: yellow;
-  color: black;
-  border: 1px solid black;
-
-  &:hover {
-    background-color: black;
-    color: white;
-    border: none;
-  }
-`;
-
 export const LoadingSpinner = styled.div`
   display: inline-block;
   width: 30px;
