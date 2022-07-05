@@ -55,6 +55,7 @@ export const Container = styled.div`
 export const SearchContainer = styled.div`
   position: absolute;
   top: 20%;
+  z-index: 1;
 
   @media screen and (max-width: 900px) {
     top: 15%;
