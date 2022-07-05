@@ -67,6 +67,11 @@ a:hover {
     width: 250px;
   }
 
+  .searchImage {
+    width: 45px;
+    height: 45px;
+  }
+
   .searchIcon {
     margin-top: -10.5%;
     margin-left: 90%;
