@@ -46,6 +46,7 @@ const Navigation = () => {
       ...products[2],
       ...products[3],
       ...products[4],
+      ...products[5],
     ];
   }
   // console.log(allProducts);
