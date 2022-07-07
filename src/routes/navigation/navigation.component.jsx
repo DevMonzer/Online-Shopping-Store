@@ -38,14 +38,11 @@ const Navigation = () => {
 
   const categoriesMap = useSelector(selectCategoriesMap);
 
-  const products = Object.values(categoriesMap);
-  let array = [];
-  if (products && products.length) {
-    products.forEach((product) => {
-      array.push(...product);
-    });
-  }
-  console.log(array);
+  let allProducts = [];
+  const products = Object.values(categoriesMap).map((product) => {
+    allProducts.push(...product);
+  });
+  // console.log(allProducts);
 
   ////////////////////////////////////////////////////////
 
@@ -54,7 +51,7 @@ const Navigation = () => {
       <Container>
         <SearchContainer>
           {products && products.length ? (
-            <SearchBar placeholder="Search " data={array} />
+            <SearchBar placeholder="Search " data={allProducts} />
           ) : null}
         </SearchContainer>
         <NavigationContainer>
