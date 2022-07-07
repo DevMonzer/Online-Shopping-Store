@@ -53,7 +53,7 @@ const Card = () => {
   useEffect(() => {
     if (data) {
       const product = data.filter((product) => product.id == cardId);
-      setProductCard(product[0]);
+      setProductCard(...product);
     }
   }, [data]);
 
