@@ -55,7 +55,7 @@ const Card = () => {
       const product = data.filter((product) => product.id == cardId);
       setProductCard(...product);
     }
-  }, [data]);
+  });
 
   // Navigate to the product card detail page via its route
   const navigate = useNavigate();
