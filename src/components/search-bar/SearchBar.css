@@ -24,6 +24,7 @@ input:focus {
   overflow: hidden;
   overflow-y: auto;
   cursor: pointer;
+  font-family: "Roboto", sans-serif;
 }
 
 .dataResult .dataItem {
