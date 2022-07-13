@@ -12,7 +12,7 @@ export const NavigationContainer = styled.div`
     height: 60px;
     padding: 10px 20px;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 `;
 
