@@ -8,13 +8,14 @@ import {
 } from "./directory.styles";
 
 // Home Page
-const DirectoryItem = ({ categories }) => {
+const Directory = ({ categories }) => {
   const navigate = useNavigate();
 
   return (
     <DirectoryContainer>
       {categories.map((category) => {
         const { id, title, route, imageUrl } = category;
+
         return (
           <DirectoryItemContainer key={id} onClick={() => navigate(route)}>
             <BackgroundImage imageUrl={imageUrl} />
@@ -29,4 +30,4 @@ const DirectoryItem = ({ categories }) => {
   );
 };
 
-export default DirectoryItem;
+export default Directory;
