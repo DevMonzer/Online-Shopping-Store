@@ -90,13 +90,8 @@ a:hover {
 }
 
 @media screen and (max-width: 500px) {
-  .search input {
-    width: 200px;
-  }
-
   .searchIcon {
-    margin-top: -12%;
-    margin-left: 88%;
+    margin-top: -9.5%;
   }
 }
 
