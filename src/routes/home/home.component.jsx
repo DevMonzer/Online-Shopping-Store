@@ -53,9 +53,9 @@ const Home = () => {
       <HomeDirectory categories={categories} />
       <Outlet />
       <p style={{ fontSize: "1.2rem", textAlign: "center" }}>
-        This app is built by:
+        This app is built by :&nbsp;
         <a
-          style={{ color: "blue" }}
+          style={{ color: "blue", textDecoration: "underline" }}
           target="_blank"
           href="https://dev-monzer.vercel.app/"
           rel="noreferrer"
