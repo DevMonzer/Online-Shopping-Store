@@ -78,11 +78,11 @@ const Card = () => {
             alt={`${productCard.name}`}
           />
           <div className="productCardDetails">
-            <p className="productCardDetail">
+            <p>
               This is {productCard.name}
               <br /> and you can get only for
             </p>
-            <p className="productCardDetail">${productCard.price}</p>
+            <p>${productCard.price}</p>
             {currentUser ? (
               <Button
                 buttonType={BUTTON_TYPE_CLASSES.facebook}
