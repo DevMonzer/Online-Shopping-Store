@@ -56,7 +56,8 @@ export const Footer = styled.div`
   height: 5%;
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
 
   @media screen and (max-width: 400px) {
     width: 80%;
