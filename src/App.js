@@ -11,9 +11,17 @@ import Checkout from "./routes/checkout/checkout.component";
 import SignIn from "./components/sign-in-form/sign-in-form.component";
 import SignUp from "./components/sign-up-form/sign-up-form.component";
 
+import { checkUserSession } from "./store/user/user.action";
+
 import { GlobalStyle } from "./global.styles";
 
 const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(checkUserSession());
+  }, []);
+
   return (
     <div>
       <GlobalStyle />
