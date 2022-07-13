@@ -60,13 +60,15 @@ const DirectoryItem = ({ category }) => {
 
   return (
     <DirectoryContainer>
-      <DirectoryItemContainer onClick={onNavigateHandler}>
-        <BackgroundImage imageUrl={imageUrl} />
-        <Body>
-          <h2>{title.toUpperCase()}</h2>
-          <p>Shop Now</p>
-        </Body>
-      </DirectoryItemContainer>
+      {categories.map((category) => (
+        <DirectoryItemContainer key={category.id} onClick={onNavigateHandler}>
+          <BackgroundImage imageUrl={category.imageUrl} />
+          <Body>
+            <h2>{category.title.toUpperCase()}</h2>
+            <p>Shop Now</p>
+          </Body>
+        </DirectoryItemContainer>
+      ))}
     </DirectoryContainer>
   );
 };
