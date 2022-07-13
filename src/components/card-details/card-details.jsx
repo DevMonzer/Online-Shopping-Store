@@ -30,24 +30,26 @@ const Card = () => {
   const addProductToCart = () =>
     dispatch(addItemToCart(cartItems, productCard));
 
+  let data, route;
+
   if (window.location.pathname.includes("/shop/hats/")) {
-    var data = categoriesMap["hats"];
-    var route = "/shop/hats";
+    data = categoriesMap["hats"];
+    route = "/shop/hats";
   } else if (window.location.pathname.includes("/shop/jackets/")) {
-    var data = categoriesMap["jackets"];
-    var route = "/shop/jackets";
+    data = categoriesMap["jackets"];
+    route = "/shop/jackets";
   } else if (window.location.pathname.includes("/shop/sneakers/")) {
-    var data = categoriesMap["sneakers"];
-    var route = "/shop/sneakers";
+    data = categoriesMap["sneakers"];
+    route = "/shop/sneakers";
   } else if (window.location.pathname.includes("/shop/womens/")) {
-    var data = categoriesMap["womens"];
-    var route = "/shop/womens";
+    data = categoriesMap["womens"];
+    route = "/shop/womens";
   } else if (window.location.pathname.includes("/shop/mens/")) {
-    var data = categoriesMap["mens"];
-    var route = "/shop/mens";
+    data = categoriesMap["mens"];
+    route = "/shop/mens";
   } else if (window.location.pathname.includes("/shop/kids/")) {
-    var data = categoriesMap["kids"];
-    var route = "/shop/kids";
+    data = categoriesMap["kids"];
+    route = "/shop/kids";
   }
 
   useEffect(() => {
