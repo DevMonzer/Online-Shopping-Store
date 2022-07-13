@@ -52,16 +52,16 @@ const categories = [
 ];
 
 // Home Page
-const DirectoryItem = ({ category }) => {
-  const { imageUrl, title, route } = category;
+const DirectoryItem = () => {
   const navigate = useNavigate();
-
-  const onNavigateHandler = () => navigate(route);
 
   return (
     <DirectoryContainer>
       {categories.map((category) => (
-        <DirectoryItemContainer key={category.id} onClick={onNavigateHandler}>
+        <DirectoryItemContainer
+          key={category.id}
+          onClick={() => navigate(category.route)}
+        >
           <BackgroundImage imageUrl={category.imageUrl} />
           <Body>
             <h2>{category.title.toUpperCase()}</h2>
