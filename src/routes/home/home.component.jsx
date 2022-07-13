@@ -7,7 +7,6 @@ import DirectoryItem from "../../components/directory-item/directory-item.compon
 const Home = () => {
   return (
     <div>
-      {/* <Directory /> */}
       <DirectoryItem />
       <Outlet />
       <p style={{ fontSize: "1.2rem", textAlign: "center" }}>
