@@ -94,9 +94,3 @@ a:hover {
     margin-top: -9.5%;
   }
 }
-
-@media screen and (max-width: 400px) {
-  .searchIcon {
-    margin-top: -12%;
-  }
-}
