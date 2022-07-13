@@ -5,7 +5,7 @@ import {
   Body,
   DirectoryContainer,
   DirectoryItemContainer,
-} from "./directory-item.styles";
+} from "./directory.styles";
 
 const categories = [
   {
