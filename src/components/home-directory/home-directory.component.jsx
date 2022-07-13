@@ -5,10 +5,10 @@ import {
   Body,
   DirectoryContainer,
   DirectoryItemContainer,
-} from "./directory.styles";
+} from "./home-directory.styles";
 
 // Home Page
-const Directory = ({ categories }) => {
+const HomeDirectory = ({ categories }) => {
   const navigate = useNavigate();
 
   return (
@@ -30,4 +30,4 @@ const Directory = ({ categories }) => {
   );
 };
 
-export default Directory;
+export default HomeDirectory;
