@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-import Directory from "../../components/directory/directory.component";
+import HomeDirectory from "../../components/home-directory/home-directory.component";
 
 const categories = [
   {
@@ -50,7 +50,7 @@ const categories = [
 const Home = () => {
   return (
     <div>
-      <Directory categories={categories} />
+      <HomeDirectory categories={categories} />
       <Outlet />
       <p style={{ fontSize: "1.2rem", textAlign: "center" }}>
         This app is built by:
