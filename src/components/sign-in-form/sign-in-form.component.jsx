@@ -141,7 +141,7 @@ const SignInForm = () => {
             type="button"
             onClick={signInWithFacebook}
           >
-            Sign With Facebook
+            Facebook
           </Button>
         </Center>
         <Link className="link-style" to="/sign-up">
