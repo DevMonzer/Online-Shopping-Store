@@ -46,6 +46,7 @@ const categories = [
   },
 ];
 
+// Home Route
 const Home = () => {
   return (
     <div>
