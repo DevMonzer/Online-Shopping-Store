@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
 
-import DirectoryItem from "../../components/directory-item/directory-item.component";
+import Directory from "../../components/directory-item/directory-item.component";
 
 const Home = () => {
   return (
     <div>
-      <DirectoryItem />
+      <Directory />
       <Outlet />
       <p style={{ fontSize: "1.2rem", textAlign: "center" }}>
         This app is built by:
