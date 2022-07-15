@@ -30,7 +30,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="shop/*" element={<Shop />} />
 
-          {/* Nested card details components */}
+          {/* Nested card details component Routes */}
           <Route path="shop/hats/:cardId" element={<Card />} />
           <Route path="shop/jackets/:cardId" element={<Card />} />
           <Route path="shop/sneakers/:cardId" element={<Card />} />
