@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
-import CategoriesPreview from "../../components/category-preview/category-preview.component";
+import ShopDirectory from "../../components/shop-directory/shop-directory.component";
 import Category from "../category/category.component";
 import { fetchCategoriesStart } from "../../store/categories/category.action";
 
@@ -30,7 +30,7 @@ const Shop = () => {
   return (
     <Routes>
       {/* Shop Component */}
-      <Route index element={<CategoriesPreview />} />
+      <Route index element={<ShopDirectory />} />
       {/* Nested Shop Categories Components (Hats, jackets, etc.) */}
       <Route path=":category" element={<Category />} />
     </Routes>
