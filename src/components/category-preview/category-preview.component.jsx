@@ -6,8 +6,10 @@ import {
   selectCategoriesIsLoading,
 } from "../../store/categories/category.selector";
 
+import CategoryPreview from "../../components/category-preview/category-preview.component";
 import Spinner from "../../components/spinner/spinner.component";
-import ProductCard from "../product-card/product-card.component";
+
+import ProductCard from "../../components/product-card/product-card.component";
 
 import {
   CategoryPreviewContainer,
@@ -16,8 +18,7 @@ import {
   Center,
 } from "./category-preview.styles";
 
-// Shop Page
-const CategoryPreview = ({ title, products }) => {
+const CategoriesPreview = () => {
   const categoriesMap = useSelector(selectCategoriesMap);
   const isLoading = useSelector(selectCategoriesIsLoading);
 
@@ -29,7 +30,7 @@ const CategoryPreview = ({ title, products }) => {
         Object.keys(categoriesMap).map((title) => {
           const products = categoriesMap[title];
           return (
-            <CategoryPreviewContainer>
+            <CategoryPreviewContainer key={title}>
               <Center>
                 <Title to={title}>{title.toUpperCase()}</Title>
               </Center>
@@ -48,4 +49,4 @@ const CategoryPreview = ({ title, products }) => {
   );
 };
 
-export default CategoryPreview;
+export default CategoriesPreview;
