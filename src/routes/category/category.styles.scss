@@ -13,16 +13,6 @@
     border: 1px solid gray;
     cursor: pointer;
   }
-
-  @media screen and (max-width: 600px) {
-    .paginationBttns {
-      font-size: 14px;
-    }
-
-    .paginationBttns a {
-      margin: 0 5px;
-    }
-  }
 }
 
 .paginationActive a {
