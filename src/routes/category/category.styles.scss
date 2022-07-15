@@ -5,27 +5,27 @@
   align-items: center;
   color: grey;
   font-size: 16px;
-}
 
-.paginationBttns a {
-  margin: 0 10px;
-  padding: 10px;
-  border-radius: 10%;
-  border: 1px solid gray;
-  cursor: pointer;
+  a {
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 10%;
+    border: 1px solid gray;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 600px) {
+    .paginationBttns {
+      font-size: 14px;
+    }
+
+    .paginationBttns a {
+      margin: 0 5px;
+    }
+  }
 }
 
 .paginationActive a {
   color: white;
   background-color: grey;
-}
-
-@media screen and (max-width: 600px) {
-  .paginationBttns {
-    font-size: 14px;
-  }
-
-  .paginationBttns a {
-    margin: 0 5px;
-  }
 }
