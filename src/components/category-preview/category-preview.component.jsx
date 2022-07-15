@@ -22,18 +22,29 @@ const CategoryPreview = ({ title, products }) => {
   const isLoading = useSelector(selectCategoriesIsLoading);
 
   return (
-    <CategoryPreviewContainer>
-      <Center>
-        <Title to={title}>{title.toUpperCase()}</Title>
-      </Center>
-      <Preview>
-        {products
-          .filter((_, idx) => idx < 4)
-          .map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-      </Preview>
-    </CategoryPreviewContainer>
+    <Fragment>
+      {isLoading ? (
+        <Spinner />
+      ) : (
+        Object.keys(categoriesMap).map((title) => {
+          const products = categoriesMap[title];
+          return (
+            <CategoryPreviewContainer>
+              <Center>
+                <Title to={title}>{title.toUpperCase()}</Title>
+              </Center>
+              <Preview>
+                {products
+                  .filter((_, idx) => idx < 4)
+                  .map((product) => (
+                    <ProductCard key={product.id} product={product} />
+                  ))}
+              </Preview>
+            </CategoryPreviewContainer>
+          );
+        })
+      )}
+    </Fragment>
   );
 };
 
