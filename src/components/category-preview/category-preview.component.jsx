@@ -18,6 +18,9 @@ import {
 
 // Shop Page
 const CategoryPreview = ({ title, products }) => {
+  const categoriesMap = useSelector(selectCategoriesMap);
+  const isLoading = useSelector(selectCategoriesIsLoading);
+
   return (
     <CategoryPreviewContainer>
       <Center>
