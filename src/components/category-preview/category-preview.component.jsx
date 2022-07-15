@@ -6,7 +6,6 @@ import {
   selectCategoriesIsLoading,
 } from "../../store/categories/category.selector";
 
-import CategoryPreview from "../../components/category-preview/category-preview.component";
 import Spinner from "../../components/spinner/spinner.component";
 import ProductCard from "../product-card/product-card.component";
 
