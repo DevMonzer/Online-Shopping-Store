@@ -119,7 +119,10 @@ const Card = () => {
           >
             This app is built by :&nbsp;
             <a
-              style={{ color: "blue", textDecoration: "underline" }}
+              style={{
+                color: "rgba(51, 123, 255, 0.884)",
+                textDecoration: "underline",
+              }}
               target="_blank"
               href="https://dev-monzer.vercel.app/"
               rel="noreferrer"
