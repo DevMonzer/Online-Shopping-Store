@@ -18,7 +18,7 @@ import {
 } from "./category-preview.styles";
 
 // Shop Page
-const CategoriesPreview = () => {
+const ShopDirectory = () => {
   const categoriesMap = useSelector(selectCategoriesMap);
   const isLoading = useSelector(selectCategoriesIsLoading);
 
@@ -49,4 +49,4 @@ const CategoriesPreview = () => {
   );
 };
 
-export default CategoriesPreview;
+export default ShopDirectory;
