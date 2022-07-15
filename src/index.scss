@@ -21,3 +21,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+::selection {
+  background: #fff;
+  color: #ff0000;
+}
