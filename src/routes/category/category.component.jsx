@@ -16,7 +16,7 @@ import { CategoryContainer, Title, Center } from "./category.styles";
 
 import "./category.styles.css";
 
-// Categories Pages inside the Shop Page
+// Nested Categories Pages inside the Shop Page
 const Category = () => {
   const { category } = useParams();
   const categoriesMap = useSelector(selectCategoriesMap);
