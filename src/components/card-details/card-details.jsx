@@ -71,43 +71,63 @@ const Card = () => {
       {!data?.length ? (
         <Spinner />
       ) : (
-        <div className="productCardContainer">
-          <img
-            className="productCardImage"
-            src={productCard.imageUrl}
-            alt={`${productCard.name}`}
-          />
-          <div className="productCardDetails">
-            <p>
-              This is
-              <span className="productCardName">{productCard.name}</span>
-              <br /> and you can get only for
-            </p>
-            <p>${productCard.price}</p>
-            {currentUser ? (
+        <>
+          <div className="productCardContainer">
+            <img
+              className="productCardImage"
+              src={productCard.imageUrl}
+              alt={`${productCard.name}`}
+            />
+            <div className="productCardDetails">
+              <p>
+                This is
+                <span className="productCardName">{productCard.name}</span>
+                <br /> and you can get only for
+              </p>
+              <p>${productCard.price}</p>
+              {currentUser ? (
+                <Button
+                  buttonType={BUTTON_TYPE_CLASSES.facebook}
+                  onClick={addProductToCart}
+                >
+                  Add to card
+                </Button>
+              ) : (
+                <Button
+                  buttonType={BUTTON_TYPE_CLASSES.facebook}
+                  onClick={logInHandler}
+                >
+                  Log in FIRST
+                </Button>
+              )}
+              <br />
               <Button
-                buttonType={BUTTON_TYPE_CLASSES.facebook}
-                onClick={addProductToCart}
+                buttonType={BUTTON_TYPE_CLASSES.google}
+                onClick={onNavigateHandler}
               >
-                Add to card
+                Go Back
               </Button>
-            ) : (
-              <Button
-                buttonType={BUTTON_TYPE_CLASSES.facebook}
-                onClick={logInHandler}
-              >
-                Log in FIRST
-              </Button>
-            )}
-            <br />
-            <Button
-              buttonType={BUTTON_TYPE_CLASSES.google}
-              onClick={onNavigateHandler}
-            >
-              Go Back
-            </Button>
+            </div>
           </div>
-        </div>
+          <p
+            style={{
+              fontSize: "1.2rem",
+              textAlign: "center",
+              fontFamily: "Lato",
+              paddingTop: "2rem",
+            }}
+          >
+            This app is built by :&nbsp;
+            <a
+              style={{ color: "blue", textDecoration: "underline" }}
+              target="_blank"
+              href="https://dev-monzer.vercel.app/"
+              rel="noreferrer"
+            >
+              Monzer
+            </a>
+          </p>
+        </>
       )}
     </Fragment>
   );
