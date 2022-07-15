@@ -6,16 +6,16 @@ import {
   selectCategoriesIsLoading,
 } from "../../store/categories/category.selector";
 
-import Spinner from "../../components/spinner/spinner.component";
+import Spinner from "../spinner/spinner.component";
 
-import ProductCard from "../../components/product-card/product-card.component";
+import ProductCard from "../product-card/product-card.component";
 
 import {
   CategoryPreviewContainer,
   Title,
   Preview,
   Center,
-} from "./category-preview.styles";
+} from "./shop-directory.styles";
 
 // Shop Page
 const ShopDirectory = () => {
