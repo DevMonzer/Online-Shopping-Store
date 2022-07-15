@@ -79,7 +79,8 @@ const Card = () => {
           />
           <div className="productCardDetails">
             <p>
-              This is {productCard.name}
+              This is
+              <span className="productCardName">{productCard.name}</span>
               <br /> and you can get only for
             </p>
             <p>${productCard.price}</p>
