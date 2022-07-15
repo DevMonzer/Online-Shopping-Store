@@ -53,7 +53,11 @@ const Home = () => {
       <HomeDirectory categories={categories} />
       <Outlet />
       <p
-        style={{ fontSize: "1.2rem", textAlign: "center", fontFamily: "Lato" }}
+        style={{
+          fontSize: "1.2rem",
+          textAlign: "center",
+          fontFamily: "Roboto",
+        }}
       >
         This app is built by :&nbsp;
         <a
