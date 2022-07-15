@@ -30,7 +30,6 @@ const PaymentForm = () => {
       },
       body: JSON.stringify({ amount: amount * 100 }),
     }).then((res) => {
-      console.log(res);
       return res.json();
     });
 
@@ -40,7 +39,7 @@ const PaymentForm = () => {
       payment_method: {
         card: elements.getElement(CardElement),
         billing_details: {
-          name: currentUser ? currentUser.displayName : "Monzer Mohammed",
+          name: currentUser ? currentUser.displayName : "Monzer",
         },
       },
     });
