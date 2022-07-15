@@ -115,6 +115,7 @@ const Card = () => {
               textAlign: "center",
               fontFamily: "Lato",
               paddingTop: "2rem",
+              fontFamily: "Roboto",
             }}
           >
             This app is built by :&nbsp;
