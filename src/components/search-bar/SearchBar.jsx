@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { ReactComponent as SearchIcon } from "../../assets/search.svg";
 import { ReactComponent as CloseIcon } from "../../assets/x-circle.svg";
 
-import "./SearchBar.css";
+import "./SearchBar.scss";
 
 function SearchBar({ placeholder, data }) {
   const [filteredData, setFilteredData] = useState([]);
