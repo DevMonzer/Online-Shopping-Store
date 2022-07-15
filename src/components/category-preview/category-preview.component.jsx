@@ -17,7 +17,7 @@ import {
   Center,
 } from "./category-preview.styles";
 
-// Nested Shop Components [Hats, jackets, ... etc]
+// Shop Page
 const CategoriesPreview = () => {
   const categoriesMap = useSelector(selectCategoriesMap);
   const isLoading = useSelector(selectCategoriesIsLoading);
