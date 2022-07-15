@@ -14,7 +14,7 @@ import {
 
 import { CategoryContainer, Title, Center } from "./category.styles";
 
-import "./category.styles.css";
+import "./category.styles.scss";
 
 // Nested Categories Pages inside the Shop Page
 const Category = () => {
