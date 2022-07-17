@@ -76,7 +76,7 @@ const Card = () => {
             />
             <div className="productCardDetails">
               <p>
-                This is
+                This is&nbsp;
                 <span className="productCardName">{productCard.name}</span>
                 <br /> and you can get only for
               </p>
