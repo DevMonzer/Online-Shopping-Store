@@ -110,6 +110,7 @@ const Card = () => {
               </Button>
             </div>
           </div>
+          <Slider title="Top Products" allProducts={allProducts} />
           <p
             style={{
               fontSize: "1.2rem",
