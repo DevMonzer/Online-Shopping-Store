@@ -25,6 +25,21 @@ const Slider = ({ title, allProducts }) => {
   const randomProducts = [];
   top5Products.map((product) => randomProducts.push(product));
   // console.log(randomProducts);
+
+  // Storing the the 5 products into an array and pass it down to the pagination function
+  const allProductsItems = [];
+  randomProducts.forEach((item) => {
+    allProductsItems.push(
+      <img
+        className="slider-link"
+        onClick={() => navigate(item.route)}
+        src={item.imageUrl}
+        alt={item.name}
+        role="presentation"
+      />
+    );
+  });
+  // console.log(allProductsItems);
 };
 
 export default Slider;
