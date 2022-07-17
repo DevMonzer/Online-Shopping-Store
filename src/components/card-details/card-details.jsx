@@ -23,9 +23,17 @@ const Card = () => {
   const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
 
-  useEffect(() => {
-    dispatch(fetchCategoriesStart());
-  }, []);
+  // useEffect(() => {
+  //   dispatch(fetchCategoriesStart());
+  // }, []);
+
+  // Getting all categoriesMap products and spread them into one array
+  let allProducts = [];
+  Object.values(categoriesMap).map((product) => {
+    allProducts.push(...product);
+  });
+
+  console.log(allProducts);
 
   const addProductToCart = () =>
     dispatch(addItemToCart(cartItems, productCard));
