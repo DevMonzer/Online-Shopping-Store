@@ -9,6 +9,17 @@ import "./slider.styles.scss";
 
 const Slider = ({ title, allProducts }) => {
   const navigate = useNavigate();
+
+  /////////////////////////////////////////////////////////////////
+  // Getting the top 5 products ids randomly
+  const top5Products = [
+    allProducts[Math.floor(Math.random() * allProducts.length)],
+    allProducts[Math.floor(Math.random() * allProducts.length)],
+    allProducts[Math.floor(Math.random() * allProducts.length)],
+    allProducts[Math.floor(Math.random() * allProducts.length)],
+    allProducts[Math.floor(Math.random() * allProducts.length)],
+  ];
+  // console.log(top5Products);
 };
 
 export default Slider;
