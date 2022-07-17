@@ -6,3 +6,9 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import { Typography } from "@mui/material";
 
 import "./slider.styles.scss";
+
+const Slider = ({ title, allProducts }) => {
+  const navigate = useNavigate();
+};
+
+export default Slider;
