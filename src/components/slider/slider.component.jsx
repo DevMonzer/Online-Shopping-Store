@@ -20,7 +20,7 @@ const Slider = ({ title, allProducts }) => {
   }
   // console.log(top5Products);
 
-  // Getting the top 5 random products cards based on the top5Products ids
+  // Getting the top 5 random products cards based on the top5Products array
   const randomProducts = [];
   top5Products.map((product) => randomProducts.push(product));
   // console.log(randomProducts);
