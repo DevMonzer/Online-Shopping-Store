@@ -42,7 +42,13 @@ const Slider = ({ title, allProducts }) => {
 
   return (
     <>
-      <Typography padding={"40px 0 20px 0"} textAlign="center" variant="h6">
+      <Typography
+        padding={"40px 0 20px 0"}
+        textAlign="center"
+        variant="h5"
+        color={"rgba(51, 123, 255, 0.884)"}
+        fontWeight={"bold"}
+      >
         {title}
       </Typography>
       <AliceCarousel
