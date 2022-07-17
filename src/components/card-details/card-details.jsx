@@ -27,14 +27,14 @@ const Card = () => {
   //   dispatch(fetchCategoriesStart());
   // }, []);
 
-  // Getting all categoriesMap products and spread them into one array
+  // Getting all categoriesMap products
   let allProducts = [];
   Object.values(categoriesMap).map((product) => {
     allProducts.push(...product);
   });
   // console.log(allProducts);
 
-  // Loop through all products array and get the one that the user selected
+  // Getting back the selected product card
   useEffect(() => {
     if (allProducts && allProducts.length) {
       const productCard = allProducts.filter((product) => product.id == cardId);
@@ -67,12 +67,12 @@ const Card = () => {
     route = "/shop/kids";
   }
 
-  useEffect(() => {
-    if (data) {
-      const product = data.filter((product) => product.id == cardId);
-      setProductCard(...product);
-    }
-  });
+  // useEffect(() => {
+  //   if (data) {
+  //     const product = data.filter((product) => product.id == cardId);
+  //     setProductCard(...product);
+  //   }
+  // });
 
   // Navigate to the product card detail page via its route
   const navigate = useNavigate();
@@ -83,7 +83,7 @@ const Card = () => {
 
   return (
     <Fragment>
-      {!data?.length ? (
+      {!allProducts?.length ? (
         <Spinner />
       ) : (
         <>
