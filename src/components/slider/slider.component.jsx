@@ -12,16 +12,15 @@ const Slider = ({ title, allProducts }) => {
 
   /////////////////////////////////////////////////////////////////
   // Getting the top 5 products ids randomly
-  const top5Products = [
-    allProducts[Math.floor(Math.random() * allProducts.length)],
-    allProducts[Math.floor(Math.random() * allProducts.length)],
-    allProducts[Math.floor(Math.random() * allProducts.length)],
-    allProducts[Math.floor(Math.random() * allProducts.length)],
-    allProducts[Math.floor(Math.random() * allProducts.length)],
-  ];
+  const top5Products = [];
+  for (var i = 0; i < 5; i++) {
+    top5Products.push(
+      allProducts[Math.floor(Math.random() * allProducts.length)]
+    );
+  }
   // console.log(top5Products);
 
-  // Getting the top 5 random products based on the top5Products ids
+  // Getting the top 5 random products cards based on the top5Products ids
   const randomProducts = [];
   top5Products.map((product) => randomProducts.push(product));
   // console.log(randomProducts);
