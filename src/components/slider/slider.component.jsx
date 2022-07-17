@@ -40,6 +40,28 @@ const Slider = ({ title, allProducts }) => {
     );
   });
   // console.log(allProductsItems);
+
+  return (
+    <>
+      <Typography padding={"40px 0 20px 0"} textAlign="center" variant="h6">
+        {title}
+      </Typography>
+      <AliceCarousel
+        animationDuration={1500}
+        autoPlayInterval={500}
+        disableButtonsControls={true}
+        // disableDotsControls={true}
+        // autoPlayControls={false}
+        mouseTracking
+        autoHeight
+        infinite={true}
+        controlsStrategy={"responsive"}
+        autoWidth={true}
+        autoPlay={true}
+        items={allProductsItems}
+      />
+    </>
+  );
 };
 
 export default Slider;
