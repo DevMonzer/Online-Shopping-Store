@@ -32,8 +32,15 @@ const Card = () => {
   Object.values(categoriesMap).map((product) => {
     allProducts.push(...product);
   });
-
   // console.log(allProducts);
+
+  // Loop through all products array and get the one that the user selected
+  useEffect(() => {
+    if (allProducts && allProducts.length) {
+      const productCard = allProducts.filter((product) => product.id == cardId);
+      setProductCard(...productCard);
+    }
+  }, [allProducts]);
 
   const addProductToCart = () =>
     dispatch(addItemToCart(cartItems, productCard));
