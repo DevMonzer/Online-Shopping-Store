@@ -6,7 +6,6 @@ import { selectCategoriesMap } from "../../store/categories/category.selector";
 import { selectCartItems } from "../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../store/user/user.selector";
 import { addItemToCart } from "../../store/cart/cart.action";
-// import { fetchCategoriesStart } from "../../store/categories/category.action";
 
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 import Spinner from "../spinner/spinner.component";
@@ -22,10 +21,6 @@ const Card = () => {
   const currentUser = useSelector(selectCurrentUser);
   const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
-
-  // useEffect(() => {
-  //   dispatch(fetchCategoriesStart());
-  // }, []);
 
   // Getting all categoriesMap products
   let allProducts = [];
