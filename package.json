@@ -29,6 +29,10 @@
     "stripe": "^8.210.0",
     "styled-components": "5.3.3",
     "web-vitals": "2.1.4",
+    "@mui/material": "^5.5.1",
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1",
+    "react-alice-carousel": "^2.5.1",
     "yarn": "^1.22.18"
   },
   "scripts": {
