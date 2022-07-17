@@ -6,13 +6,13 @@ import { selectCategoriesMap } from "../../store/categories/category.selector";
 import { selectCartItems } from "../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../store/user/user.selector";
 import { addItemToCart } from "../../store/cart/cart.action";
-import { fetchCategoriesStart } from "../../store/categories/category.action";
+// import { fetchCategoriesStart } from "../../store/categories/category.action";
 
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
+import Spinner from "../spinner/spinner.component";
+import Slider from "../slider/slider.component";
 
 import "./card-details.scss";
-
-import Spinner from "../spinner/spinner.component";
 
 const Card = () => {
   const { cardId } = useParams();
@@ -33,7 +33,7 @@ const Card = () => {
     allProducts.push(...product);
   });
 
-  console.log(allProducts);
+  // console.log(allProducts);
 
   const addProductToCart = () =>
     dispatch(addItemToCart(cartItems, productCard));
