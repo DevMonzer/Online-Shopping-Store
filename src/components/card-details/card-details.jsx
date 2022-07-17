@@ -32,7 +32,6 @@ const Card = () => {
   Object.values(categoriesMap).map((product) => {
     allProducts.push(...product);
   });
-  // console.log(allProducts);
 
   // Getting back the selected product card
   useEffect(() => {
@@ -57,13 +56,6 @@ const Card = () => {
   } else if (window.location.pathname.includes("/shop/kids/")) {
     route = "/shop/kids";
   }
-
-  // useEffect(() => {
-  //   if (data) {
-  //     const product = data.filter((product) => product.id == cardId);
-  //     setProductCard(...product);
-  //   }
-  // });
 
   // Navigate to the product card detail page via its route
   const navigate = useNavigate();
