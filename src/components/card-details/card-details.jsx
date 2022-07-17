@@ -42,11 +42,8 @@ const Card = () => {
     }
   }, [allProducts]);
 
-  const addProductToCart = () =>
-    dispatch(addItemToCart(cartItems, productCard));
-
+  // Getting the card parent route
   let route;
-
   if (window.location.pathname.includes("/shop/hats/")) {
     route = "/shop/hats";
   } else if (window.location.pathname.includes("/shop/jackets/")) {
@@ -70,8 +67,11 @@ const Card = () => {
 
   // Navigate to the product card detail page via its route
   const navigate = useNavigate();
-  const onNavigateHandler = () => navigate(route);
 
+  // Event Handlers
+  const onNavigateHandler = () => navigate(route);
+  const addProductToCart = () =>
+    dispatch(addItemToCart(cartItems, productCard));
   const logInHandler = () =>
     alert("Please log in to your account before adding products");
 
