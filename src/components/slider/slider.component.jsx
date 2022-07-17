@@ -20,6 +20,11 @@ const Slider = ({ title, allProducts }) => {
     allProducts[Math.floor(Math.random() * allProducts.length)],
   ];
   // console.log(top5Products);
+
+  // Getting the top 5 random products based on the top5Products ids
+  const randomProducts = [];
+  top5Products.map((product) => randomProducts.push(product));
+  // console.log(randomProducts);
 };
 
 export default Slider;
