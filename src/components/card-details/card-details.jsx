@@ -45,25 +45,19 @@ const Card = () => {
   const addProductToCart = () =>
     dispatch(addItemToCart(cartItems, productCard));
 
-  let data, route;
+  let route;
 
   if (window.location.pathname.includes("/shop/hats/")) {
-    data = categoriesMap["hats"];
     route = "/shop/hats";
   } else if (window.location.pathname.includes("/shop/jackets/")) {
-    data = categoriesMap["jackets"];
     route = "/shop/jackets";
   } else if (window.location.pathname.includes("/shop/sneakers/")) {
-    data = categoriesMap["sneakers"];
     route = "/shop/sneakers";
   } else if (window.location.pathname.includes("/shop/womens/")) {
-    data = categoriesMap["womens"];
     route = "/shop/womens";
   } else if (window.location.pathname.includes("/shop/mens/")) {
-    data = categoriesMap["mens"];
     route = "/shop/mens";
   } else if (window.location.pathname.includes("/shop/kids/")) {
-    data = categoriesMap["kids"];
     route = "/shop/kids";
   }
 
