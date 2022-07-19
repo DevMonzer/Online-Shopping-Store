@@ -19,6 +19,12 @@
   font-size: 23px;
 }
 
+@media screen and (max-width: 800px) {
+  .productCardDetails {
+    font-size: 20px;
+  }
+}
+
 .productCardName {
   color: rgba(51, 123, 255, 0.884);
 }
