@@ -25,15 +25,20 @@ const Slider = ({ title, allProducts }) => {
 
   // Storing the the 5 products into one array and pass it down to the AliceCarousel function
   const allProductsItems = [];
-  top5Products.forEach((item) => {
+  top5Products.forEach((product) => {
     allProductsItems.push(
-      <img
-        className="slider-link"
-        onClick={() => navigate(item.route)}
-        src={item.imageUrl}
-        alt={item.name}
-        role="presentation"
-      />
+      <div className="slider-container">
+        <img
+          className="slider-image"
+          onClick={() => navigate(product.route)}
+          src={product.imageUrl}
+          alt={product.name}
+          role="presentation"
+        />
+        <span className="slider-name">
+          {product.name} - ${product.price}
+        </span>
+      </div>
     );
   });
   // console.log(allProductsItems);
