@@ -41,15 +41,8 @@ const Slider = ({ title, allProducts }) => {
 
   return (
     <>
-      <Typography
-        padding={"40px 0 20px 0"}
-        textAlign="center"
-        variant="h5"
-        color={"rgba(51, 123, 255, 0.884)"}
-        fontWeight={"bold"}
-      >
-        {title}
-      </Typography>
+      <h1 className="slider-title">{title}</h1>
+
       <AliceCarousel
         animationDuration={1500}
         autoPlayInterval={500}
