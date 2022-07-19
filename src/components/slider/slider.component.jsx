@@ -23,7 +23,7 @@ const Slider = ({ title, allProducts }) => {
   top5ProductsIDs.map((product) => top5Products.push(product));
   // console.log(top5Products);
 
-  // Storing the the 5 products into an array and pass it down to the pagination function
+  // Storing the the 5 products into one array and pass it down to the pagination function
   const allProductsItems = [];
   top5Products.forEach((item) => {
     allProductsItems.push(
