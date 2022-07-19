@@ -19,13 +19,13 @@ const Slider = ({ title, allProducts }) => {
   // console.log(top5ProductsIDs);
 
   // Getting the top 5 random products cards based on the top5ProductsIDs array
-  const randomProducts = [];
-  top5ProductsIDs.map((product) => randomProducts.push(product));
-  // console.log(randomProducts);
+  const top5Products = [];
+  top5ProductsIDs.map((product) => top5Products.push(product));
+  // console.log(top5Products);
 
   // Storing the the 5 products into an array and pass it down to the pagination function
   const allProductsItems = [];
-  randomProducts.forEach((item) => {
+  top5Products.forEach((item) => {
     allProductsItems.push(
       <img
         className="slider-link"
