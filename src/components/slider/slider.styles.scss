@@ -27,8 +27,9 @@
   }
 }
 
-.slider-name {
-  text-align: center;
+.slider-details {
+  display: flex;
+  justify-content: center;
   font-size: 18px;
   font-family: Roboto, serif;
   color: rgba(255, 51, 5, 0.884);

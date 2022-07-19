@@ -35,13 +35,15 @@ const Slider = ({ title, allProducts }) => {
           alt={product.name}
           role="presentation"
         />
-        <span className="slider-name">
-          {product.name} - ${product.price}
+        <span className="slider-details">
+          <span className="slider-name">{product.name}</span>
+          <span className="slider-price">{product.price}</span>
         </span>
       </>
     );
   });
-  console.log(allProductsItems);
+  // console.log(allProductsItems);
+  console.clear();
 
   return (
     <>
