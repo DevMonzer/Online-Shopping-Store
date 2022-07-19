@@ -27,18 +27,18 @@ const Slider = ({ title, allProducts }) => {
   const allProductsItems = [];
   top5Products.forEach((product) => {
     allProductsItems.push(
-      <div className="slider-container">
-        <img
-          className="slider-image"
-          onClick={() => navigate(product.route)}
-          src={product.imageUrl}
-          alt={product.name}
-          role="presentation"
-        />
-        <span className="slider-name">
-          {product.name} - ${product.price}
-        </span>
-      </div>
+      // <div className="slider-container">
+      <img
+        className="slider-image"
+        onClick={() => navigate(product.route)}
+        src={product.imageUrl}
+        alt={product.name}
+        role="presentation"
+      />
+      //   <span className="slider-name">
+      //     {product.name} - ${product.price}
+      //   </span>
+      // </div>
     );
   });
   console.log(allProductsItems);
@@ -46,20 +46,23 @@ const Slider = ({ title, allProducts }) => {
   return (
     <>
       {allProductsItems.length === 0 ? null : (
-        <AliceCarousel
-          animationDuration={1500}
-          autoPlayInterval={500}
-          disableButtonsControls={true}
-          // disableDotsControls={true}
-          // autoPlayControls={false}
-          mouseTracking
-          autoHeight
-          infinite={true}
-          controlsStrategy={"responsive"}
-          autoWidth={true}
-          autoPlay={true}
-          items={allProductsItems}
-        />
+        <>
+          <h1 className="slider-title">{title}</h1>
+          <AliceCarousel
+            animationDuration={1500}
+            autoPlayInterval={500}
+            disableButtonsControls={true}
+            // disableDotsControls={true}
+            // autoPlayControls={false}
+            mouseTracking
+            // autoHeight
+            infinite={true}
+            controlsStrategy={"responsive"}
+            autoWidth={true}
+            autoPlay={true}
+            items={allProductsItems}
+          />
+        </>
       )}
       <h1 className="slider-title">{title}</h1>
     </>
