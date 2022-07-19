@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import { Typography } from "@mui/material";
 
 import "./slider.styles.scss";
 
@@ -11,17 +10,17 @@ const Slider = ({ title, allProducts }) => {
 
   /////////////////////////////////////////////////////////////////
   // Getting the top 5 products ids randomly
-  const top5Products = [];
+  const top5ProductsIDs = [];
   for (var i = 0; i < 5; i++) {
-    top5Products.push(
+    top5ProductsIDs.push(
       allProducts[Math.floor(Math.random() * allProducts.length)]
     );
   }
-  // console.log(top5Products);
+  // console.log(top5ProductsIDs);
 
-  // Getting the top 5 random products cards based on the top5Products array
+  // Getting the top 5 random products cards based on the top5ProductsIDs array
   const randomProducts = [];
-  top5Products.map((product) => randomProducts.push(product));
+  top5ProductsIDs.map((product) => randomProducts.push(product));
   // console.log(randomProducts);
 
   // Storing the the 5 products into an array and pass it down to the pagination function
