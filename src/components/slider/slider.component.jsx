@@ -27,21 +27,21 @@ const Slider = ({ title, allProducts }) => {
   const allProductsItems = [];
   top5Products.forEach((product) => {
     allProductsItems.push(
-      <div className="slider-container">
-        <img
-          className="slider-image"
-          onClick={() => navigate(product.route)}
-          src={product.imageUrl}
-          alt={product.name}
-          role="presentation"
-        />
-        <span className="slider-name">
-          {product.name} - ${product.price}
-        </span>
-      </div>
+      // <div className="slider-container">
+      <img
+        className="slider-image"
+        onClick={() => navigate(product.route)}
+        src={product.imageUrl}
+        alt={product.name}
+        role="presentation"
+      />
+      // <span className="slider-name">
+      //   {product.name} - ${product.price}
+      // </span>
+      // </div>
     );
   });
-  // console.log(allProductsItems);
+  console.log(allProductsItems);
 
   return (
     <>
