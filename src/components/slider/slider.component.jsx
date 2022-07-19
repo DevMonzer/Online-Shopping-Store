@@ -36,7 +36,7 @@ const Slider = ({ title, allProducts }) => {
           role="presentation"
         />
         <span className="slider-details">
-          <span className="slider-name">{product.name}</span>
+          <span className="slider-name">{product.name}&nbsp;-&nbsp;</span>
           <span className="slider-price">{product.price}</span>
         </span>
       </>
