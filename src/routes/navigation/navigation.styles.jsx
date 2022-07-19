@@ -43,6 +43,14 @@ export const NavLink = styled(Link)`
   padding: 10px 15px;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
+
+  @media screen and (max-width: 800px) {
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 14px;
+  }
 `;
 
 export const Container = styled.div`
