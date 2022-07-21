@@ -40,5 +40,18 @@ const pages = [
 ];
 const settings = ["Profile"];
 
-const ResponsiveAppBar = () => {};
+const ResponsiveAppBar = () => {
+  const [categoryMap, setCategorysMap] = useState([]);
+
+  // Getting the stored data in the shop data on our firestore database
+  useEffect(() => {
+    // Getting back the shop data as an array of objects from the firestore database
+    const getCategoriesMap = async () => {
+      const categoriesMap = await getCategoriesAndDocuments("categories");
+      setCategorysMap(categoriesMap);
+    };
+
+    getCategoriesMap();
+  }, []);
+};
 export default ResponsiveAppBar;
