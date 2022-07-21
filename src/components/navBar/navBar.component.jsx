@@ -126,7 +126,7 @@ const ResponsiveAppBar = () => {
 
   return (
     <AppBar
-      style={{ backgroundColor: "gray", margin: "0 0 10px 0" }}
+      style={{ backgroundColor: "gray", margin: "-10px 0 10px 0" }}
       position="static"
       elevation={0}
     >
