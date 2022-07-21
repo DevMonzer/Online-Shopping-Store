@@ -131,7 +131,7 @@ const SignInForm = () => {
             type="button"
             onClick={signInWithGoogle}
           >
-            Sign In With Google
+            Google
           </Button>
         </ButtonsContainer>
         <Center>
@@ -141,7 +141,7 @@ const SignInForm = () => {
             onClick={signInWithFacebook}
             style={{ width: "100%" }}
           >
-            Sign In With Facebook
+            Facebook
           </Button>
         </Center>
         <Link className="link-style" to="/sign-up">

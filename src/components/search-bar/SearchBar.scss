@@ -70,6 +70,14 @@ a:hover {
   .search input {
     width: 200px;
   }
+
+  .search input {
+    padding: 0 10px;
+  }
+
+  .search {
+    padding: 5px 0 0 0;
+  }
 }
 
 @media screen and (max-width: 400px) {
