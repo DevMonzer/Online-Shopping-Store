@@ -218,6 +218,7 @@ const ResponsiveAppBar = () => {
               <Link
                 style={{
                   color: "white",
+                  backgroundColor: "transparent",
                 }}
                 key={page.id}
                 onClick={handleCloseNavMenu}
@@ -230,13 +231,21 @@ const ResponsiveAppBar = () => {
             ))}
             <Button
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
+              sx={{
+                my: 2,
+                color: "white",
+                display: "block",
+                backgroundColor: "transparent",
+              }}
             >
               {currentUser ? (
                 <span onClick={signOutUser}>SIGN OUT</span>
               ) : (
-                <Link style={{ color: "white" }} to="/sign-in">
-                  SIGN IN
+                <Link
+                  style={{ color: "white", backgroundColor: "transparent" }}
+                  to="/sign-in"
+                >
+                  <span>SIGN IN</span>
                 </Link>
               )}
             </Button>
