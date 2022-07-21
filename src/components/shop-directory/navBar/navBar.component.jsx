@@ -40,30 +40,27 @@ const pages = [
 const settings = ["Profile"];
 
 const ResponsiveAppBar = () => {
-  const [categoryMap, setCategorysMap] = useState([]);
+  const dispatch = useDispatch();
+  const currentUser = useSelector(selectCurrentUser);
+  const isCartOpen = useSelector(selectIsCartOpen);
 
-  // Getting the stored data in the shop data on our firestore database
+  const signOutUser = () => dispatch(signOutStart());
+
+  //////////////////// SearchBar Code ////////////////////
+
   useEffect(() => {
-    // Getting back the shop data as an array of objects from the firestore database
-    const getCategoriesMap = async () => {
-      const categoriesMap = await getCategoriesAndDocuments("categories");
-      setCategorysMap(categoriesMap);
-    };
-
-    getCategoriesMap();
+    dispatch(fetchCategoriesStart());
   }, []);
 
-  // Getting all categoriesMap products and spread them into one variable
+  const categoriesMap = useSelector(selectCategoriesMap);
+
   let allProducts = [];
-  const products = Object.values(categoryMap).map((product) => {
+  const products = Object.values(categoriesMap).map((product) => {
     allProducts.push(...product);
   });
   // console.log(allProducts);
 
-  // Getting the currentUser state
-  const { currentUser } = useContext(UserContext);
-  // Getting the currentCart state
-  const { isCartOpen } = useContext(CartContext);
+  ////////////////////////////////////////////////////////
 
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
