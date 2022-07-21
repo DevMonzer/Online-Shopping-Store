@@ -9,6 +9,7 @@ import Shop from "./routes/shop/shop.component";
 import Card from "./components/card-details/card-details";
 import ErrorHandler from "./routes/error-handler/error-handler";
 import Checkout from "./routes/checkout/checkout.component";
+import ContactUs from "./routes/contact-us/contact-us";
 import SignIn from "./components/sign-in-form/sign-in-form.component";
 import SignUp from "./components/sign-up-form/sign-up-form.component";
 
@@ -43,6 +44,7 @@ const App = () => {
           <Route path="/sign-up" element={<SignUp />} />
 
           <Route path="checkout" element={<Checkout />} />
+          <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/*" element={<ErrorHandler />} />
         </Route>
       </Routes>
