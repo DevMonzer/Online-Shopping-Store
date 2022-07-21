@@ -32,3 +32,10 @@ import CartDropdown from "../../components/cart-dropdown/cart-dropdown.component
 import SearchBar from "../../components/search-bar/SearchBar";
 
 import "./navBar.styles.scss";
+
+const pages = [
+  { id: 1, title: "Home", link: "/" },
+  { id: 2, title: "Shop", link: "/shop" },
+  { id: 3, title: "Contact Us", link: "/contact-us" },
+];
+const settings = ["Profile"];
