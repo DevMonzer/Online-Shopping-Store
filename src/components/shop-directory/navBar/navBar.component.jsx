@@ -125,5 +125,7 @@ const ResponsiveAppBar = () => {
       },
     },
   }));
+
+  let navigate = useNavigate();
 };
 export default ResponsiveAppBar;
