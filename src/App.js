@@ -14,6 +14,8 @@ import SignUp from "./components/sign-up-form/sign-up-form.component";
 
 import { checkUserSession } from "./store/user/user.action";
 
+import { GlobalStyle } from "./global.styles";
+
 const App = () => {
   const dispatch = useDispatch();
 
@@ -23,6 +25,7 @@ const App = () => {
 
   return (
     <div>
+      <GlobalStyle />
       <Routes>
         <Route path="/" element={<Navigation />}>
           <Route index element={<Home />} />
