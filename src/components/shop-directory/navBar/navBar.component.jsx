@@ -39,3 +39,6 @@ const pages = [
   { id: 3, title: "Contact Us", link: "/contact-us" },
 ];
 const settings = ["Profile"];
+
+const ResponsiveAppBar = () => {};
+export default ResponsiveAppBar;
