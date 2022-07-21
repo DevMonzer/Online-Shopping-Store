@@ -14,6 +14,8 @@ import { fetchCategoriesStart } from "../../store/categories/category.action";
 
 import { ReactComponent as CrwnLogo } from "../../assets/crown.svg";
 
+import NavBar from "../../components/navBar/navBar.component";
+
 import {
   NavigationContainer,
   NavLinks,
@@ -48,7 +50,7 @@ const Navigation = () => {
 
   return (
     <Fragment>
-      <Container>
+      {/* <Container>
         <SearchContainer>
           {products && products.length ? (
             <SearchBar placeholder="Search " data={allProducts} />
@@ -71,7 +73,8 @@ const Navigation = () => {
           </NavLinks>
           {isCartOpen && <CartDropdown />}
         </NavigationContainer>
-      </Container>
+      </Container> */}
+      <NavBar />
       <Outlet />
     </Fragment>
   );
