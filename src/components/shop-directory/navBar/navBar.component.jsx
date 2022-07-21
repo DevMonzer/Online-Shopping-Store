@@ -127,5 +127,174 @@ const ResponsiveAppBar = () => {
   }));
 
   let navigate = useNavigate();
+
+  return (
+    <AppBar
+      style={{ backgroundColor: "gray", margin: "0 0 10px 0" }}
+      position="static"
+      elevation={0}
+    >
+      <Container maxWidth="xl">
+        <Toolbar disableGutters>
+          <Link style={{ backgroundColor: "gray" }} to="/">
+            <CrwnLogo />
+          </Link>
+
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              {/* Small Bar */}
+              {pages.map((page) => (
+                <MenuItem key={page.id} onClick={handleCloseNavMenu}>
+                  <Link to={page.link}>{page.title}</Link>
+                </MenuItem>
+              ))}
+              <MenuItem onClick={handleCloseNavMenu}>
+                {currentUser ? (
+                  <span onClick={signOutUser}>SIGN OUT</span>
+                ) : (
+                  <Link to="/sign-in">SIGN IN</Link>
+                )}
+              </MenuItem>
+            </Menu>
+          </Box>
+          <Box sx={{ flexGrow: 1 }}>
+            <Toolbar>
+              {/* <Search>
+                <SearchIconWrapper>
+                  <SearchIcon />
+                </SearchIconWrapper>
+                <StyledInputBase
+                  placeholder="Search…"
+                  inputProps={{ "aria-label": "search" }}
+                />
+              </Search> */}
+              {products && products.length ? (
+                <SearchBar placeholder="Search " data={allProducts} />
+              ) : null}
+            </Toolbar>
+          </Box>
+          <div className="cartIconDiv">
+            <span
+              style={{
+                color: "black",
+              }}
+            >
+              <span
+                style={{
+                  color: "white",
+                }}
+              >
+                <CartIcon />
+              </span>
+              {isCartOpen && <CartDropdown />}
+            </span>
+          </div>
+
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+            {pages.map((page) => (
+              <Button
+                key={page.id}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                <Link
+                  style={{
+                    color: "white",
+                  }}
+                  to={page.link}
+                >
+                  {page.title}
+                </Link>
+              </Button>
+            ))}
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              {currentUser ? (
+                <span onClick={signOutUser}>SIGN OUT</span>
+              ) : (
+                <Link style={{ color: "white" }} to="/sign-in">
+                  SIGN IN
+                </Link>
+              )}
+            </Button>
+            <div
+              style={{
+                marginTop: "8px",
+                color: "black",
+              }}
+            >
+              <span
+                style={{
+                  color: "white",
+                }}
+              >
+                <CartIcon />
+              </span>
+              {isCartOpen && <CartDropdown />}
+            </div>
+          </Box>
+
+          {/* <Box sx={{ flexGrow: 0 }}>
+            <Tooltip title="Open settings">
+              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+              </IconButton>
+            </Tooltip>
+            <Menu
+              sx={{ mt: "45px" }}
+              id="menu-appbar"
+              anchorEl={anchorElUser}
+              anchorOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+              open={Boolean(anchorElUser)}
+              onClose={handleCloseUserMenu}
+            >
+              {settings.map((setting) => (
+                <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                  <Typography textAlign="center">{setting}</Typography>
+                </MenuItem>
+              ))}
+            </Menu>
+          </Box> */}
+        </Toolbar>
+      </Container>
+    </AppBar>
+  );
 };
 export default ResponsiveAppBar;
