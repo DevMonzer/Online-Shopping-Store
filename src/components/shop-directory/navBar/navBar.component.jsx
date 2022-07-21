@@ -53,5 +53,20 @@ const ResponsiveAppBar = () => {
 
     getCategoriesMap();
   }, []);
+
+  // Getting all categoriesMap products and spread them into one variable
+  let allProducts = [];
+  const products = Object.values(categoryMap).map((product) => {
+    allProducts.push(...product);
+  });
+  // console.log(allProducts);
+
+  // Getting the currentUser state
+  const { currentUser } = useContext(UserContext);
+  // Getting the currentCart state
+  const { isCartOpen } = useContext(CartContext);
+
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [anchorElUser, setAnchorElUser] = useState(null);
 };
 export default ResponsiveAppBar;
