@@ -23,7 +23,7 @@ const Card = () => {
   const cartItems = useSelector(selectCartItems);
 
   useEffect(() => {
-    window.scrollTo(0, { behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
   // Getting all categoriesMap products
