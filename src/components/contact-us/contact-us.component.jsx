@@ -15,6 +15,9 @@ const Results = () => {
 };
 
 const ContactUs = () => {
+  const [results, setResults] = useState(false);
+  const form = useRef();
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
