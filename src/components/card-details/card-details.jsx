@@ -10,6 +10,7 @@ import { addItemToCart } from "../../store/cart/cart.action";
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 import Spinner from "../spinner/spinner.component";
 import Slider from "../slider/slider.component";
+import Loader from "../loader/loader.component";
 
 import "./card-details.scss";
 
@@ -69,7 +70,7 @@ const Card = () => {
   return (
     <Fragment>
       {!allProducts?.length ? (
-        <Spinner />
+        <Loader />
       ) : (
         <>
           <div className="productCardContainer">
