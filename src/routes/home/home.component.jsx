@@ -2,7 +2,6 @@ import { Outlet } from "react-router-dom";
 
 import HomeDirectory from "../../components/home-directory/home-directory.component";
 import ContactUsForm from "../../components/contact-us/contact-us.component";
-import Footer from "../../components/footer/footer.component";
 
 const categories = [
   {
@@ -75,8 +74,6 @@ const Home = () => {
           Monzer
         </a>
       </p> */}
-
-      <Footer />
     </div>
   );
 };
