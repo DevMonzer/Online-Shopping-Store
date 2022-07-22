@@ -63,6 +63,8 @@ const ContactUs = () => {
               </div>
               <div className="col-md-6">
                 <form
+                  ref={form}
+                  onSubmit={sendEmail}
                   className="mb-5"
                   method="post"
                   id="contactForm"
