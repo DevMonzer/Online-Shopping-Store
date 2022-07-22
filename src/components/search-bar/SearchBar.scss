@@ -6,6 +6,7 @@
   width: 350px;
   height: 35px;
   color: black;
+  padding: 0 10px;
   position: relative;
 }
 
@@ -73,10 +74,6 @@ a:hover {
   .dataResult,
   .search input {
     width: 200px;
-  }
-
-  .search input {
-    padding: 0 10px;
   }
 }
 
