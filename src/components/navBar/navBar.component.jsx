@@ -163,9 +163,9 @@ const ResponsiveAppBar = () => {
             >
               {/* Small Bar */}
               {pages.map((page) => (
-                <MenuItem key={page.id} onClick={handleCloseNavMenu}>
-                  <Link to={page.link}>{page.title}</Link>
-                </MenuItem>
+                <Link key={page.id} to={page.link} onClick={handleCloseNavMenu}>
+                  <MenuItem>{page.title}</MenuItem>
+                </Link>
               ))}
               <MenuItem onClick={handleCloseNavMenu}>
                 {currentUser ? (
