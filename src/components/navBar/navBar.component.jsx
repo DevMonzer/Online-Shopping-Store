@@ -125,12 +125,7 @@ const ResponsiveAppBar = () => {
   let navigate = useNavigate();
 
   return (
-    <AppBar
-      style={{ backgroundColor: "gray", margin: "-10px 0 10px 0" }}
-      position="static"
-      elevation={0}
-      sx={{ padding: { lg: "0", xs: "10px 0" } }}
-    >
+    <AppBar className="appbar-container" position="static" elevation={0}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link style={{ backgroundColor: "gray" }} to="/">
