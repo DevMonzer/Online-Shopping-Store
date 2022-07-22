@@ -129,7 +129,7 @@ const ResponsiveAppBar = () => {
       style={{ backgroundColor: "gray", margin: "-10px 0 10px 0" }}
       position="static"
       elevation={0}
-      sx={{ padding: { xs: "10px 0" } }}
+      sx={{ padding: { lg: "0", xs: "10px 0" } }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
