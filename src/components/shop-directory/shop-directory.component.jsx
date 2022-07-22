@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import { useSelector } from "react-redux";
 
 import {
@@ -21,6 +21,10 @@ import {
 const ShopDirectory = () => {
   const categoriesMap = useSelector(selectCategoriesMap);
   const isLoading = useSelector(selectCategoriesIsLoading);
+
+  useEffect(() => {
+    window.scrollTo(0, { behavior: "smooth" });
+  });
 
   return (
     <Fragment>
