@@ -18,6 +18,29 @@ const ContactUs = () => {
   const [results, setResults] = useState(false);
   const form = useRef();
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_12a673s",
+        "template_s0kk4g9",
+        form.current,
+        "MDaoH8yGvOU2JIVdR"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    e.target.reset();
+    setResults(true);
+  };
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
