@@ -22,8 +22,8 @@ export const CategoryContainer = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 38px;
-  margin-bottom: 25px;
+  font-size: 33px;
+  margin: 10px 0 15px 0;
   text-align: center;
 `;
 
