@@ -1,5 +1,10 @@
 import React from "react";
 
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+
 import "./footer.styles.css";
 
 const Footer = () => {
@@ -50,19 +55,19 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/devmonzer/"
                 rel="noreferrer"
               >
-                <i className="fa fa-linkedin fa-2x"></i>
+                <LinkedInIcon />
               </a>
               <a target="_blank" href="https://github.com/DevMonzer">
-                <i className="fa fa-github fa-2x"></i>
+                <GitHubIcon />
               </a>
               <a target="_blank" href="https://twitter.com/DevMonzer">
-                <i className="fa fa-twitter fa-2x"></i>
+                <TwitterIcon />
               </a>
               <a
                 target="_blank"
                 href="https://www.facebook.com/profile.php?id=100075721583290"
               >
-                <i className="fa fa-facebook-square fa-2x"></i>
+                <FacebookOutlinedIcon />
               </a>
             </div>
           </div>
