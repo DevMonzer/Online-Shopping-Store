@@ -107,6 +107,7 @@ const ContactUs = () => {
                     <div className="col-md-12 form-group">
                       <textarea
                         className="form-control"
+                        type="text"
                         name="message"
                         id="message"
                         cols="30"
