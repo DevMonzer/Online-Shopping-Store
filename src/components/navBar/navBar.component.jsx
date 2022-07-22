@@ -128,7 +128,7 @@ const ResponsiveAppBar = () => {
     <AppBar className="appbar-container" position="static" elevation={0}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Link style={{ backgroundColor: "gray" }} to="/">
+          <Link to="/">
             <CrwnLogo />
           </Link>
 
