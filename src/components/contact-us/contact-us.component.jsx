@@ -8,8 +8,8 @@ import "./contact-us.styles.css";
 
 const Results = () => {
   return (
-    <p style={{ color: "green", padding: "20px", fontWeight: "bold" }}>
-      '&gt;' Your message has been successfully sent ✅
+    <p style={{ color: "green", fontWeight: "bold" }}>
+      &gt; Your message has been successfully sent
     </p>
   );
 };
