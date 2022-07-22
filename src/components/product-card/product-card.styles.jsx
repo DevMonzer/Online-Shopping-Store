@@ -8,6 +8,10 @@ export const ProductCartContainer = styled.div`
   align-items: center;
   position: relative;
 
+  @media screen and (max-width: 400px) {
+    padding: 5px 0;
+  }
+
   img {
     width: 100%;
     height: 95%;
