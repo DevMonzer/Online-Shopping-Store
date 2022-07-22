@@ -63,13 +63,22 @@ export const Footer = styled.div`
   font-size: 16px;
   font-family: "Roboto", sans-serif;
 
+  @media screen and (max-width: 1000px) {
+    width: 96%;
+  }
+
+  @media screen and (max-width: 650px) {
+    width: 92%;
+  }
+
   @media screen and (max-width: 400px) {
-    width: 80%;
+    width: 83%;
+    font-size: 14px;
   }
 `;
 
 export const Name = styled.span`
-  width: 80%;
+  width: 90%;
 `;
 
 export const Price = styled.span`
