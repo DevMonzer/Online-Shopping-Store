@@ -119,8 +119,7 @@ const ContactUs = () => {
                   <div className="row">
                     <div className="col-12">
                       <input
-                        // type="submit"
-                        onChange={() => console.log("s")}
+                        type="submit"
                         value="Send Message"
                         className="btn btn-primary rounded-0 py-2 px-4"
                       />
