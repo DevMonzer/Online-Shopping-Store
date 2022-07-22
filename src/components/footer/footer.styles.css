@@ -1,6 +1,6 @@
 .footer-dark {
   padding: 50px 0;
-  color: #f0f9ff;
+  color: #fff;
   background-color: gray;
 }
 
@@ -22,7 +22,7 @@
 .footer-dark ul a {
   color: inherit;
   text-decoration: none;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .footer-dark ul a:hover {
@@ -47,7 +47,7 @@
 }
 
 .footer-dark .item.text p {
-  opacity: 0.6;
+  opacity: 0.8;
   margin-bottom: 0;
 }
 

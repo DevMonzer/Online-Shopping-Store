@@ -8,21 +8,21 @@ const Footer = () => {
       <footer>
         <div className="container">
           <div className="row">
-            <div className="col-sm-6 col-md-3 item">
-              <h3>Services</h3>
+            <div className="col-sm-12 col-md-3 item">
+              <h3>Pages</h3>
               <ul>
                 <li>
-                  <a href="#">Web design</a>
+                  <a href="#">Home</a>
                 </li>
                 <li>
-                  <a href="#">Development</a>
+                  <a href="#">Shop</a>
                 </li>
                 <li>
-                  <a href="#">Hosting</a>
+                  <a href="#">Contact Us</a>
                 </li>
               </ul>
             </div>
-            <div className="col-sm-6 col-md-3 item">
+            {/* <div className="col-sm-6 col-md-3 item">
               <h3>About</h3>
               <ul>
                 <li>
@@ -35,32 +35,40 @@ const Footer = () => {
                   <a href="#">Careers</a>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div className="col-md-6 item text">
-              <h3>Company Name</h3>
+              <h3>Shopping Store</h3>
               <p>
-                Praesent sed lobortis mi. Suspendisse vel placerat ligula.
-                Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis
-                tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel
-                in justo.
+                Here you can find modern fashion products, and you can easily
+                add cards to your shopping cart. <br /> Don't forget to visit
+                our social media platforms to see the latest news.
               </p>
             </div>
             <div className="col item social">
-              <a href="#">
-                <i className="icon ion-social-facebook"></i>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/devmonzer/"
+                rel="noreferrer"
+              >
+                <i className="fa fa-linkedin fa-2x"></i>
               </a>
-              <a href="#">
-                <i className="icon ion-social-twitter"></i>
+              <a target="_blank" href="https://github.com/DevMonzer">
+                <i className="fa fa-github fa-2x"></i>
               </a>
-              <a href="#">
-                <i className="icon ion-social-snapchat"></i>
+              <a target="_blank" href="https://twitter.com/DevMonzer">
+                <i className="fa fa-twitter fa-2x"></i>
               </a>
-              <a href="#">
-                <i className="icon ion-social-instagram"></i>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=100075721583290"
+              >
+                <i className="fa fa-facebook-square fa-2x"></i>
               </a>
             </div>
           </div>
-          <p className="copyright">Company Name © {new Date().getFullYear()}</p>
+          <p className="copyright">
+            All rights reserved © {new Date().getFullYear()}
+          </p>
         </div>
       </footer>
     </div>
