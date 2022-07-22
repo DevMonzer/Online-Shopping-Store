@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 
 import { ReactComponent as ContactIcon } from "../../assets/undraw-contact.svg";
 
@@ -6,6 +6,10 @@ import "./bootstrap.min.css";
 import "./contact-us.styles.css";
 
 const ContactUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, { behavior: "smooth" });
+  });
+
   return (
     <div className="content">
       <div className="container">
