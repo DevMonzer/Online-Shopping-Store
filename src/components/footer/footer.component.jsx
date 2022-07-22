@@ -27,20 +27,6 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            {/* <div className="col-sm-6 col-md-3 item">
-              <h3>About</h3>
-              <ul>
-                <li>
-                  <a href="#">Company</a>
-                </li>
-                <li>
-                  <a href="#">Team</a>
-                </li>
-                <li>
-                  <a href="#">Careers</a>
-                </li>
-              </ul>
-            </div> */}
             <div className="col-md-6 item text">
               <h3>Shopping Store</h3>
               <p>
