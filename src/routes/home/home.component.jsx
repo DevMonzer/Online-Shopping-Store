@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 
 import HomeDirectory from "../../components/home-directory/home-directory.component";
 import ContactUsForm from "../../components/contact-us/contact-us.component";
+import Footer from "../../components/footer/footer.component";
 
 const categories = [
   {
@@ -54,7 +55,7 @@ const Home = () => {
       <HomeDirectory categories={categories} />
       <Outlet />
       {/* <ContactUsForm /> */}
-      <p
+      {/* <p
         style={{
           fontSize: "1.2rem",
           textAlign: "center",
@@ -73,7 +74,9 @@ const Home = () => {
         >
           Monzer
         </a>
-      </p>
+      </p> */}
+
+      <Footer />
     </div>
   );
 };

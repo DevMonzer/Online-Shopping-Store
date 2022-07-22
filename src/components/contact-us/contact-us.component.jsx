@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ReactComponent as Human } from "../../assets/undraw-contact.svg";
+import { ReactComponent as ContactIcon } from "../../assets/undraw-contact.svg";
 
 import "./bootstrap.min.css";
 import "./contact-us.styles.css";
@@ -19,7 +19,7 @@ const ContactUs = () => {
                 </p>
 
                 <p>
-                  <Human className="img-fluid" />
+                  <ContactIcon className="img-fluid" />
                 </p>
               </div>
               <div className="col-md-6">
