@@ -123,7 +123,6 @@ const ResponsiveAppBar = () => {
 
   let navigate = useNavigate();
   const signOutUser = () => dispatch(signOutStart());
-  const onNavigateHandler = () => navigate();
 
   return (
     <AppBar className="appbar-container" position="static" elevation={0}>
