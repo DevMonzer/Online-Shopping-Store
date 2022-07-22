@@ -122,11 +122,13 @@ const ContactUs = () => {
                   </div>
                   <div className="row">
                     <div className="col-12">
-                      <input
+                      <button
                         type="submit"
-                        value="Send Message"
+                        // value=""
                         className="btn btn-primary rounded-0 py-2 px-4"
-                      />
+                      >
+                        Send Message
+                      </button>
                       <span className="submitting"></span>
                     </div>
                   </div>
