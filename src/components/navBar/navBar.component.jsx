@@ -121,8 +121,9 @@ const ResponsiveAppBar = () => {
   });
   // console.log(allProducts);
 
-  const signOutUser = () => dispatch(signOutStart());
   let navigate = useNavigate();
+  const signOutUser = () => dispatch(signOutStart());
+  const onNavigateHandler = () => navigate(route);
 
   return (
     <AppBar className="appbar-container" position="static" elevation={0}>
