@@ -36,4 +36,5 @@ export const Preview = styled.div`
 
 export const Center = styled.h2`
   text-align: center;
+  padding: 0 0 10px 0;
 `;
