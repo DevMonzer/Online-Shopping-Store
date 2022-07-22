@@ -115,6 +115,7 @@ const ResponsiveAppBar = () => {
 
   const categoriesMap = useSelector(selectCategoriesMap);
 
+  // Getting the categories for the searchBar
   let allProducts = [];
   const products = Object.values(categoriesMap).map((product) => {
     allProducts.push(...product);
