@@ -8,6 +8,8 @@ import {
 
 import Spinner from "../spinner/spinner.component";
 
+import Loader from "../loader/loader.component";
+
 import ProductCard from "../product-card/product-card.component";
 
 import {
@@ -29,7 +31,7 @@ const ShopDirectory = () => {
   return (
     <Fragment>
       {isLoading ? (
-        <Spinner />
+        <Loader />
       ) : (
         Object.keys(categoriesMap).map((title) => {
           const products = categoriesMap[title];
