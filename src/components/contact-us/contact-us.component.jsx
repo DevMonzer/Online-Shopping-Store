@@ -20,9 +20,7 @@ const ContactUs = () => {
                 </p>
 
                 <p>
-                  {/* <img src="images/undraw-contact.svg" alt="Image" /> */}
-
-                  {/* <Human className="img-fluid" /> */}
+                  <Human className="img-fluid" />
                 </p>
               </div>
               <div className="col-md-6">
