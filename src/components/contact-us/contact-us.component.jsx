@@ -6,6 +6,14 @@ import { ReactComponent as ContactIcon } from "../../assets/undraw-contact.svg";
 import "./bootstrap.min.css";
 import "./contact-us.styles.css";
 
+const Results = () => {
+  return (
+    <p style={{ color: "green", padding: "20px", fontWeight: "bold" }}>
+      '&gt;' Your message has been successfully sent ✅
+    </p>
+  );
+};
+
 const ContactUs = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
