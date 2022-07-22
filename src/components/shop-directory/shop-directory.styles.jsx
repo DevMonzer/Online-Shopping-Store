@@ -6,10 +6,15 @@ export const CategoryPreviewContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
+  padding: 0 10px;
+
+  @media screen and (max-width: 400px) {
+    padding: 0;
+  }
 `;
 
 export const Title = styled(Link)`
-  font-size: 28px;
+  font-size: 33px;
   margin-bottom: 25px;
   cursor: pointer;
 `;
