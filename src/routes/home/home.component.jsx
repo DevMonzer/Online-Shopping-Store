@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 
 import HomeDirectory from "../../components/home-directory/home-directory.component";
+import ContactUs from "../../components/contact-us/contact-us.component";
 
 const categories = [
   {
@@ -52,6 +53,11 @@ const Home = () => {
     <div>
       <HomeDirectory categories={categories} />
       <Outlet />
+      {/* <div
+        style={{ backgroundColor: "rgb(73, 73, 73)", marginBottom: "-150px" }}
+      >
+        <ContactUs />
+      </div> */}
     </div>
   );
 };
