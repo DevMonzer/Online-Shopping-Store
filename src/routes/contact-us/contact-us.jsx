@@ -1,10 +1,11 @@
 import React from "react";
 
+import ContactUss from "../../components/contact-us/contact-us.component";
+
 const ContactUs = () => {
   return (
-    <div style={{ textAlign: "center", fontSize: "30px", color: "red" }}>
-      This route is not implemented yet.
-      <p style={{ color: "green" }}>Go Back</p>
+    <div>
+      <ContactUss />
     </div>
   );
 };

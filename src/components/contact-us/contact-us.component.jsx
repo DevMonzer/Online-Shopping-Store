@@ -1,92 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap"
-      rel="stylesheet"
-    />
+import React from "react";
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+import { ReactComponent as Human } from "../../assets/undraw-contact.svg";
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+import "./bootstrap.min.css";
+import "./contact-us.styles.css";
 
-    <!-- Style -->
-    <link rel="stylesheet" href="css/style.css" />
-
-    <title>Contact Form #6</title>
-  </head>
-  <body>
-    <div class="content">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-10">
-            <div class="row justify-content-center">
-              <div class="col-md-6">
-                <h3 class="heading mb-4">Let's talk about everything!</h3>
+const ContactUs = () => {
+  return (
+    <div className="content">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-md-10">
+            <div className="row justify-content-center">
+              <div className="col-md-6">
+                <h3 className="heading mb-4">Let's talk about everything!</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Voluptas debitis, fugit natus?
                 </p>
 
                 <p>
-                  <img
-                    src="images/undraw-contact.svg"
-                    alt="Image"
-                    class="img-fluid"
-                  />
+                  {/* <img src="images/undraw-contact.svg" alt="Image" /> */}
+
+                  {/* <Human className="img-fluid" /> */}
                 </p>
               </div>
-              <div class="col-md-6">
+              <div className="col-md-6">
                 <form
-                  class="mb-5"
+                  className="mb-5"
                   method="post"
                   id="contactForm"
                   name="contactForm"
                 >
-                  <div class="row">
-                    <div class="col-md-12 form-group">
+                  <div className="row">
+                    <div className="col-md-12 form-group">
                       <input
                         type="text"
-                        class="form-control"
+                        className="form-control"
                         name="name"
                         id="name"
                         placeholder="Your name"
                       />
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
+                  <div className="row">
+                    <div className="col-md-12 form-group">
                       <input
                         type="text"
-                        class="form-control"
+                        className="form-control"
                         name="email"
                         id="email"
                         placeholder="Email"
                       />
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
+                  <div className="row">
+                    <div className="col-md-12 form-group">
                       <input
                         type="text"
-                        class="form-control"
+                        className="form-control"
                         name="subject"
                         id="subject"
                         placeholder="Subject"
                       />
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
+                  <div className="row">
+                    <div className="col-md-12 form-group">
                       <textarea
-                        class="form-control"
+                        className="form-control"
                         name="message"
                         id="message"
                         cols="30"
@@ -95,14 +77,14 @@
                       ></textarea>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-12">
+                  <div className="row">
+                    <div className="col-12">
                       <input
                         type="submit"
                         value="Send Message"
-                        class="btn btn-primary rounded-0 py-2 px-4"
+                        className="btn btn-primary rounded-0 py-2 px-4"
                       />
-                      <span class="submitting"></span>
+                      <span className="submitting"></span>
                     </div>
                   </div>
                 </form>
@@ -117,5 +99,7 @@
         </div>
       </div>
     </div>
-  </body>
-</html>
+  );
+};
+
+export default ContactUs;
