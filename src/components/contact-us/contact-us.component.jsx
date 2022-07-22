@@ -15,8 +15,7 @@ const ContactUs = () => {
               <div className="col-md-6">
                 <h3 className="heading mb-4">Let's talk about everything!</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptas debitis, fugit natus?
+                  Pleese feel free to talk about everything you can think of
                 </p>
 
                 <p>
@@ -78,7 +77,7 @@ const ContactUs = () => {
                   <div className="row">
                     <div className="col-12">
                       <input
-                        type="submit"
+                        // type="submit"
                         value="Send Message"
                         className="btn btn-primary rounded-0 py-2 px-4"
                       />
