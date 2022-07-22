@@ -54,26 +54,6 @@ const Home = () => {
       <HomeDirectory categories={categories} />
       <Outlet />
       {/* <ContactUsForm /> */}
-      {/* <p
-        style={{
-          fontSize: "1.2rem",
-          textAlign: "center",
-          fontFamily: "Roboto",
-        }}
-      >
-        This app is built by :&nbsp;
-        <a
-          style={{
-            color: "rgba(51, 123, 255, 0.884)",
-            textDecoration: "underline",
-          }}
-          target="_blank"
-          href="https://dev-monzer.vercel.app/"
-          rel="noreferrer"
-        >
-          Monzer
-        </a>
-      </p> */}
     </div>
   );
 };
