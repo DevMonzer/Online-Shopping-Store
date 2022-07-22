@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import emailjs from "@emailjs/browser";
 
 import { ReactComponent as ContactIcon } from "../../assets/undraw-contact.svg";
 
