@@ -1,7 +1,9 @@
+// React
 import { useState, useEffect, useContext } from "react";
 import { Outlet, Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
+// MUI
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -19,16 +21,19 @@ import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 
+// Components
 import CartIcon from "../../components/cart-icon/cart-icon.component";
 import CartDropdown from "../../components/cart-dropdown/cart-dropdown.component";
 import SearchBar from "../../components/search-bar/SearchBar";
 
+// Redux
 import { selectIsCartOpen } from "../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../store/user/user.selector";
 import { signOutStart } from "../../store/user/user.action";
 import { selectCategoriesMap } from "../../store/categories/category.selector";
 import { fetchCategoriesStart } from "../../store/categories/category.action";
 
+// Dependencies
 import { ReactComponent as CrwnLogo } from "../../assets/crown.svg";
 import "./navBar.styles.scss";
 
@@ -40,28 +45,6 @@ const pages = [
 const settings = ["Profile"];
 
 const ResponsiveAppBar = () => {
-  const dispatch = useDispatch();
-  const currentUser = useSelector(selectCurrentUser);
-  const isCartOpen = useSelector(selectIsCartOpen);
-
-  const signOutUser = () => dispatch(signOutStart());
-
-  //////////////////// SearchBar Code ////////////////////
-
-  useEffect(() => {
-    dispatch(fetchCategoriesStart());
-  }, []);
-
-  const categoriesMap = useSelector(selectCategoriesMap);
-
-  let allProducts = [];
-  const products = Object.values(categoriesMap).map((product) => {
-    allProducts.push(...product);
-  });
-  // console.log(allProducts);
-
-  ////////////////////////////////////////////////////////
-
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
 
@@ -122,6 +105,23 @@ const ResponsiveAppBar = () => {
     },
   }));
 
+  const dispatch = useDispatch();
+  const currentUser = useSelector(selectCurrentUser);
+  const isCartOpen = useSelector(selectIsCartOpen);
+
+  useEffect(() => {
+    dispatch(fetchCategoriesStart());
+  }, []);
+
+  const categoriesMap = useSelector(selectCategoriesMap);
+
+  let allProducts = [];
+  const products = Object.values(categoriesMap).map((product) => {
+    allProducts.push(...product);
+  });
+  // console.log(allProducts);
+
+  const signOutUser = () => dispatch(signOutStart());
   let navigate = useNavigate();
 
   return (
