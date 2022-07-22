@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import {
@@ -10,6 +11,10 @@ import {
 // Home Page
 const HomeDirectory = ({ categories }) => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, { behavior: "smooth" });
+  });
 
   return (
     <DirectoryContainer>
