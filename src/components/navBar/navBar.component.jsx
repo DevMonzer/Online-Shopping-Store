@@ -210,7 +210,13 @@ const ResponsiveAppBar = () => {
             </span>
           </div>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              justifyContent: "end",
+            }}
+          >
             {pages.map((page) => (
               <Link
                 style={{
