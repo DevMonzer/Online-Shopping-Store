@@ -7,21 +7,11 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-import Alert from "@mui/material/Alert";
-import Stack from "@mui/material/Stack";
 
 import { ReactComponent as ContactIcon } from "../../assets/undraw-contact.svg";
 
 import "./bootstrap.min.css";
 import "./contact-us.styles.css";
-
-const Success = () => {
-  return (
-    <Stack sx={{ width: "100%" }} spacing={2}>
-      <Alert severity="success">Your message has been sent successfully</Alert>
-    </Stack>
-  );
-};
 
 const Error = () => {
   return (
@@ -40,19 +30,17 @@ const AlertDialog = () => {
   };
 
   return (
-    <>
+    <div>
       <Dialog
         open={open}
         onClose={handleClose}
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">{"Sucess"}</DialogTitle>
+        <DialogTitle id="alert-dialog-title">{"Success"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            {/* <Alert severity="success"> */}
             Your message has been sent successfully
-            {/* </Alert> */}
           </DialogContentText>
         </DialogContent>
         <DialogActions>
@@ -61,7 +49,7 @@ const AlertDialog = () => {
           </Button>
         </DialogActions>
       </Dialog>
-    </>
+    </div>
   );
 };
 
