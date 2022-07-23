@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
@@ -10,7 +11,6 @@ import DialogTitle from "@mui/material/DialogTitle";
 
 import { ReactComponent as ContactIcon } from "../../assets/undraw-contact.svg";
 
-import "./bootstrap.min.css";
 import "./contact-us.styles.scss";
 
 // AlertDialog
