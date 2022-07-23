@@ -23,10 +23,6 @@ const Card = () => {
   const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-
   // Getting all categoriesMap products
   let allProducts = [];
   Object.values(categoriesMap).map((product) => {
