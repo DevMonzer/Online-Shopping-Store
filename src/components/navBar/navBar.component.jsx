@@ -170,9 +170,9 @@ const ResponsiveAppBar = () => {
               ))}
               <MenuItem onClick={handleCloseNavMenu}>
                 {currentUser ? (
-                  <span onClick={signOutUser}>SIGN OUT</span>
+                  <span onClick={signOutUser}>Sign Out</span>
                 ) : (
-                  <Link to="/sign-in">SIGN IN</Link>
+                  <Link to="/sign-in">Sign In</Link>
                 )}
               </MenuItem>
             </Menu>
