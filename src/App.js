@@ -6,10 +6,10 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./routes/home/home.component";
 import Navigation from "./routes/navigation/navigation.component";
 import Shop from "./routes/shop/shop.component";
-import Card from "./components/card-details/card-details";
-import ErrorHandler from "./routes/error-handler/error-handler";
 import Checkout from "./routes/checkout/checkout.component";
-// import ContactUs from "./routes/contact-us/contact-us";
+import ErrorHandler from "./routes/error-handler/error-handler";
+import Card from "./components/card-details/card-details";
+
 import ContactUs from "./components/contact-us/contact-us.component";
 import SignIn from "./components/sign-in-form/sign-in-form.component";
 import SignUp from "./components/sign-up-form/sign-up-form.component";
