@@ -13,14 +13,6 @@ import { ReactComponent as ContactIcon } from "../../assets/undraw-contact.svg";
 import "./bootstrap.min.css";
 import "./contact-us.styles.css";
 
-const Error = () => {
-  return (
-    <Stack sx={{ width: "100%" }} spacing={2}>
-      <Alert severity="error">Something went wrong! Please try again.</Alert>
-    </Stack>
-  );
-};
-
 // AlertDialog
 const SuccessDialog = () => {
   const [open, setOpen] = useState(true);
