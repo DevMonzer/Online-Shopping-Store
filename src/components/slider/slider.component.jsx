@@ -8,6 +8,10 @@ import "./slider.styles.scss";
 const Slider = ({ title, allProducts }) => {
   const navigate = useNavigate();
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
   /////////////////////////////////////////////////////////////////
   // Getting the top 5 products ids randomly
   const top5ProductsIDs = [];
