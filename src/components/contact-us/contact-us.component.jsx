@@ -18,11 +18,10 @@ const Success = () => {
   );
 };
 
-const Success = () => {
+const Error = () => {
   return (
     <Stack sx={{ width: "100%" }} spacing={2}>
-      {/* <Alert severity="error">This is an error alert — check it out!</Alert> */}
-      <Alert severity="success">This is a success alert — check it out!</Alert>
+      <Alert severity="error">This is an error alert — check it out!</Alert>
     </Stack>
   );
 };
