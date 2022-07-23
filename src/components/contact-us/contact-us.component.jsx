@@ -9,13 +9,7 @@ import { ReactComponent as ContactIcon } from "../../assets/undraw-contact.svg";
 import "./bootstrap.min.css";
 import "./contact-us.styles.css";
 
-const Results = () => {
-  // return (
-  //   <p style={{ color: "green", fontWeight: "bold" }}>
-  //     &gt; Your message has been successfully sent
-  //   </p>
-  // );
-
+const Success = () => {
   return (
     <Stack sx={{ width: "100%" }} spacing={2}>
       {/* <Alert severity="error">This is an error alert — check it out!</Alert> */}
@@ -143,7 +137,7 @@ const ContactUs = () => {
                     </div>
                   </div>
                 </form>
-                <div> {results ? <Results /> : null}</div>
+                <div> {results ? <Success /> : null}</div>
               </div>
             </div>
           </div>
