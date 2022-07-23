@@ -22,7 +22,7 @@ const Error = () => {
 };
 
 // AlertDialog
-const AlertDialog = () => {
+const SuccessDialog = () => {
   const [open, setOpen] = useState(true);
 
   const handleClose = () => {
@@ -172,7 +172,7 @@ const ContactUs = () => {
                     </div>
                   </div>
                 </form>
-                <div> {results ? <AlertDialog /> : null}</div>
+                <div> {results ? <SuccessDialog /> : null}</div>
               </div>
             </div>
           </div>
