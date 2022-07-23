@@ -40,7 +40,7 @@ const AlertDialog = () => {
   };
 
   return (
-    <div>
+    <>
       <Dialog
         open={open}
         onClose={handleClose}
@@ -61,7 +61,7 @@ const AlertDialog = () => {
           </Button>
         </DialogActions>
       </Dialog>
-    </div>
+    </>
   );
 };
 
@@ -184,7 +184,7 @@ const ContactUs = () => {
                     </div>
                   </div>
                 </form>
-                <div> {results ? <AlertDialog /> : <Error />}</div>
+                <div> {results ? <AlertDialog /> : null}</div>
               </div>
             </div>
           </div>
