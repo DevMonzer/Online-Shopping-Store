@@ -133,18 +133,7 @@ const ContactUs = () => {
                     </div>
                   </div>
                 </form>
-                {/* <div> {results ? <Results /> : null}</div> */}
-                <div>
-                  {results ? (
-                    <div id="form-message-success">
-                      Your message was sent, thank you!
-                    </div>
-                  ) : (
-                    <div id="form-message-warning mt-4">
-                      Something went wrong. Please try again.
-                    </div>
-                  )}
-                </div>
+                <div> {results ? <Results /> : null}</div>
                 <div id="form-message-warning mt-4"></div>
                 <div id="form-message-success">
                   Your message was sent, thank you!
