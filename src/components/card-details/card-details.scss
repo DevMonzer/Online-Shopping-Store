@@ -5,6 +5,8 @@
   column-gap: 50px;
   font-family: "Roboto", sans-serif;
 
+  padding: 60px 0 40px 0;
+
   @media screen and (max-width: 600px) {
     flex-direction: column;
     row-gap: 50px;
@@ -39,8 +41,8 @@
   }
 
   &:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease-in;
+    transform: scale(1.3);
+    transition: all 1s ease-in;
 
     @media screen and (max-width: 600px) {
       transform: scale(1);
