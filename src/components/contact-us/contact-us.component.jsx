@@ -47,14 +47,12 @@ const AlertDialog = () => {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">
-          {"Use Google's location service?"}
-        </DialogTitle>
+        <DialogTitle id="alert-dialog-title">{"Sucess"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            <Alert severity="success">
-              Your message has been sent successfully
-            </Alert>
+            {/* <Alert severity="success"> */}
+            Your message has been sent successfully
+            {/* </Alert> */}
           </DialogContentText>
         </DialogContent>
         <DialogActions>
