@@ -11,7 +11,7 @@ import DialogTitle from "@mui/material/DialogTitle";
 import { ReactComponent as ContactIcon } from "../../assets/undraw-contact.svg";
 
 import "./bootstrap.min.css";
-import "./contact-us.styles.css";
+import "./contact-us.styles.scss";
 
 // AlertDialog
 const SuccessDialog = () => {
