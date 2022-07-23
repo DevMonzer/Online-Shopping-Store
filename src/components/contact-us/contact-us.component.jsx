@@ -33,7 +33,7 @@ const Error = () => {
 
 // AlertDialog
 const AlertDialog = () => {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -193,7 +193,7 @@ const ContactUs = () => {
                     </div>
                   </div>
                 </form>
-                <div> {results ? <Success /> : <Error />}</div>
+                <div> {results ? <AlertDialog /> : <Error />}</div>
               </div>
             </div>
           </div>
