@@ -12,7 +12,7 @@ import "./contact-us.styles.css";
 const Success = () => {
   return (
     <Stack sx={{ width: "100%" }} spacing={2}>
-      <Alert severity="success">This is a success alert — check it out!</Alert>
+      <Alert severity="success">Your message has been sent successfully</Alert>
     </Stack>
   );
 };
@@ -20,7 +20,7 @@ const Success = () => {
 const Error = () => {
   return (
     <Stack sx={{ width: "100%" }} spacing={2}>
-      <Alert severity="error">This is an error alert — check it out!</Alert>
+      <Alert severity="error">Something went wrong! Please try again.</Alert>
     </Stack>
   );
 };
