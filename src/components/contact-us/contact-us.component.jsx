@@ -1,6 +1,9 @@
 import { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
+import Alert from "@mui/material/Alert";
+import Stack from "@mui/material/Stack";
+
 import { ReactComponent as ContactIcon } from "../../assets/undraw-contact.svg";
 
 import "./bootstrap.min.css";
