@@ -155,7 +155,6 @@ const ContactUs = () => {
                     <div className="col-12">
                       <button
                         type="submit"
-                        // value=""
                         className="btn btn-primary rounded-0 py-2 px-4"
                       >
                         Send Message
