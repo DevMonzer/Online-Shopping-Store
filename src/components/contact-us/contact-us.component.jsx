@@ -1,6 +1,12 @@
 import { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
+import Button from "@mui/material/Button";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
 import Alert from "@mui/material/Alert";
 import Stack from "@mui/material/Stack";
 
