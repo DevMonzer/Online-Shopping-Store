@@ -144,7 +144,7 @@ const ContactUs = () => {
                     </div>
                   </div>
                 </form>
-                <div> {results ? <Success /> : null}</div>
+                <div> {results ? <Success /> : <Error />}</div>
               </div>
             </div>
           </div>
