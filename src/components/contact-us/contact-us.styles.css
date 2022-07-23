@@ -73,24 +73,6 @@
   text-align: center;
 }
 
-label.error {
-  font-size: 12px;
-  color: red;
-}
-
-#message {
-  resize: vertical;
-}
-
-#form-message-warning,
-#form-message-success {
-  display: none;
-}
-
-#form-message-warning {
-  color: #b90b0b;
-}
-
 #form-message-success {
   color: #55a44e;
   font-size: 18px;
