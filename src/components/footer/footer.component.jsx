@@ -6,7 +6,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 
-import "./footer.styles.css";
+import "./footer.styles.scss";
 
 const Footer = () => {
   return (
