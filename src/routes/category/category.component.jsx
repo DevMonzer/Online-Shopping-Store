@@ -6,6 +6,7 @@ import ReactPaginate from "react-paginate";
 
 import ProductCard from "../../components/product-card/product-card.component";
 import Spinner from "../../components/spinner/spinner.component";
+import Loader from "../../components/loader/loader.component";
 
 import {
   selectCategoriesMap,
@@ -51,7 +52,7 @@ const Category = () => {
         <Link to="/shop">{category.toUpperCase()}</Link>
       </Title>
       {isLoading ? (
-        <Spinner />
+        <Loader />
       ) : (
         <>
           <CategoryContainer>{displayUsers}</CategoryContainer>
