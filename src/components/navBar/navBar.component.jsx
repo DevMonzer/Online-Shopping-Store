@@ -179,15 +179,6 @@ const ResponsiveAppBar = () => {
           </Box>
           <Box sx={{ flexGrow: 1 }}>
             <Toolbar>
-              {/* <Search>
-                <SearchIconWrapper>
-                  <SearchIcon />
-                </SearchIconWrapper>
-                <StyledInputBase
-                  placeholder="Search…"
-                  inputProps={{ "aria-label": "search" }}
-                />
-              </Search> */}
               {products && products.length ? (
                 <SearchBar placeholder="Search " data={allProducts} />
               ) : null}
