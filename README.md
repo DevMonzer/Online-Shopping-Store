@@ -2,8 +2,6 @@
 
 Online-Shopping-Store app watch live -> https://online-store-puce.vercel.app/
 
-<a href="https://ibb.co/mCLrMbn"><img src="https://i.ibb.co/5WNXfGQ/Screen-Shot-2022-07-02-at-21-28-06-fullpage.png" alt="Screen-Shot-2022-07-02-at-21-28-06-fullpage" border="0"></a>
-
 <a href="https://ibb.co/sbwjVLY"><img src="https://i.ibb.co/RY02DLw/Screen-Shot-2022-07-25-at-13-26-56-fullpage.png" alt="Screen-Shot-2022-07-25-at-13-26-56-fullpage" border="0"></a>
 
 ## What to do  
