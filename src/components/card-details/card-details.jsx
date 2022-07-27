@@ -50,46 +50,47 @@ const Card = () => {
       {!allProducts?.length ? (
         <Loader />
       ) : (
-        <>
-          <div className="productCardContainer">
-            <img
-              className="productCardImage"
-              src={productCard.imageUrl}
-              alt={`${productCard.name}`}
-            />
-            <div className="productCardDetails">
-              <p>
-                This is&nbsp;
-                <span className="productCardName">{productCard.name}</span>
-                <br /> and you can get only for
-              </p>
-              <p>${productCard.price}</p>
-              {currentUser ? (
-                <Button
-                  buttonType={BUTTON_TYPE_CLASSES.facebook}
-                  onClick={addProductToCart}
-                >
-                  Add to card
-                </Button>
-              ) : (
-                <Button
-                  buttonType={BUTTON_TYPE_CLASSES.facebook}
-                  onClick={logInHandler}
-                >
-                  Log in FIRST
-                </Button>
-              )}
-              <br />
-              <Button
-                buttonType={BUTTON_TYPE_CLASSES.google}
-                onClick={() => navigate(-1)}
-              >
-                Go Back
-              </Button>
-            </div>
-          </div>
-          <Slider title="Top Products" allProducts={allProducts} />
-        </>
+        <Loader />
+        // <>
+        //   <div className="productCardContainer">
+        //     <img
+        //       className="productCardImage"
+        //       src={productCard.imageUrl}
+        //       alt={`${productCard.name}`}
+        //     />
+        //     <div className="productCardDetails">
+        //       <p>
+        //         This is&nbsp;
+        //         <span className="productCardName">{productCard.name}</span>
+        //         <br /> and you can get only for
+        //       </p>
+        //       <p>${productCard.price}</p>
+        //       {currentUser ? (
+        //         <Button
+        //           buttonType={BUTTON_TYPE_CLASSES.facebook}
+        //           onClick={addProductToCart}
+        //         >
+        //           Add to card
+        //         </Button>
+        //       ) : (
+        //         <Button
+        //           buttonType={BUTTON_TYPE_CLASSES.facebook}
+        //           onClick={logInHandler}
+        //         >
+        //           Log in FIRST
+        //         </Button>
+        //       )}
+        //       <br />
+        //       <Button
+        //         buttonType={BUTTON_TYPE_CLASSES.google}
+        //         onClick={() => navigate(-1)}
+        //       >
+        //         Go Back
+        //       </Button>
+        //     </div>
+        //   </div>
+        //   <Slider title="Top Products" allProducts={allProducts} />
+        // </>
       )}
     </Fragment>
   );
