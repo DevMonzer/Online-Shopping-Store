@@ -37,27 +37,10 @@ const Card = () => {
     }
   }, [allProducts]);
 
-  // Getting the card parent route
-  let route;
-  if (window.location.pathname.includes("/shop/hats/")) {
-    route = "/shop/hats";
-  } else if (window.location.pathname.includes("/shop/jackets/")) {
-    route = "/shop/jackets";
-  } else if (window.location.pathname.includes("/shop/sneakers/")) {
-    route = "/shop/sneakers";
-  } else if (window.location.pathname.includes("/shop/womens/")) {
-    route = "/shop/womens";
-  } else if (window.location.pathname.includes("/shop/mens/")) {
-    route = "/shop/mens";
-  } else if (window.location.pathname.includes("/shop/kids/")) {
-    route = "/shop/kids";
-  }
-
   // Navigate to the product card detail page via its route
   const navigate = useNavigate();
 
   // Event Handlers
-  const onNavigateHandler = () => navigate(route);
   const addProductToCart = () =>
     dispatch(addItemToCart(cartItems, productCard));
   const logInHandler = () =>
@@ -100,7 +83,7 @@ const Card = () => {
               <br />
               <Button
                 buttonType={BUTTON_TYPE_CLASSES.google}
-                onClick={onNavigateHandler}
+                onClick={() => navigate(-1)}
               >
                 Go Back
               </Button>
