@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 import {
   selectCartCount,
@@ -24,7 +25,7 @@ const CartIcon = () => {
 
   return (
     <CartIconContainer onClick={toggleIsCartOpen}>
-      <ShoppingIcon className="shopping-icon" />
+      <ShoppingCartIcon />
       <ItemCount>{currentUser ? cartCount : 0}</ItemCount>
     </CartIconContainer>
   );
