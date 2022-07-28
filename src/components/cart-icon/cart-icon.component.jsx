@@ -26,7 +26,7 @@ const CartIcon = () => {
   return (
     <CartIconContainer onClick={toggleIsCartOpen}>
       <ShoppingCartIcon />
-      <ItemCount>{currentUser ? cartCount : 0}</ItemCount>
+      {cartCount > 0 && <ItemCount>{currentUser ? cartCount : 0}</ItemCount>}
     </CartIconContainer>
   );
 };
