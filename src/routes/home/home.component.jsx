@@ -53,11 +53,6 @@ const Home = () => {
     <div>
       <HomeDirectory categories={categories} />
       <Outlet />
-      {/* <div
-        style={{ backgroundColor: "rgb(73, 73, 73)", marginBottom: "-150px" }}
-      >
-        <ContactUs />
-      </div> */}
     </div>
   );
 };
