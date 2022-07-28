@@ -7,8 +7,6 @@ import { addItemToCart } from "../../store/cart/cart.action";
 
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
-import Card from "../card/card";
-
 import {
   ProductCartContainer,
   Footer,
