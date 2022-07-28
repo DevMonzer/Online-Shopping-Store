@@ -53,7 +53,11 @@ const Home = () => {
     <div>
       <HomeDirectory categories={categories} />
       <Outlet />
-      <RecipeReviewCard />
+      <Grid container spacing={2}>
+        <Grid item xs={8}>
+          <RecipeReviewCard />
+        </Grid>
+      </Grid>
     </div>
   );
 };
