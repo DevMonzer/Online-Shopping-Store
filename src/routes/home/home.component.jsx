@@ -54,7 +54,6 @@ const Home = () => {
       <HomeDirectory categories={categories} />
       <Outlet />
       <RecipeReviewCard />
-      <RecipeReviewCard />
     </div>
   );
 };
