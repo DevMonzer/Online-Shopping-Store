@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 
 import HomeDirectory from "../../components/home-directory/home-directory.component";
+import RecipeReviewCard from "../../components/shopping-card/shopping-card.component";
 
 const categories = [
   {
@@ -52,6 +53,7 @@ const Home = () => {
     <div>
       <HomeDirectory categories={categories} />
       <Outlet />
+      <RecipeReviewCard />
     </div>
   );
 };
