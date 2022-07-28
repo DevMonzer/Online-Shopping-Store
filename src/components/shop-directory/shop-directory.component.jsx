@@ -1,12 +1,12 @@
 import { Fragment, useEffect } from "react";
 import { useSelector } from "react-redux";
 
+import Grid from "@mui/material/Grid";
+
 import {
   selectCategoriesMap,
   selectCategoriesIsLoading,
 } from "../../store/categories/category.selector";
-
-import Spinner from "../spinner/spinner.component";
 
 import Loader from "../loader/loader.component";
 
@@ -51,6 +51,21 @@ const ShopDirectory = () => {
           );
         })
       )}
+
+      <Grid container spacing={2} padding={1}>
+        <Grid item lg={3} xs={6}>
+          <RecipeReviewCard />
+        </Grid>
+        <Grid item lg={3} xs={6}>
+          <RecipeReviewCard />
+        </Grid>
+        <Grid item lg={3} xs={6}>
+          <RecipeReviewCard />
+        </Grid>
+        <Grid item lg={3} xs={6}>
+          <RecipeReviewCard />
+        </Grid>
+      </Grid>
     </Fragment>
   );
 };
