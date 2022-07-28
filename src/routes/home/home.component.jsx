@@ -57,6 +57,15 @@ const Home = () => {
         <Grid item xs={8}>
           <RecipeReviewCard />
         </Grid>
+        <Grid item xs={8}>
+          <RecipeReviewCard />
+        </Grid>
+        <Grid item xs={8}>
+          <RecipeReviewCard />
+        </Grid>
+        <Grid item xs={8}>
+          <RecipeReviewCard />
+        </Grid>
       </Grid>
     </div>
   );
