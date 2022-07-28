@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import Grid from "@mui/material/Grid";
 
 import HomeDirectory from "../../components/home-directory/home-directory.component";
 import RecipeReviewCard from "../../components/shopping-card/shopping-card.component";
@@ -53,17 +54,17 @@ const Home = () => {
     <div>
       <HomeDirectory categories={categories} />
       <Outlet />
-      <Grid container spacing={2}>
-        <Grid item xs={8}>
+      <Grid container spacing={2} padding={1}>
+        <Grid item lg={3} xs={8}>
           <RecipeReviewCard />
         </Grid>
-        <Grid item xs={8}>
+        <Grid item lg={3} xs={8}>
           <RecipeReviewCard />
         </Grid>
-        <Grid item xs={8}>
+        <Grid item lg={3} xs={8}>
           <RecipeReviewCard />
         </Grid>
-        <Grid item xs={8}>
+        <Grid item lg={3} xs={8}>
           <RecipeReviewCard />
         </Grid>
       </Grid>
