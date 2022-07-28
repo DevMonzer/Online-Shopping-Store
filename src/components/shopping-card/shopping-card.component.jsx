@@ -33,7 +33,7 @@ const RecipeReviewCard = ({ product }) => {
   //   const onNavigateHandler = () => navigate(route);
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card className="card-media" sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="100%"
@@ -41,11 +41,7 @@ const RecipeReviewCard = ({ product }) => {
         alt="Paella dish"
       />
       <CardContent>
-        <Typography
-          className="typography"
-          variant="body3"
-          color="text.secondary"
-        >
+        <Typography className="typography">
           <span>Name</span>
           <Button>Add To Cart</Button>
           <span>$90</span>

@@ -1,9 +1,19 @@
+.card-media {
+  position: relative;
+}
+
 .typography {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+  & Button {
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 20%;
 
-.typography Button {
-  border-radius: 5px;
+    @media screen and (max-width: 400px) {
+      fontsize: 12px;
+    }
+  }
 }
