@@ -58,20 +58,6 @@ export default function RecipeReviewCard() {
 
   return (
     <Card sx={{ maxWidth: 345 }}>
-      {/* <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            R
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
-      /> */}
       <CardMedia
         component="img"
         height="100%"
@@ -79,12 +65,12 @@ export default function RecipeReviewCard() {
         alt="Paella dish"
       />
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body3" color="text.secondary">
           <span>Name</span>
           <span style={{ float: "right" }}>$90</span>
-          <br />
-          <br />
-          <Button variant="outlined">Add To Cart</Button>
+          <Button style={{ marginLeft: "15%" }} variant="outlined">
+            Add To Cart
+          </Button>
         </Typography>
       </CardContent>
     </Card>
