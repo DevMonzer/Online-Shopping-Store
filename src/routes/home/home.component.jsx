@@ -55,16 +55,16 @@ const Home = () => {
       <HomeDirectory categories={categories} />
       <Outlet />
       <Grid container spacing={2} padding={1}>
-        <Grid item lg={3} xs={8}>
+        <Grid item lg={3} xs={6}>
           <RecipeReviewCard />
         </Grid>
-        <Grid item lg={3} xs={8}>
+        <Grid item lg={3} xs={6}>
           <RecipeReviewCard />
         </Grid>
-        <Grid item lg={3} xs={8}>
+        <Grid item lg={3} xs={6}>
           <RecipeReviewCard />
         </Grid>
-        <Grid item lg={3} xs={8}>
+        <Grid item lg={3} xs={6}>
           <RecipeReviewCard />
         </Grid>
       </Grid>
