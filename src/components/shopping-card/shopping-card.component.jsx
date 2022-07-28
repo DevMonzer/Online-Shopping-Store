@@ -41,7 +41,11 @@ const RecipeReviewCard = ({ product }) => {
         alt="Paella dish"
       />
       <CardContent>
-        <Typography variant="body3" color="text.secondary">
+        <Typography
+          className="typography"
+          variant="body3"
+          color="text.secondary"
+        >
           <span>Name</span>
           <Button>Add To Cart</Button>
           <span>$90</span>
