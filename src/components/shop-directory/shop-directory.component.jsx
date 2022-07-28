@@ -8,6 +8,8 @@ import {
   selectCategoriesIsLoading,
 } from "../../store/categories/category.selector";
 
+import RecipeReviewCard from "../../components/shopping-card/shopping-card.component";
+
 import Loader from "../loader/loader.component";
 
 import ProductCard from "../product-card/product-card.component";
