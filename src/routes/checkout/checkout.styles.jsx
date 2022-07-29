@@ -12,8 +12,8 @@ export const CheckoutContainer = styled.div`
     width: 70%;
   }
 
-  @media screen and (max-width: 990px) {
-    width: 80%;
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
   }
 `;
 
