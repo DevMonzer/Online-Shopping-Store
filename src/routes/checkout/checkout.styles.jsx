@@ -13,6 +13,7 @@ export const CheckoutContainer = styled.div`
   }
 
   @media screen and (max-width: 500px) {
+    width: 85%;
     font-size: 14px;
   }
 `;
