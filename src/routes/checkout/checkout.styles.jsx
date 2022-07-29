@@ -40,6 +40,6 @@ export const Total = styled.span`
   font-size: 36px;
 
   @media screen and (max-width: 600px) {
-    font-size: 30px;
+    font-size: 25px;
   }
 `;
