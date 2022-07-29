@@ -25,6 +25,8 @@ const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
 
+  const [first, second, third] = name.split(" ");
+
   const addProductToCart = () => dispatch(addItemToCart(cartItems, product));
 
   const logInHandler = () =>
@@ -38,7 +40,7 @@ const ProductCard = ({ product }) => {
     <ProductCartContainer>
       <img src={imageUrl} alt={`${name}`} onClick={onNavigateHandler} />
       <Footer>
-        <Name>{name}</Name>
+        <Name>{mobile ? second : name}</Name>
         <Price>${price}</Price>
       </Footer>
       {currentUser ? (
