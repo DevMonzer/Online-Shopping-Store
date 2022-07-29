@@ -58,15 +58,6 @@ const ShopDirectory = () => {
         <Grid item xl={2} lg={3} md={3} sm={4} xs={6}>
           <RecipeReviewCard />
         </Grid>
-        <Grid item xl={2} lg={3} md={3} sm={4} xs={6}>
-          <RecipeReviewCard />
-        </Grid>
-        <Grid item xl={2} lg={3} md={3} sm={4} xs={6}>
-          <RecipeReviewCard />
-        </Grid>
-        <Grid item xl={2} lg={3} md={3} sm={4} xs={6}>
-          <RecipeReviewCard />
-        </Grid>
       </Grid>
     </Fragment>
   );
