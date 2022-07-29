@@ -40,15 +40,13 @@ const RecipeReviewCard = ({ product }) => {
         image="https://i.ibb.co/vQ6BRgQ/Black-Dress.jpg"
         alt="Paella dish"
       />
-      <CardContent>
-        <div className="card-container">
-          <div className="footer">
-            <p>Name</p>
-            <p>$90</p>
-          </div>
-          <Button>Add To Cart</Button>
+      <div className="card-container">
+        <div className="footer">
+          <p>Name</p>
+          <p>$90</p>
         </div>
-      </CardContent>
+        <Button>Add To Cart</Button>
+      </div>
     </Card>
   );
 };
