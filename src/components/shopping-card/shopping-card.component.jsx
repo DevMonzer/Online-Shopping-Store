@@ -25,14 +25,18 @@ const ShoppingCard = ({ product }) => {
 
   // Navigate to the product card detail page via its route
   const navigate = useNavigate();
-  //   const onNavigateHandler = () => navigate(route);
+  const onNavigateHandler = () => navigate(route);
 
   return (
-    <Card className="card-media" sx={{ maxWidth: 345 }}>
+    <Card
+      onClick={onNavigateHandler}
+      className="card-media"
+      sx={{ maxWidth: 345 }}
+    >
       <CardMedia
         component="img"
         height="100%"
-        image="https://i.ibb.co/vQ6BRgQ/Black-Dress.jpg"
+        image={imageUrl}
         alt="Paella dish"
       />
       <div className="card-container">
