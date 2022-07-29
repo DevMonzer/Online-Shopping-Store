@@ -53,7 +53,7 @@ const ProductCard = ({ product }) => {
     //   )}
     // </ProductCartContainer>
 
-    <Grid container spacing={2} padding={1}>
+    <Grid container padding={1}>
       <Grid>
         <ShoppingCard product={product} />
       </Grid>
