@@ -14,6 +14,10 @@ import {
   Price,
 } from "./product-card.styles";
 
+import Grid from "@mui/material/Grid";
+
+import ShoppingCard from "../../components/shopping-card/shopping-card.component";
+
 const ProductCard = ({ product }) => {
   const currentUser = useSelector(selectCurrentUser);
 
@@ -31,23 +35,29 @@ const ProductCard = ({ product }) => {
   const onNavigateHandler = () => navigate(route);
 
   return (
-    <ProductCartContainer>
-      <img src={imageUrl} alt={`${name}`} onClick={onNavigateHandler} />
-      <Footer>
-        <Name>{name}</Name>
-        <Price>${price}</Price>
-      </Footer>
-      {currentUser ? (
-        <Button
-          buttonType={BUTTON_TYPE_CLASSES.inverted}
-          onClick={addProductToCart}
-        >
-          Add to card
-        </Button>
-      ) : (
-        <Button onClick={logInHandler}>Log in FIRST</Button>
-      )}
-    </ProductCartContainer>
+    // <ProductCartContainer>
+    //   <img src={imageUrl} alt={`${name}`} onClick={onNavigateHandler} />
+    //   <Footer>
+    //     <Name>{name}</Name>
+    //     <Price>${price}</Price>
+    //   </Footer>
+    //   {currentUser ? (
+    //     <Button
+    //       buttonType={BUTTON_TYPE_CLASSES.inverted}
+    //       onClick={addProductToCart}
+    //     >
+    //       Add to card
+    //     </Button>
+    //   ) : (
+    //     <Button onClick={logInHandler}>Log in FIRST</Button>
+    //   )}
+    // </ProductCartContainer>
+
+    <Grid container spacing={2} padding={1}>
+      <Grid item xl={2} lg={3} md={3} sm={4} xs={6}>
+        <ShoppingCard product={product} />
+      </Grid>
+    </Grid>
   );
 };
 

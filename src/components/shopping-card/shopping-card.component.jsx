@@ -11,7 +11,7 @@ import CardMedia from "@mui/material/CardMedia";
 
 import "./shopping-card.styles.scss";
 
-const RecipeReviewCard = ({ product }) => {
+const ShoppingCard = ({ product }) => {
   const currentUser = useSelector(selectCurrentUser);
 
   //   const { name, price, imageUrl, route } = product;
@@ -54,4 +54,4 @@ const RecipeReviewCard = ({ product }) => {
   );
 };
 
-export default RecipeReviewCard;
+export default ShoppingCard;

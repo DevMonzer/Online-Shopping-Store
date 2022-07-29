@@ -1,8 +1,6 @@
 import { Fragment, useEffect } from "react";
 import { useSelector } from "react-redux";
 
-import Grid from "@mui/material/Grid";
-
 import {
   selectCategoriesMap,
   selectCategoriesIsLoading,
