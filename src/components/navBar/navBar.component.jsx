@@ -35,7 +35,6 @@ const pages = [
   { id: 2, title: "Shop", link: "/shop" },
   { id: 3, title: "Contact Us", link: "/contact-us" },
 ];
-const settings = ["Profile"];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
