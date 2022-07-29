@@ -32,4 +32,9 @@
   @media screen and (max-width: 800px) {
     font-size: 14px;
   }
+
+  @media screen and (max-width: 400px) {
+    font-size: 12px;
+    font-weight: bold;
+  }
 }
