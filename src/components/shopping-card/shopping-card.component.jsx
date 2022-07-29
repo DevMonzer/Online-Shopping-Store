@@ -45,7 +45,9 @@ const RecipeReviewCard = ({ product }) => {
             Add to card
           </Button>
         ) : (
-          <Button onClick={logInHandler}>Log in FIRST</Button>
+          <Button variant="contained" onClick={logInHandler}>
+            Log in FIRST
+          </Button>
         )}
       </div>
     </Card>
