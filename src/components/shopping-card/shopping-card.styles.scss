@@ -13,10 +13,13 @@
   & Button {
     position: absolute;
     border-radius: 5px;
-    top: 40%;
-    left: 25%;
+    // top: 40%;
+    // left: 30%;
     opacity: 0.7;
-    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // display: none;
 
     @media screen and (max-width: 800px) {
       display: block;

@@ -6,9 +6,10 @@ import { selectCurrentUser } from "../../store/user/user.selector";
 import { addItemToCart } from "../../store/cart/cart.action";
 
 import Card from "@mui/material/Card";
+import Button from "@mui/material/Button";
 import CardMedia from "@mui/material/CardMedia";
 
-import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
+// import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 import "./shopping-card.styles.scss";
 
@@ -43,7 +44,8 @@ const RecipeReviewCard = ({ product }) => {
         </div>
         {currentUser ? (
           <Button
-            buttonType={BUTTON_TYPE_CLASSES.inverted}
+            variant="contained"
+            // buttonType={BUTTON_TYPE_CLASSES.inverted}
             onClick={addProductToCart}
           >
             Add to card
