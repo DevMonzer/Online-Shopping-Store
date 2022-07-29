@@ -2,7 +2,10 @@
   position: relative;
   height: 380px;
   width: 300px;
-  padding: 0;
+
+  @media screen and (max-width: 1200px) {
+    width: 205px;
+  }
 
   &:hover {
     background-color: aliceblue;

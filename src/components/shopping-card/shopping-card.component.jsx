@@ -28,11 +28,7 @@ const ShoppingCard = ({ product }) => {
   const onNavigateHandler = () => navigate(route);
 
   return (
-    <Card
-      onClick={onNavigateHandler}
-      className="card-media"
-      sx={{ maxWidth: 345 }}
-    >
+    <Card onClick={onNavigateHandler} className="card-media">
       <img className="card-image" src={imageUrl} alt={`${name}`} />
       <div className="card-container">
         <div className="footer">
