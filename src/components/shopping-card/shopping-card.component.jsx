@@ -14,7 +14,7 @@ import "./shopping-card.styles.scss";
 const ShoppingCard = ({ product }) => {
   const currentUser = useSelector(selectCurrentUser);
 
-  //   const { name, price, imageUrl, route } = product;
+  const { name, price, imageUrl, route } = product;
   const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
 
@@ -37,8 +37,8 @@ const ShoppingCard = ({ product }) => {
       />
       <div className="card-container">
         <div className="footer">
-          <p>Name</p>
-          <p>$90</p>
+          <p>{name}</p>
+          <p>${price}</p>
         </div>
         {currentUser ? (
           <Button variant="contained" onClick={addProductToCart}>
