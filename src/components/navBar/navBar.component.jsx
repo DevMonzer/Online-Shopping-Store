@@ -71,7 +71,7 @@ const ResponsiveAppBar = () => {
     <AppBar className="appbar-container" position="static" elevation={0}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Link to="/">
+          <Link to="/" style={{ marginTop: "-2px" }}>
             <CrwnLogo />
           </Link>
 
@@ -121,15 +121,6 @@ const ResponsiveAppBar = () => {
           </Box>
           <Box sx={{ flexGrow: 1 }}>
             <Toolbar>
-              {/* <Search>
-                <SearchIconWrapper>
-                  <SearchIcon />
-                </SearchIconWrapper>
-                <StyledInputBase
-                  placeholder="Search…"
-                  inputProps={{ "aria-label": "search" }}
-                />
-              </Search> */}
               {products && products.length ? (
                 <SearchBar placeholder="Search " data={allProducts} />
               ) : null}
