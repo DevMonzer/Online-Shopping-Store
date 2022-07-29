@@ -2,12 +2,6 @@
   position: relative;
   padding: 0;
 
-  &:hover {
-    & Button:hover {
-      display: block;
-    }
-  }
-
   & Button {
     position: absolute;
     border-radius: 5px;
