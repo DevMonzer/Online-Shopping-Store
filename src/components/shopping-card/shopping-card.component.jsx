@@ -41,11 +41,13 @@ const RecipeReviewCard = ({ product }) => {
         alt="Paella dish"
       />
       <CardContent>
-        <Typography className="typography">
-          <span>Name</span>
+        <div className="typography">
+          <div className="footer">
+            <p>Name</p>
+            <p>$90</p>
+          </div>
           <Button>Add To Cart</Button>
-          <span>$90</span>
-        </Typography>
+        </div>
       </CardContent>
     </Card>
   );
