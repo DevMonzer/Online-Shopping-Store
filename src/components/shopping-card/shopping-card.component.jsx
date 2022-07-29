@@ -5,12 +5,8 @@ import { selectCartItems } from "../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../store/user/user.selector";
 import { addItemToCart } from "../../store/cart/cart.action";
 
-import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
-import CardContent from "@mui/material/CardContent";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
@@ -45,7 +41,16 @@ const RecipeReviewCard = ({ product }) => {
           <p>Name</p>
           <p>$90</p>
         </div>
-        <Button>Add To Cart</Button>
+        {currentUser ? (
+          <Button
+            buttonType={BUTTON_TYPE_CLASSES.inverted}
+            onClick={addProductToCart}
+          >
+            Add to card
+          </Button>
+        ) : (
+          <Button onClick={logInHandler}>Log in FIRST</Button>
+        )}
       </div>
     </Card>
   );
