@@ -41,7 +41,7 @@ const RecipeReviewCard = ({ product }) => {
         alt="Paella dish"
       />
       <CardContent>
-        <div className="typography">
+        <div className="card-container">
           <div className="footer">
             <p>Name</p>
             <p>$90</p>
