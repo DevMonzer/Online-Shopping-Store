@@ -15,10 +15,6 @@ export const CheckoutContainer = styled.div`
   @media screen and (max-width: 990px) {
     width: 80%;
   }
-
-  @media screen and (max-width: 580px) {
-    width: 90%;
-  }
 `;
 
 export const CheckoutHeader = styled.div`
