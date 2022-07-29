@@ -1,7 +1,6 @@
 .card-media {
   position: relative;
   height: 380px;
-  width: 380px;
   padding: 0;
 
   &:hover {
@@ -13,7 +12,7 @@
   }
 
   .card-image {
-    height: 90%;
+    height: 88%;
     width: 100%;
   }
 
@@ -50,7 +49,7 @@
   justify-content: space-between;
 
   font-size: 18px;
-  padding: 10px 10px 0 10px;
+  padding: 10px 10px 20px 10px;
 
   @media screen and (max-width: 800px) {
     font-size: 14px;
