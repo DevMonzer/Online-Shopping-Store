@@ -36,6 +36,7 @@ const ShoppingCard = ({ product }) => {
       <CardMedia
         component="img"
         height="100%"
+        width="100%"
         image={imageUrl}
         alt="Paella dish"
       />
