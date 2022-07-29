@@ -33,13 +33,7 @@ const ShoppingCard = ({ product }) => {
       className="card-media"
       sx={{ maxWidth: 345 }}
     >
-      <CardMedia
-        component="img"
-        height="100%"
-        width="100%"
-        image={imageUrl}
-        alt="Paella dish"
-      />
+      <img src={imageUrl} alt={`${name}`} />
       <div className="card-container">
         <div className="footer">
           <p>{name}</p>
