@@ -16,9 +16,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 12px;
+    padding: 10px;
 
     @media screen and (max-width: 950px) {
       font-size: 10px;
+    }
+
+    @media screen and (max-width: 800px) {
       display: block;
     }
 
