@@ -2,6 +2,14 @@
   position: relative;
   padding: 0;
 
+  &:hover {
+    background-color: aliceblue;
+    display: block;
+
+    Button {
+    }
+  }
+
   & Button {
     position: absolute;
     border-radius: 5px;
