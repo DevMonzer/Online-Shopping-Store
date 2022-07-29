@@ -5,6 +5,8 @@ import { selectCartItems } from "../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../store/user/user.selector";
 import { addItemToCart } from "../../store/cart/cart.action";
 
+import useMediaQuery from "@mui/material/useMediaQuery";
+
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 import {
@@ -15,6 +17,8 @@ import {
 } from "./product-card.styles";
 
 const ProductCard = ({ product }) => {
+  const mobile = useMediaQuery("(max-width:400px)");
+
   const currentUser = useSelector(selectCurrentUser);
 
   const { name, price, imageUrl, route } = product;
