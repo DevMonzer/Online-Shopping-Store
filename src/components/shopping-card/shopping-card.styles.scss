@@ -3,6 +3,9 @@
   padding: 0;
 
   &:hover {
+    & Button:hover {
+      display: block;
+    }
   }
 
   & Button {
