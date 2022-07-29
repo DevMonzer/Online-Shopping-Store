@@ -17,6 +17,10 @@
     left: 25%;
     opacity: 0.7;
     display: none;
+
+    @media screen and (max-width: 800px) {
+      display: block;
+    }
   }
 }
 
