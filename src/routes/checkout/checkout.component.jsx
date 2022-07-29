@@ -36,7 +36,7 @@ const Checkout = () => {
           <span>Product</span>
         </HeaderBlock>
         <HeaderBlock>
-          <span>{mobile ? "Desc" : "Description"}</span>
+          <span>{mobile ? "Name" : "Description"}</span>
         </HeaderBlock>
         <HeaderBlock>
           <span>Quantity</span>
