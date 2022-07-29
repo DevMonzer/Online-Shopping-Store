@@ -1,5 +1,7 @@
 .card-media {
   position: relative;
+  height: 380px;
+  width: 380px;
   padding: 0;
 
   &:hover {
@@ -8,6 +10,11 @@
     Button {
       display: block;
     }
+  }
+
+  .card-image {
+    height: 90%;
+    width: 100%;
   }
 
   & Button {
