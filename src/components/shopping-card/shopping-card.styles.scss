@@ -20,8 +20,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     // display: none;
+    font-size: 12px;
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 950px) {
+      font-size: 10px;
       display: block;
     }
   }
