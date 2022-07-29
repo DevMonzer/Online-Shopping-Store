@@ -5,8 +5,6 @@ import { selectCartItems } from "../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../store/user/user.selector";
 import { addItemToCart } from "../../store/cart/cart.action";
 
-import useMediaQuery from "@mui/material/useMediaQuery";
-
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 import {
@@ -17,15 +15,11 @@ import {
 } from "./product-card.styles";
 
 const ProductCard = ({ product }) => {
-  const mobile = useMediaQuery("(max-width:400px)");
-
   const currentUser = useSelector(selectCurrentUser);
 
   const { name, price, imageUrl, route } = product;
   const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
-
-  const [first, second, third] = name.split(" ");
 
   const addProductToCart = () => dispatch(addItemToCart(cartItems, product));
 
@@ -40,7 +34,7 @@ const ProductCard = ({ product }) => {
     <ProductCartContainer>
       <img src={imageUrl} alt={`${name}`} onClick={onNavigateHandler} />
       <Footer>
-        <Name>{mobile ? second : name}</Name>
+        <Name>{name}</Name>
         <Price>${price}</Price>
       </Footer>
       {currentUser ? (
