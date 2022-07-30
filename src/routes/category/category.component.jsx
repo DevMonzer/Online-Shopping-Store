@@ -5,7 +5,6 @@ import { useParams, Link } from "react-router-dom";
 import ReactPaginate from "react-paginate";
 
 import ProductCard from "../../components/product-card/product-card.component";
-import Spinner from "../../components/spinner/spinner.component";
 import Loader from "../../components/loader/loader.component";
 
 import {
