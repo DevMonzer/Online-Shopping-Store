@@ -1,5 +1,6 @@
 import { Fragment, useEffect } from "react";
 import { useSelector } from "react-redux";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 import {
   selectCategoriesMap,
