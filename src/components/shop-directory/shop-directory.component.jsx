@@ -20,7 +20,7 @@ import {
 
 // Shop Page
 const ShopDirectory = () => {
-  const largeScreens = useMediaQuery("(min-width:1200)");
+  const largeScreens = useMediaQuery("(min-width:1200px)");
 
   const categoriesMap = useSelector(selectCategoriesMap);
   const isLoading = useSelector(selectCategoriesIsLoading);
@@ -43,7 +43,7 @@ const ShopDirectory = () => {
               </Center>
               <Preview>
                 {products
-                  .filter((_, idx) => (largeScreens ? idx < 5 : idx > 4))
+                  .filter((_, idx) => (largeScreens ? idx < 5 : idx < 4))
                   .map((product) => (
                     <ProductCard key={product.id} product={product} />
                   ))}
