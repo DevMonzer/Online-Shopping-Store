@@ -25,8 +25,12 @@ export const Title = styled(Link)`
 
 export const Preview = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   column-gap: 20px;
+
+  @media screen and (max-width: 1100px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
   @media screen and (max-width: 900px) {
     grid-template-columns: repeat(3, 1fr);
