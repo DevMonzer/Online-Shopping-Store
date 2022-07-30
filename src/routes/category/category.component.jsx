@@ -20,6 +20,8 @@ import "./category.styles.scss";
 
 // Nested Categories Pages inside the Shop Page
 const Category = () => {
+  const lasrgeScreens = useMediaQuery("(min-width:1200px)");
+
   const { category } = useParams();
   const categoriesMap = useSelector(selectCategoriesMap);
   const isLoading = useSelector(selectCategoriesIsLoading);
