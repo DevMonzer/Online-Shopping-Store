@@ -29,7 +29,7 @@ const Category = () => {
 
   // Pagination Code
   const [pageNumber, setPageNumber] = useState(0);
-  const productsPerPage = 16;
+  const productsPerPage = lasrgeScreens ? 15 : 16;
   const pagesVisited = pageNumber * productsPerPage;
 
   const displayUsers =
