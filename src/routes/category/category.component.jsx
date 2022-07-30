@@ -2,6 +2,8 @@ import { useState, useEffect, Fragment } from "react";
 import { useSelector } from "react-redux";
 import { useParams, Link } from "react-router-dom";
 
+import useMediaQuery from "@mui/material/useMediaQuery";
+
 import ReactPaginate from "react-paginate";
 
 import ProductCard from "../../components/product-card/product-card.component";
