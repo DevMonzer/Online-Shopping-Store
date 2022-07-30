@@ -53,6 +53,10 @@ export const DirectoryItemContainer = styled.div`
   margin: 0 7.5px 15px;
   overflow: hidden;
 
+  @media screen and (max-width: 1200px) {
+    height: 280px;
+  }
+
   @media screen and (max-width: 700px) {
     min-width: 40%;
   }
