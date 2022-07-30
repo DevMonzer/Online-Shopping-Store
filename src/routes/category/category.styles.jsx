@@ -5,6 +5,9 @@ export const CategoryContainer = styled.div`
   grid-template-columns: repeat(5, 1fr);
   column-gap: 20px;
   row-gap: 50px;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 10px 10px 10px;
 
   @media screen and (max-width: 1200px) {
     grid-template-columns: repeat(4, 1fr);
