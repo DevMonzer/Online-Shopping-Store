@@ -2,6 +2,8 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { CartItemContainer, ItemDetails } from "./cart-item.styles";
 
+import { setIsCartOpen } from "../../store/cart/cart.action.js";
+
 const CartItem = ({ cartItem }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
