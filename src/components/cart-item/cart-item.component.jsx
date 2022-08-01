@@ -5,6 +5,7 @@ const CartItem = ({ cartItem }) => {
   const navigate = useNavigate();
   const handleNavigate = (productRoute) => {
     navigate(productRoute);
+    dispatch(setIsCartOpen(false));
   };
 
   const { name, imageUrl, price, quantity, route } = cartItem;
