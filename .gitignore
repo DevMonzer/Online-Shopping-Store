@@ -7,9 +7,15 @@
 
 .env
 
+# Folders and files
 /firebase
 firebase.utils.js
 shop-data.js
+cart.action.js
+category.action.js
+user.action.js
+
+
 
 
 # testing
