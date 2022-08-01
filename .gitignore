@@ -7,8 +7,7 @@
 
 .env
 
-# Folders and files
-/firebase
+# Files to ignore
 firebase.utils.js
 shop-data.js
 cart.action.js
