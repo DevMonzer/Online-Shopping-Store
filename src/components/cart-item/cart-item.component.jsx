@@ -6,7 +6,7 @@ const CartItem = ({ cartItem }) => {
   const { name, imageUrl, price, quantity, route } = cartItem;
 
   return (
-    <CartItemContainer>
+    <CartItemContainer onClick={() => navigate(route)}>
       <img src={imageUrl} alt={`${name}`} />
       <ItemDetails>
         <span>{name}</span>
