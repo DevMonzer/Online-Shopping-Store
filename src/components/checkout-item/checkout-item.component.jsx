@@ -34,7 +34,7 @@ const CheckoutItem = ({ cartItem }) => {
     dispatch(setIsCartOpen(false));
   });
 
-  const { name, imageUrl, price, quantity } = cartItem;
+  const { name, imageUrl, price, quantity, route } = cartItem;
   const cartItems = useSelector(selectCartItems);
 
   const clearItemHandler = () =>
