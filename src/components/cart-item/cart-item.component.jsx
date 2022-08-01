@@ -1,3 +1,4 @@
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { CartItemContainer, ItemDetails } from "./cart-item.styles";
 
