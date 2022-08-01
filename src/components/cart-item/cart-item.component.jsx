@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { CartItemContainer, ItemDetails } from "./cart-item.styles";
 
 const CartItem = ({ cartItem }) => {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleNavigate = (productRoute) => {
     navigate(productRoute);
