@@ -32,12 +32,13 @@
 }
 
 .productCardImage {
-  height: 60vh;
+  height: 520px;
+  width: 380px;
   border-radius: 10px;
-  width: 280px;
 
   @media screen and (max-width: 600px) {
-    width: 60%;
+    height: 520px;
+    width: 380px;
   }
 
   &:hover {
