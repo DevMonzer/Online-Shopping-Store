@@ -24,7 +24,7 @@ export const CartDropdownContainer = styled.div`
   }
 
   @media screen and (max-width: 900px) {
-    width: 260px;
+    width: 280px;
   }
 
   ${BaseButton},
