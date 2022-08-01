@@ -40,13 +40,4 @@
     height: 420px;
     width: 300px;
   }
-
-  &:hover {
-    transform: scale(1.3);
-    transition: all 1s ease-in;
-
-    @media screen and (max-width: 600px) {
-      transform: scale(1);
-    }
-  }
 }
