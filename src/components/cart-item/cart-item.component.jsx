@@ -3,10 +3,14 @@ import { CartItemContainer, ItemDetails } from "./cart-item.styles";
 
 const CartItem = ({ cartItem }) => {
   const navigate = useNavigate();
+  const handleNavigate = (productRoute) => {
+    navigate(productRoute);
+  };
+
   const { name, imageUrl, price, quantity, route } = cartItem;
 
   return (
-    <CartItemContainer onClick={() => navigate(route)}>
+    <CartItemContainer onClick={() => handleNavigate(route)}>
       <img src={imageUrl} alt={`${name}`} />
       <ItemDetails>
         <span>{name}</span>
