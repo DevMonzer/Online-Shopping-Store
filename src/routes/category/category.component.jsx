@@ -7,7 +7,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import ReactPaginate from "react-paginate";
 
 import ProductCard from "../../components/product-card/product-card.component";
-import Loader from "../../components/loader/loader.component";
+import Spinner from "../../components/spinner/spinner.component";
 
 import {
   selectCategoriesMap,
@@ -55,7 +55,7 @@ const Category = () => {
         <Link to="/shop">{category.toUpperCase()}</Link>
       </Title>
       {isLoading ? (
-        <Loader />
+        <Spinner />
       ) : (
         <>
           <CategoryContainer>{displayUsers}</CategoryContainer>
