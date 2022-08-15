@@ -16,6 +16,7 @@ import SignUp from "./components/sign-up-form/sign-up-form.component";
 import { checkUserSession } from "./store/user/user.action";
 
 const App = () => {
+  // Checking the user session
   const dispatch = useDispatch();
 
   useEffect(() => {
