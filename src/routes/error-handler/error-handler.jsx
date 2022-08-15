@@ -10,7 +10,7 @@ const ErrorHandler = () => {
         textAlign: "center",
       }}
     >
-      Wrong Route Go Back To Home Page{" "}
+      Wrong Route Go Back To Home Page
       <Link style={{ textDecoration: "underline", color: "blue" }} to="/">
         Home
       </Link>
