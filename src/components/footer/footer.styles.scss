@@ -17,8 +17,10 @@
     & a {
       color: #fff;
       opacity: 0.75;
+
       &:hover {
-        opacity: 0.9;
+        opacity: 1;
+        background-color: transparent;
       }
     }
   }
