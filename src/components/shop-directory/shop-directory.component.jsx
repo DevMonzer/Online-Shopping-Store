@@ -7,7 +7,7 @@ import {
   selectCategoriesIsLoading,
 } from "../../store/categories/category.selector";
 
-import Loader from "../loader/loader.component";
+import Spinner from "../spinner/spinner.component";
 
 import ProductCard from "../product-card/product-card.component";
 
@@ -33,7 +33,7 @@ const ShopDirectory = () => {
   return (
     <Fragment>
       {isLoading ? (
-        <Loader />
+        <Spinner />
       ) : (
         Object.keys(categoriesMap).map((title) => {
           const products = categoriesMap[title];
