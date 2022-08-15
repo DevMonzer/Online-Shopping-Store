@@ -18,13 +18,13 @@ const Footer = () => {
               <h3>Pages</h3>
               <ul>
                 <li>
-                  <Link to="/">Home</Link>
+                  <a href="/">Home</a>
                 </li>
                 <li>
-                  <Link to="/shop">Shop</Link>
+                  <a href="/shop">Shop</a>
                 </li>
                 <li>
-                  <Link to="/contact-us">Contact Us</Link>
+                  <a href="/contact-us">Contact Us</a>
                 </li>
               </ul>
             </div>
