@@ -21,7 +21,7 @@ import {
 // Shop Page
 const ShopDirectory = () => {
   const largeScreens = useMediaQuery("(min-width:1200px)");
-  // console.log(largeScreens);
+  console.log(largeScreens);
 
   const categoriesMap = useSelector(selectCategoriesMap);
   const isLoading = useSelector(selectCategoriesIsLoading);
