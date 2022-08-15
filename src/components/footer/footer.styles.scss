@@ -3,11 +3,26 @@
   color: #fff;
   background-color: rgb(73, 73, 73);
   font-family: "Roboto";
+  font-size: 16px;
   h3 {
     margin-top: 0;
     margin-bottom: 12px;
     font-weight: bold;
     font-size: 16px;
+  }
+
+  ul {
+    list-style: none;
+
+    & a {
+      display: inline-block;
+      text-align: center;
+      color: #fff;
+      opacity: 0.75;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
   }
 
   .item.social {
