@@ -125,11 +125,9 @@ const ResponsiveAppBar = () => {
           </Box>
           <div className="cartIconDiv">
             <span
-              style={
-                {
-                  // color: "black",
-                }
-              }
+              style={{
+                color: "black",
+              }}
             >
               <span
                 style={{
