@@ -34,6 +34,7 @@
     "serverless-http": "^2.7.0",
     "stripe": "^8.210.0",
     "styled-components": "5.3.3",
+    "vercel": "^28.1.0",
     "web-vitals": "2.1.4",
     "yarn": "^1.22.18"
   },
