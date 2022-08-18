@@ -169,13 +169,15 @@ const ResponsiveAppBar = () => {
               }}
             >
               {currentUser ? (
-                <span onClick={signOutUser}>SIGN OUT</span>
+                <span className="nav-link" onClick={signOutUser}>
+                  SIGN OUT
+                </span>
               ) : (
                 <Link
                   style={{ color: "white", backgroundColor: "transparent" }}
                   to="/sign-in"
                 >
-                  <span>SIGN IN</span>
+                  <span className="nav-link">SIGN IN</span>
                 </Link>
               )}
             </Button>
