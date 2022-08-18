@@ -18,7 +18,7 @@ import { CategoryContainer, Title, Center } from "./category.styles";
 
 import "./category.styles.scss";
 
-// Nested Categories Pages inside the Shop Page
+// Nested Categories Pages inside the Shop Page (HATS, JACKETS, ...)
 const Category = () => {
   const lasrgeScreens = useMediaQuery("(min-width:1200px)");
 
