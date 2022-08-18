@@ -33,7 +33,7 @@ const Shop = () => {
     <Routes>
       {/* Shop Component */}
       <Route index element={<ShopDirectory />} />
-      {/* Nested Shop Categories Components (Hats, jackets, etc.) */}
+      {/* Nested Shop Categories Components Routes (Hats, jackets, etc.) */}
       <Route path=":category" element={<Category />} />
     </Routes>
   );
