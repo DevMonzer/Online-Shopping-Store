@@ -139,7 +139,7 @@ const ResponsiveAppBar = () => {
               {isCartOpen && <CartDropdown />}
             </span>
           </div>
-
+          {/* Large Screens Bar */}
           <Box
             sx={{
               flexGrow: 1,
