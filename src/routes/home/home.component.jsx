@@ -46,7 +46,7 @@ const categories = [
   },
 ];
 
-// Home Router - The Main Page
+// Home Route - The Main Page
 const Home = () => {
   return (
     <div>
