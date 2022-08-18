@@ -46,7 +46,7 @@ const categories = [
   },
 ];
 
-// Home Router
+// Home Router - The Main Page
 const Home = () => {
   return (
     <div>
