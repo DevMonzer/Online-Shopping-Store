@@ -13,6 +13,7 @@ import { addCollectionAndDocuments } from "../../utils/firebase/firebase.utils";
 const Shop = () => {
   const dispatch = useDispatch();
 
+  // Getting back the firestore data
   useEffect(() => {
     dispatch(fetchCategoriesStart());
   }, []);
