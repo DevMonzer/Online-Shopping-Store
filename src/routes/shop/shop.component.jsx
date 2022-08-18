@@ -10,7 +10,7 @@ import SHOP_DATA from "../../shop-data";
 
 import { addCollectionAndDocuments } from "../../utils/firebase/firebase.utils";
 
-// The Shop Router
+// The Shop Route
 const Shop = () => {
   const dispatch = useDispatch();
 
