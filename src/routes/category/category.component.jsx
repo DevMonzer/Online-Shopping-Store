@@ -32,6 +32,10 @@ const Category = () => {
   const productsPerPage = lasrgeScreens ? 15 : 16;
   const pagesVisited = pageNumber * productsPerPage;
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
   const displayUsers =
     products &&
     products
