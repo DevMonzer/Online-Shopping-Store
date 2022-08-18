@@ -49,6 +49,7 @@ const ResponsiveAppBar = () => {
   const currentUser = useSelector(selectCurrentUser);
   const isCartOpen = useSelector(selectIsCartOpen);
 
+  // Getting the firestore data
   useEffect(() => {
     dispatch(fetchCategoriesStart());
   }, []);
