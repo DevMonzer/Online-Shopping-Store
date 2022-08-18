@@ -19,6 +19,7 @@ const App = () => {
   // Checking the user session
   const dispatch = useDispatch();
 
+  // Getting the user session object
   useEffect(() => {
     dispatch(checkUserSession());
   }, []);
