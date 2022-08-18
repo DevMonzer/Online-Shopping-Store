@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from "react";
-import { Outlet, Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
 // MUI
@@ -62,7 +62,6 @@ const ResponsiveAppBar = () => {
   });
   // console.log(allProducts);
 
-  let navigate = useNavigate();
   const signOutUser = () => dispatch(signOutStart());
 
   return (
