@@ -13,3 +13,12 @@
     display: none;
   }
 }
+
+.nav-link {
+  color: #fff;
+  background-color: transparent;
+
+  &:hover {
+    background-color: grey !important;
+  }
+}

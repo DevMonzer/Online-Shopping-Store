@@ -153,6 +153,7 @@ const ResponsiveAppBar = () => {
                   color: "white",
                   backgroundColor: "transparent",
                 }}
+                className="nav-link"
                 key={page.id}
                 onClick={handleCloseNavMenu}
                 to={page.link}
