@@ -8,7 +8,7 @@ import {
   DirectoryItemContainer,
 } from "./home-directory.styles";
 
-// Home Page
+// Home Page Categories (HATS, JACKETS, ...)
 const HomeDirectory = ({ categories }) => {
   const navigate = useNavigate();
 
