@@ -32,7 +32,7 @@ const ShopDirectory = () => {
 
   return (
     <Fragment>
-      {!isLoading ? (
+      {isLoading ? (
         <Spinner />
       ) : (
         Object.keys(categoriesMap).map((title) => {
