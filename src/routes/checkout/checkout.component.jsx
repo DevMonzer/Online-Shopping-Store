@@ -5,6 +5,7 @@ import {
   selectCartTotal,
 } from "../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../store/user/user.selector";
+import { setIsCartOpen } from "../../store/cart/cart.action.js";
 
 import CheckoutItem from "../../components/checkout-item/checkout-item.component";
 import PaymentForm from "../../components/payment-form/payment-form.component";
@@ -19,6 +20,9 @@ import {
 } from "./checkout.styles";
 
 const Checkout = () => {
+  // Close the cart dropdown when a user navigates to the checkout component
+  dispatch(setIsCartOpen(false));
+
   const mobile = useMediaQuery("(max-width:600px)");
 
   const currentUser = useSelector(selectCurrentUser);
