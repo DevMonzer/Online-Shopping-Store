@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import { useSelector } from "react-redux";
 
 import { Outlet } from "react-router-dom";
-import Spinner from "../spinner/spinner.component";
+import Spinner from "../../components/spinner/spinner.component";
 
 import { selectCategoriesIsLoading } from "../../store/categories/category.selector";
 
