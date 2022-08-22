@@ -8,11 +8,11 @@
 .env
 
 # Files to ignore
-firebase.utils.js
-shop-data.js
-cart.action.js
-category.action.js
-user.action.js
+# firebase.utils.js
+# shop-data.js
+# cart.action.js
+# category.action.js
+# user.action.js
 
 # testing
 /coverage
