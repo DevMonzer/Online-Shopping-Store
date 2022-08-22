@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 import {
   selectCartItems,
@@ -20,6 +20,7 @@ import {
 } from "./checkout.styles";
 
 const Checkout = () => {
+  const dispatch = useDispatch();
   // Close the cart dropdown when a user navigates to the checkout component
   dispatch(setIsCartOpen(false));
 
