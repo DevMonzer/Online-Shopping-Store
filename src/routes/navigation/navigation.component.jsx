@@ -7,9 +7,9 @@ import Footer from "../../components/footer/footer.component";
 const Navigation = () => {
   return (
     <Fragment>
-      {/* <NavBar /> */}
+      <NavBar />
       <Outlet />
-      {/* <Footer /> */}
+      <Footer />
     </Fragment>
   );
 };

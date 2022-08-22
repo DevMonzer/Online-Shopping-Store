@@ -12,6 +12,9 @@
     left: 94px;
     top: 48px;
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     animation: spinnerAnimation linear 1s infinite;
     background: #45505f;
     width: 12px;
