@@ -1,4 +1,6 @@
 import { Fragment } from "react";
+import { useSelector } from "react-redux";
+
 import { Outlet } from "react-router-dom";
 
 import { selectCategoriesIsLoading } from "../../store/categories/category.selector";
