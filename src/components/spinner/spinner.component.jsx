@@ -1,8 +1,8 @@
 import "./spinner.css";
 
 const Spinner = () => (
-  <div className="loadingio-spinner-spinner-r0dzq8q9gui">
-    <div className="ldio-2rt7av59393">
+  <div className="spinner-container">
+    <div className="spinner-animation">
       <div></div>
       <div></div>
       <div></div>
