@@ -19,8 +19,6 @@ import {
   RemoveButton,
 } from "./checkout-item.styles";
 
-import { setIsCartOpen } from "../../store/cart/cart.action.js";
-
 const CheckoutItem = ({ cartItem }) => {
   const dispatch = useDispatch();
 
@@ -28,11 +26,6 @@ const CheckoutItem = ({ cartItem }) => {
   const handleNavigate = (productRoute) => {
     navigate(productRoute);
   };
-
-  // Close the cart dropdown when a user navigates to the checkout component
-  useEffect(() => {
-    dispatch(setIsCartOpen(false));
-  });
 
   const { name, imageUrl, price, quantity, route } = cartItem;
   const cartItems = useSelector(selectCartItems);
