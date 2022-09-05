@@ -63,21 +63,21 @@ const Category = () => {
       ) : (
         <>
           <CategoryContainer>{displayUsers}</CategoryContainer>
-          <Center>
-            {pageCount > 1 ? (
-              <ReactPaginate
-                previousLabel={"<"}
-                nextLabel={">"}
-                pageCount={pageCount}
-                onPageChange={changePage}
-                containerClassName={"paginationBttns"}
-                previousLinkClassName={"previousBttn"}
-                nextLinkClassName={"nextBttn"}
-                disabledClassName={"paginationDisabled"}
-                activeClassName={"paginationActive"}
-              />
-            ) : null}
-          </Center>
+          {/* <Center> */}
+          {pageCount > 1 ? (
+            <ReactPaginate
+              previousLabel={"<"}
+              nextLabel={">"}
+              pageCount={pageCount}
+              onPageChange={changePage}
+              containerClassName={"paginationBttns"}
+              previousLinkClassName={"previousBttn"}
+              nextLinkClassName={"nextBttn"}
+              disabledClassName={"paginationDisabled"}
+              activeClassName={"paginationActive"}
+            />
+          ) : null}
+          {/* </Center> */}
         </>
       )}
     </Fragment>
