@@ -49,9 +49,9 @@ const Category = () => {
   // Calculationg the pageNumber
   const pageCount = Math.ceil(products && products.length / productsPerPage);
   // Change the page selection
-  // const changePage = ({ selected }) => {
-  //   setPageNumber(selected);
-  // };
+  const changePage = ({ selected }) => {
+    setPageNumber(selected);
+  };
 
   return (
     <Fragment>
