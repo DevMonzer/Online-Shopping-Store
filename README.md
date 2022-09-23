@@ -1,4 +1,4 @@
-# Online-Shopping-Store  
+# Online-Shopping-Store 
  
 Online-Shopping-Store app watch live -> https://online-store-puce.vercel.app/
 
@@ -20,7 +20,6 @@ Online-Shopping-Store app watch live -> https://online-store-puce.vercel.app/
 * React Router
 * Firebase and Firestore for both authentication and handling data
 * Stripe for handling payment 
-
 
 ## See More Images:  
 
