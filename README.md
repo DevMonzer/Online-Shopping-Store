@@ -7,7 +7,7 @@ Online-Shopping-Store app watch live -> https://online-store-puce.vercel.app/
 ### Install dependencies
 
 ```bash
-npm install
+npm install 
 ```
 
 ### Run
