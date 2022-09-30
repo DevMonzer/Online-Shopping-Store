@@ -19,7 +19,7 @@ const Shop = () => {
     dispatch(fetchCategoriesStart());
   }, []);
 
-  // Update the SHOP_DATA on firestore database
+  // Update the SHOP_DATA to firestore database
   // useEffect(() => {
   //   const getCategoriesMap = async () => {
   //     addCollectionAndDocuments("categories", SHOP_DATA);
@@ -34,7 +34,7 @@ const Shop = () => {
       {/* Shop Component */}
       <Route index element={<ShopDirectory />} />
       {/* Nested Shop Categories Components Routes (Hats, jackets, etc.) */}
-      <Route path=":category" element={<Category />} />
+      <Route path=':category' element={<Category />} />
     </Routes>
   );
 };
