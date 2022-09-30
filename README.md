@@ -1,13 +1,20 @@
 # Online-Shopping-Store 
-
+ 
 Online-Shopping-Store app watch live -> https://online-store-puce.vercel.app/
+ 
+<a href="https://ibb.co/sbwjVLY"><img src="https://i.ibb.co/RY02DLw/Screen-Shot-2022-07-25-at-13-26-56-fullpage.png" alt="Screen-Shot-2022-07-25-at-13-26-56-fullpage" border="0"></a> 
 
-<a href="https://ibb.co/sbwjVLY"><img src="https://i.ibb.co/RY02DLw/Screen-Shot-2022-07-25-at-13-26-56-fullpage.png" alt="Screen-Shot-2022-07-25-at-13-26-56-fullpage" border="0"></a>
+### Install dependencies
 
-## What to do  
-1. Clone this repo     
-2. Run `npm install` to download the node_modules folder   
-3. Run `npm start`
+```bash
+npm install 
+```
+
+### Run
+
+```bash 
+npm start
+```
     
 ## Technologies ⚙️   
  
@@ -21,8 +28,7 @@ Online-Shopping-Store app watch live -> https://online-store-puce.vercel.app/
 * Firebase and Firestore for both authentication and handling data
 * Stripe for handling payment 
 
-
-## More Images: 
+## See More Images:  
 
 <a href="https://ibb.co/vL6vjHJ"><img src="https://i.ibb.co/RQk4D9C/Capture2.jpg" alt="Capture2" border="0"></a>
 ##
