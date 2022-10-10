@@ -27,24 +27,24 @@ const App = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Navigation />}>
+        <Route path='/' element={<Navigation />}>
           <Route index element={<Home />} />
-          <Route path="shop/*" element={<Shop />} />
+          <Route path='shop/*' element={<Shop />} />
 
           {/* Nested card details component Routes */}
-          <Route path="shop/hats/:cardId" element={<Card />} />
-          <Route path="shop/jackets/:cardId" element={<Card />} />
-          <Route path="shop/sneakers/:cardId" element={<Card />} />
-          <Route path="shop/kids/:cardId" element={<Card />} />
-          <Route path="shop/mens/:cardId" element={<Card />} />
-          <Route path="shop/womens/:cardId" element={<Card />} />
+          <Route path='shop/hats/:cardId' element={<Card />} />
+          <Route path='shop/jackets/:cardId' element={<Card />} />
+          <Route path='shop/sneakers/:cardId' element={<Card />} />
+          <Route path='shop/kids/:cardId' element={<Card />} />
+          <Route path='shop/mens/:cardId' element={<Card />} />
+          <Route path='shop/womens/:cardId' element={<Card />} />
 
-          <Route path="/sign-in" element={<SignIn />} />
-          <Route path="/sign-up" element={<SignUp />} />
+          <Route path='/sign-in' element={<SignIn />} />
+          <Route path='/sign-up' element={<SignUp />} />
 
-          <Route path="checkout" element={<Checkout />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/*" element={<ErrorHandler />} />
+          <Route path='checkout' element={<Checkout />} />
+          <Route path='/contact-us' element={<ContactUs />} />
+          <Route path='/*' element={<ErrorHandler />} />
         </Route>
       </Routes>
     </div>
