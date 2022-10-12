@@ -10,7 +10,7 @@ Online-Shopping-Store app watch live -> https://online-store-puce.vercel.app/
 npm install 
 ```
 
-### Run
+### Run 
 
 ```bash  
 npm start
