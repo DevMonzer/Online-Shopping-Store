@@ -12,7 +12,7 @@ npm install
 
 ### Run 
 
-```bash  
+```bash   
 npm start
 ```
     
